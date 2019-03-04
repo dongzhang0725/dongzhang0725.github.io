@@ -447,10 +447,7 @@
           
 
   
-    <div class="comments" id="comments">
-      <div id="disqus_thread">
-        <noscript>Please enable JavaScript to view the comments powered by Disqus.</noscript>
-      </div>
+    <div class="comments" id="gitalk-container">
     </div>
 
   
@@ -690,29 +687,6 @@
 
 
   
-  
-  <script id="dsq-count-scr" src="https://ZD.disqus.com/count.js" async></script>
-
-
-<script>
-  var disqus_config = function() {
-    this.page.url = "https://dongzhang0725.github.io/tags/index.html";
-    this.page.identifier = "tags/index.html";
-    this.page.title = 'Tags';
-    };
-  function loadComments() {
-    var d = document, s = d.createElement('script');
-    s.src = 'https://ZD.disqus.com/embed.js';
-    s.setAttribute('data-timestamp', '' + +new Date());
-    (d.head || d.body).appendChild(s);
-  }
-  
-    loadComments();
-  
-</script>
-
-
-
 
 
   
@@ -732,7 +706,7 @@
   var gitalk = new Gitalk({
     clientID: '55e7b2bd2c9d294158bf',
     clientSecret: 'b0716af44800887bfab50497c5e0309525a353b8',
-    repo: 'dongzhang0725.github.io',
+    repo: 'PhyloSuite',
     owner: 'dongzhang0725',
     admin: ['dongzhang0725'],
     id: md5(location.pathname),
