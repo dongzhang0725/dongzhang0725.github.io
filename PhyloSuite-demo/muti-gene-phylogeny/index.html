@@ -147,7 +147,7 @@
 <meta property="og:image" content="https://github.com/dongzhang0725/PhyloSuite_tutorial/blob/master/images/muti_gene_tutorial/gene_order_en.jpg?raw=true">
 <meta property="og:image" content="https://github.com/dongzhang0725/PhyloSuite_tutorial/blob/master/images/muti_gene_tutorial/itol_lcolor_en.jpg?raw=true">
 <meta property="og:image" content="https://github.com/dongzhang0725/PhyloSuite_tutorial/blob/master/images/muti_gene_tutorial/final_tree_en.jpg?raw=true">
-<meta property="og:updated_time" content="2019-03-04T09:01:52.039Z">
+<meta property="og:updated_time" content="2019-03-07T01:48:09.897Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Muti-gene phylogeny">
 <meta name="twitter:description" content="PhyloSuite: from data acquisition to phylogenetic tree annotation (muti-gene dataset)">
@@ -473,7 +473,7 @@
                 
                   <span class="post-meta-item-text">Edited on</span>
                 
-                <time title="Modified: 2019-03-04 17:01:52" itemprop="dateModified" datetime="2019-03-04T17:01:52+08:00">2019-03-04</time>
+                <time title="Modified: 2019-03-07 09:48:09" itemprop="dateModified" datetime="2019-03-07T09:48:09+08:00">2019-03-07</time>
               
             
           </span>
@@ -528,15 +528,14 @@
         <p><img src="https://github.com/dongzhang0725/PhyloSuite_tutorial/blob/master/images/muti_gene_tutorial/cover.jpg?raw=true" alt><br>PhyloSuite: from data acquisition to phylogenetic tree annotation (muti-gene dataset)</p>
 <a id="more"></a>
 <p>In order to make it easier for users to get started, here we briefly introduce the use of PhyloSuite using an example of all available Monogenea (class) (Platyhelminthes) mitochondrial genomes (mitogenomes).</p>
-<p><span style="color:red">Author’s Note: </span>To save space, the contents duplicated with our <a href="https://dongzhang0725.github.io/dongzhang0725.github.io/PhyloSuite-demo/single-gene-phylogeny/#7-Flowchart">single-gene tutorial</a> will not be detailed in this article.</p>
+<p><span style="color:red">Author’s Note: </span>To save space, the contents duplicated with our <a href="https://dongzhang0725.github.io/dongzhang0725.github.io/PhyloSuite-demo/single-gene-phylogeny/#7-Flowchart">single-gene tutorial</a> will not be detailed in this article. The interface of some functions may change a bit in the version 1.1.15.</p>
 <h3 id="1-Sequence-download-and-preparation"><a href="#1-Sequence-download-and-preparation" class="headerlink" title="1. Sequence download and preparation"></a>1. Sequence download and preparation</h3><p>Since PhyloSuite is designed both for experts and students, we will briefly introduce how to search for sequences in GenBank. We will search for all available mitogenome sequences of the class Monogenea, but this method can be applied to any other taxonomic group. After entering the NCBI’s main website (https://www.ncbi.nlm.nih.gov/), follow the steps below:</p>
 <ol>
 <li>Select the Nucleotide database;</li>
 <li>Enter <code>Monogenea[ORGN] AND (mitochondrion[TITL] OR mitochondrial[TITL]) AND 10000:50000[SLEN]</code> into the search box. This search comprises 3 parts: first we define the target taxonomic group  (<code>Monogenea[ORGN]</code>), then define sequence type <code>(mitochondrion[TITL] OR mitochondrial[TITL])</code>, and finally predefine the length range of the sequence (<code>10000:50000[SLEN]</code>). These keywords can be adjusted according to your needs;</li>
 <li>Click <code>Send to</code>;</li>
-<li>Select <code>Complete Record --&gt; File --&gt; GenBank</code> to save the complete mitogenomes. Alternatively, you may select just the Accession List (either via file or clipboard options).</li>
+<li>Select <code>Complete Record --&gt; File --&gt; GenBank</code> to save the complete mitogenomes. Alternatively, you may select just the Accession List (either via file or clipboard options).<br><img src="https://github.com/dongzhang0725/PhyloSuite_tutorial/blob/master/images/muti_gene_tutorial/download_seq_en.jpg?raw=true" alt><br>Note: In version 1.1.15, you can download these (or any other data) via the inbuilt <code>Search in NCBI</code> function, see <a href="https://dongzhang0725.github.io/dongzhang0725.github.io/documentation/#4-3-3-1-Brief-example">here</a> for details.</li>
 </ol>
-<p><img src="https://github.com/dongzhang0725/PhyloSuite_tutorial/blob/master/images/muti_gene_tutorial/download_seq_en.jpg?raw=true" alt></p>
 <p>After the sequences/IDs are downloaded/copied, you can drag-drop the file directly into PhyloSuite, or click open file(s)/input ID(s) and paste the list of accession numbers there and let PhyloSuite download the selected files.</p>
 <ol>
 <li>First select any working folder (files or flowchart);</li>
@@ -551,7 +550,7 @@
 <li>If PhyloSuite identifies duplicates, the star-shaped icon will change into a <span style="color:purple">purple</span> brush. Clicking this button again will clean up the duplicates (by default, PhyloSuite preferentially retains the RefSeq IDs, starting with NC). In the demo dataset, this results in 34 retained unique sequences.</li>
 </ol>
 <p><img src="https://github.com/dongzhang0725/PhyloSuite_tutorial/blob/master/images/muti_gene_tutorial/highlight_identical_seq_en.jpg?raw=true" alt></p>
-<p>The next step is to update the lineage data (taxonomy). Use <code>ctrl+A</code> to select all sequences, then right-click, choose <code>Get taxonomy (NCBI)</code> to automatically grab the lineage information from NCBI, and then manually modify the unrecognized information. See the <a href="https://dongzhang0725.github.io/dongzhang0725.github.io/single-gene-phylogeny/">single gene tutorial</a> for other details.</p>
+<p>The next step is to update the lineage data (taxonomy). Use <code>ctrl+A</code> to select all sequences, then right-click, choose <code>Get taxonomy (NCBI)</code> to automatically grab the lineage information from NCBI, and then manually modify the unrecognized information. See the <a href="https://dongzhang0725.github.io/dongzhang0725.github.io/PhyloSuite-demo/single-gene-phylogeny/">single gene tutorial</a> for other details.</p>
 <h3 id="2-Sequence-standardization"><a href="#2-Sequence-standardization" class="headerlink" title="2. Sequence standardization"></a>2. Sequence standardization</h3><p>The function mainly has two aspects: the first is to standardize the synonymous gene names, and the second is to identify the problematic annotation features. For example, in mitogenomes, the two copies of trnS and trnL are commonly confused:</p>
 <ol>
 <li>Select all sequences, then right-click and select <code>Standardization</code>;</li>
@@ -596,19 +595,18 @@
 <p><img src="https://github.com/dongzhang0725/PhyloSuite_tutorial/blob/master/images/muti_gene_tutorial/mark_NCR_en.jpg?raw=true" alt></p>
 <h3 id="3-Sequence-extraction"><a href="#3-Sequence-extraction" class="headerlink" title="3. Sequence extraction"></a>3. Sequence extraction</h3><ol>
 <li>In the main interface, select all sequences, right-click and choose <code>Extract</code> to enter the extraction interface;</li>
-<li>Monogeneans use the code table 9 (<code>Echinoderm and Flatworm Mitochondrial Code</code>). Selecting the right code table is necessary to correctly identify the stop codons, translate protein-coding genes, and generate an RSCU table;</li>
 <li>Select the predefined <code>Mitogenome</code> as the sequence type;</li>
 <li>Set parameters for the gene order visualization in iTOL, such as the shape, color and length of each gene icon;</li>
 <li><code>Gene Interval</code> is used to set the spacing between gene icons in the iTOL gene order visualization;</li>
-<li>The content of <code>Lineage color</code> is explained in the <a href="https://dongzhang0725.github.io/dongzhang0725.github.io/single-gene-phylogeny/">single gene tutorial</a>, so I won’t go into details here. Finally, click <code>Start</code> to start the program.</li>
+<li>The content of <code>Lineage color</code> is explained in the <a href="https://dongzhang0725.github.io/dongzhang0725.github.io/PhyloSuite-demo/single-gene-phylogeny/">single gene tutorial</a>, so I won’t go into details here. Finally, click <code>Start</code> to start the program.</li>
 </ol>
 <p><img src="https://github.com/dongzhang0725/PhyloSuite_tutorial/blob/master/images/muti_gene_tutorial/extract_en.jpg?raw=true" alt></p>
-<p>After extraction, the sequences corresponding to each <code>feature</code> are stored in folders named according to corresponding GenBank file features: CDS_NUC (nucleotide sequences of genes identified within the CDS; in this case 12 genes, as atp8 is missing), CDS_AA (translated amino acid sequences of the 12 genes), rRNA (2 genes) and tRNA (22 genes). Sometimes you may encounter a situation where gene names are not standardized. For detailed procedure please refer to the <a href="https://dongzhang0725.github.io/dongzhang0725.github.io/single-gene-phylogeny/">single gene tutorial</a>. Briefly: open the <code>extract_results\StatFiles\name_for_unification.csv</code> file, replace the name in the <code>New Name</code> column, then save it (csv), and finally drag this file into the extraction settings interface (see screenshot below):</p>
+<p>After extraction, the sequences corresponding to each <code>feature</code> are stored in folders named according to corresponding GenBank file features: CDS_NUC (nucleotide sequences of genes identified within the CDS; in this case 12 genes, as atp8 is missing), CDS_AA (translated amino acid sequences of the 12 genes), rRNA (2 genes) and tRNA (22 genes). Sometimes you may encounter a situation where gene names are not standardized. For detailed procedure please refer to the <a href="https://dongzhang0725.github.io/dongzhang0725.github.io/PhyloSuite-demo/single-gene-phylogeny/">single gene tutorial</a>. Briefly: open the <code>extract_results\StatFiles\name_for_unification.csv</code> file, replace the name in the <code>New Name</code> column, then save it (csv), and finally drag this file into the extraction settings interface (see screenshot below):</p>
 <p><img src="https://github.com/dongzhang0725/PhyloSuite_tutorial/blob/master/images/muti_gene_tutorial/replace_name_en.jpg?raw=true" alt></p>
 <p>Note that there may be some sequence files with ‘copy’ in the file name in the results folder; this means that there are duplicated genes in some sequences (copy2 means 2 genes, copy3 means 3, etc.). As shown in the figure (our demo dataset doesn’t have duplicated genes, this is from another dataset just for demonstration), there are two copies of trnA, trnK and trnS1 genes in some sequences (user can open fasta files of problematic sequences to view details):</p>
 <p><img src="https://github.com/dongzhang0725/PhyloSuite_tutorial/blob/master/images/muti_gene_tutorial/gene_copy_en.jpg?raw=true" alt></p>
 <p>In addition to the extracted sequences, you may also find the gene order file (which can be used for CREx and TreeREx analyses) and various statistical tables in the results folder. Some of them can be used directly in your manuscript, and some can be used for downstream analyses (not shown in this tutorial).</p>
-<h3 id="4-Multiple-sequence-alignment"><a href="#4-Multiple-sequence-alignment" class="headerlink" title="4. Multiple sequence alignment"></a>4. Multiple sequence alignment</h3><p>You can automatically input the results from the previous step into MAFFT in the following way (see the <a href="https://dongzhang0725.github.io/dongzhang0725.github.io/single-gene-phylogeny/">single gene tutorial</a> for multiple ways of importing files):</p>
+<h3 id="4-Multiple-sequence-alignment"><a href="#4-Multiple-sequence-alignment" class="headerlink" title="4. Multiple sequence alignment"></a>4. Multiple sequence alignment</h3><p>You can automatically input the results from the previous step into MAFFT in the following way (see the <a href="https://dongzhang0725.github.io/dongzhang0725.github.io/PhyloSuite-demo/single-gene-phylogeny/">single gene tutorial</a> for multiple ways of importing files):</p>
 <ol>
 <li>Check the <code>extract_results</code> result folder;</li>
 <li>Open MAFFT through the <code>Alignment</code> menu;</li>
@@ -632,7 +630,7 @@
 <li>After setting other parameters, start the program.</li>
 </ol>
 <p><img src="https://github.com/dongzhang0725/PhyloSuite_tutorial/blob/master/images/muti_gene_tutorial/mafft_pcgs_en.jpg?raw=true" alt></p>
-<p>You should get a prompt that internal stop codon was found inside a gene. If you are aware of this problem, feel free to ignore it and continue the alignment, otherwise terminate the alignment and inspect the problem:</p>
+<p>Below I demonstrate a case (although we will not encounter this in the demo data) where you get a prompt that internal stop codon was found inside a gene. If you are aware of this problem, feel free to ignore it and continue the alignment, otherwise terminate the alignment and inspect the problem:</p>
 <ol>
 <li>In the pop-up window, select <code>Yes</code> to view the problematic sequence;</li>
 <li>Select the stop codon number in the drop-down box in the right bottom corner to view each identified internal stop codon. For example, the stop codon TAG is marked here in sequence No. 31.</li>
@@ -654,7 +652,7 @@
 <p><img src="https://github.com/dongzhang0725/PhyloSuite_tutorial/blob/master/images/muti_gene_tutorial/concatenation_en.jpg?raw=true" alt></p>
 <p>Since some species do not contain all 36 genes, there is a prompt that the missing genes will be replaced with “?”. Missing genes can be viewed in the <code>missing_genes.txt</code> file in the <code>concatenate_results</code> result folder.</p>
 <p><img src="https://github.com/dongzhang0725/PhyloSuite_tutorial/blob/master/images/muti_gene_tutorial/missing_genes_en.jpg?raw=true" alt></p>
-<h3 id="6-Optimal-partitioning-strategy-and-model-selection"><a href="#6-Optimal-partitioning-strategy-and-model-selection" class="headerlink" title="6. Optimal partitioning strategy and model selection"></a>6. Optimal partitioning strategy and model selection</h3><p>In the next step we will use <code>PartitionFinder2</code> to select the best-fit partitioning strategy and models for the concatenated sequences. Note that there is some functional overlap between this plug-in, ModelFinder and IQ-Tree, see the <a href="https://dongzhang0725.github.io/dongzhang0725.github.io/single-gene-phylogeny/">single gene tutorial</a> for the other two tools. For more details about <code>PartitionFinder2</code> parameters, check the manual at <a href="http://www" target="_blank" rel="noopener">http://www</a>. Robertlanfear.com/partitionfinder/assets/Manual_v2.1.x.pdf.</p>
+<h3 id="6-Optimal-partitioning-strategy-and-model-selection"><a href="#6-Optimal-partitioning-strategy-and-model-selection" class="headerlink" title="6. Optimal partitioning strategy and model selection"></a>6. Optimal partitioning strategy and model selection</h3><p>In the next step we will use <code>PartitionFinder2</code> to select the best-fit partitioning strategy and models for the concatenated sequences. Note that there is some functional overlap between this plug-in, ModelFinder and IQ-Tree, see the <a href="https://dongzhang0725.github.io/dongzhang0725.github.io/PhyloSuite-demo/single-gene-phylogeny/">single gene tutorial</a> for the other two tools. For more details about <code>PartitionFinder2</code> parameters, check the manual at <a href="http://www" target="_blank" rel="noopener">http://www</a>. Robertlanfear.com/partitionfinder/assets/Manual_v2.1.x.pdf.</p>
 <ol>
 <li>Select the <code>concatenate_results</code> folder;</li>
 <li>Open <code>Phylogeny--&gt;PartitionFinder2</code> through the menu bar, and the concatenated dataset with the position index of each gene will be automatically imported;</li>
@@ -690,7 +688,7 @@
 <li>Play with other parameters if you wish, and then start the program.</li>
 </ol>
 <p><img src="https://github.com/dongzhang0725/PhyloSuite_tutorial/blob/master/images/muti_gene_tutorial/IQ-TREE_en.jpg?raw=true" alt></p>
-<h3 id="9-Flowchart"><a href="#9-Flowchart" class="headerlink" title="9. Flowchart"></a>9. Flowchart</h3><p>When you use datasets comprised of PCGs and RNAs (e.g., all 36/37 mitochondrial genes), it is best to use different alignment modes, and the codon sites of the PCGs need to be tested (partitioning+models), so it is best to use the procedure described so far. However, if you want to reconstruct a phylogenetic tree using just PCGs (regardless of whether you wish to use amino acids or nucleotides), you can use Workflow function to <strong>complete the entire phylogenetic analysis operation in one step</strong>. The execution order of the workflow is: alignment –&gt; removal of poorly aligned sections (optional) –&gt; concatenation –&gt; partitioning and model selection –&gt; phylogeny reconstruction (Bayesian/maximum likelihood method). You only have to select input files for the first program (MAFFT), as all downstream programs will automatically use the output of the upstream program as input file (see also the <a href="https://dongzhang0725.github.io/dongzhang0725.github.io/single-gene-phylogeny/">single gene tutorial</a>):</p>
+<h3 id="9-Flowchart"><a href="#9-Flowchart" class="headerlink" title="9. Flowchart"></a>9. Flowchart</h3><p>When you use datasets comprised of PCGs and RNAs (e.g., all 36/37 mitochondrial genes), it is best to use different alignment modes, and the codon sites of the PCGs need to be tested (partitioning+models), so it is best to use the procedure described so far. However, if you want to reconstruct a phylogenetic tree using just PCGs (regardless of whether you wish to use amino acids or nucleotides), you can use Workflow function to <strong>complete the entire phylogenetic analysis operation in one step</strong>. The execution order of the workflow is: alignment –&gt; removal of poorly aligned sections (optional) –&gt; concatenation –&gt; partitioning and model selection –&gt; phylogeny reconstruction (Bayesian/maximum likelihood method). You only have to select input files for the first program (MAFFT), as all downstream programs will automatically use the output of the upstream program as input file (see also the <a href="https://dongzhang0725.github.io/dongzhang0725.github.io/PhyloSuite-demo/single-gene-phylogeny/">single gene tutorial</a>):</p>
 <ol>
 <li>Click <code>Flowchart</code> in the menu bar;</li>
 <li>Select the desired analyses; here we will use <code>MAFFT</code>, <code>Gblocks</code>, <code>Concatenation</code>, <code>PartitionFinder</code>, <code>IQ-TREE</code>(ML) and <code>MrBayes</code> (BI);</li>
@@ -701,7 +699,7 @@
 <li>Just close the window to save the imported files.</li>
 </ol>
 <p><img src="https://github.com/dongzhang0725/PhyloSuite_tutorial/blob/master/images/muti_gene_tutorial/flowchart_en.jpg?raw=true" alt></p>
-<p>You may click the edit button next to each function pane (shown in the screenshot above) to set the parameters of each program, or modify the parameters in the parameter summary window (recommended), as follows (see also the <a href="https://dongzhang0725.github.io/dongzhang0725.github.io/single-gene-phylogeny/">single gene tutorial</a>):</p>
+<p>You may click the edit button next to each function pane (shown in the screenshot above) to set the parameters of each program, or modify the parameters in the parameter summary window (recommended), as follows (see also the <a href="https://dongzhang0725.github.io/dongzhang0725.github.io/PhyloSuite-demo/single-gene-phylogeny/">single gene tutorial</a>):</p>
 <ol>
 <li>Click the <code>Check | Start</code> button, and the parameter summary window will pop up, allowing you to check and modify the parameters;</li>
 <li>PhyloSuite is able to automatically check for conflicting parameters. For example, because <code>PartitionFinder</code> is used, partition mode should be checked in <code>IQ-TREE</code>. Clicking the blue ‘autocorrect’ function will automatically complete this operation;</li>
@@ -713,7 +711,7 @@
 <p><img src="https://github.com/dongzhang0725/PhyloSuite_tutorial/blob/master/images/muti_gene_tutorial/auto_detect_en.jpg?raw=true" alt></p>
 <p>You will notice that <code>MrBayes</code> reports and error. This is caused by an unrecognized character <code>B</code> in one of the sequences in our dataset, it is an annotation error in that GenBank record. Open the sequence viewer or input file, find the rogue character, and delete it:</p>
 <p><img src="https://github.com/dongzhang0725/PhyloSuite_tutorial/blob/master/images/muti_gene_tutorial/mrbayes_error_en.jpg?raw=true" alt></p>
-<p>After all the programs have finished, the main interface will display the summary of materials &amp; methods and references (also see the <a href="https://dongzhang0725.github.io/dongzhang0725.github.io/single-gene-phylogeny/">single gene tutorial</a>).</p>
+<p>After all the programs have finished, the main interface will display the summary of materials &amp; methods and references (also see the <a href="https://dongzhang0725.github.io/dongzhang0725.github.io/PhyloSuite-demo/single-gene-phylogeny/">single gene tutorial</a>).</p>
 <h3 id="10-Phylogenetic-Tree-Annotation"><a href="#10-Phylogenetic-Tree-Annotation" class="headerlink" title="10. Phylogenetic Tree Annotation"></a>10. Phylogenetic Tree Annotation</h3><p>Finally, we will introduce the annotation of the phylogenetic tree, as PhyloSuite generates many files useful for this:</p>
 <ol>
 <li>First, open iTOL’s home page <a href="https://itol.embl.de/" target="_blank" rel="noopener">https://itol.embl.de/</a>, log into your account, and select <code>My Trees</code>;</li>
@@ -726,7 +724,7 @@
 </ol>
 <p><img src="https://github.com/dongzhang0725/PhyloSuite_tutorial/blob/master/images/muti_gene_tutorial/bootstrap_en.jpg?raw=true" alt></p>
 <ol start="5">
-<li><p>In PhyloSuite, double-click <code>extract_results</code> to open the extraction step results (section 3). Open the <code>itolFiles</code> folder, which contains files useful for the iTOL phylogram annotation. Just drag the file into iTOL interface to see what happens. Batch replacement of species names and marking taxa with colors are described in the <a href="https://dongzhang0725.github.io/dongzhang0725.github.io/single-gene-phylogeny/">single gene tutorial</a>, so here we mainly focus on mapping gene orders to phylogenetic trees;<br>&emsp;a. Drag the <code>itol_gene_order.txt</code> file into the iTOL interface;<br>&emsp;b. In the <code>Datasets</code> tab you can play with different settings, such as <code>Label size factor</code> to control the font size of each gene name.<br>&emsp;<img src="https://github.com/dongzhang0725/PhyloSuite_tutorial/blob/master/images/muti_gene_tutorial/gene_order_en.jpg?raw=true" alt></p>
+<li><p>In PhyloSuite, double-click <code>extract_results</code> to open the extraction step results (section 3). Open the <code>itolFiles</code> folder, which contains files useful for the iTOL phylogram annotation. Just drag the file into iTOL interface to see what happens. Batch replacement of species names and marking taxa with colors are described in the <a href="https://dongzhang0725.github.io/dongzhang0725.github.io/PhyloSuite-demo/single-gene-phylogeny/">single gene tutorial</a>, so here we mainly focus on mapping gene orders to phylogenetic trees;<br>&emsp;a. Drag the <code>itol_gene_order.txt</code> file into the iTOL interface;<br>&emsp;b. In the <code>Datasets</code> tab you can play with different settings, such as <code>Label size factor</code> to control the font size of each gene name.<br>&emsp;<img src="https://github.com/dongzhang0725/PhyloSuite_tutorial/blob/master/images/muti_gene_tutorial/gene_order_en.jpg?raw=true" alt></p>
 </li>
 <li><p>Since there are many files that can be used for tree annotation, you can combine them into a variety of annotation effects. Here we demonstrate one:<br>&emsp;a. Drag <code>itol_Family_ColourRange.txt</code> and <code>itol_Family_ColourStrip.txt</code> to annotate the families;<br>&emsp;b. Close <code>color_strip</code>, as we only need this function to colorize the branches (they remain colorized even after you uncheck the strip);<br>&emsp;c. Click on the gear icon of the <code>Family text</code> to change settings;<br>&emsp;d. Move the text of the section to the left by adjusting the <code>Left margin</code> value, whereas text size can be changed via the <code>Text size factor</code>;<br>&emsp;e. Place the legend in a blank area before exporting the tree, as this makes subsequent editing easier;<br>&emsp;f. Select the <code>Export</code> tab to export the annotated phylogenetic tree (use <code>SVG</code> format if you intend to use Adobe Illustrator).</p>
 </li>
@@ -734,11 +732,12 @@
 <p><img src="https://github.com/dongzhang0725/PhyloSuite_tutorial/blob/master/images/muti_gene_tutorial/itol_lcolor_en.jpg?raw=true" alt></p>
 <p>Finally, you can use Adobe Illustrator (or other suitable software) to make final adjustments to the image, such as adjusting the position of the family name, the location of the legend, and adding gradient color blocks:</p>
 <p><img src="https://github.com/dongzhang0725/PhyloSuite_tutorial/blob/master/images/muti_gene_tutorial/final_tree_en.jpg?raw=true" alt></p>
-<p>By the way,<br>The advantages of this annotation method are especially pronounced when you have hundreds of species, or when you want to compare multiple topologies based on the same dataset. Colourated annotation is very helpful in such cases, especially for identifying paraphyly and polyphyly.</p>
+<p>The advantages of this annotation method are especially pronounced when you have hundreds of species, or when you want to compare multiple topologies based on the same dataset. Colourated annotation is very helpful in such cases, especially for identifying paraphyly and polyphyly.</p>
 <hr>
 
 <h3 id="11-Software-download-address"><a href="#11-Software-download-address" class="headerlink" title="11. Software download address"></a>11. Software download address</h3><p><a href="https://github.com/dongzhang0725/PhyloSuite/releases" target="_blank" rel="noopener">https://github.com/dongzhang0725/PhyloSuite/releases</a></p>
 <h3 id="12-Reference"><a href="#12-Reference" class="headerlink" title="12. Reference"></a>12. Reference</h3><p>Zhang, D., Gao, F., Li, WX, Jakovlić, I., Zou, H., Zhang, J., and Wang, GT (2018). PhyloSuite: an integrated and scalable desktop platform for streamlined molecular sequence data Management and evolutionary phylogenetics studies. bioRxiv, doi: 10.1101/489088.</p>
+<h3 id="13-Recommended-reading"><a href="#13-Recommended-reading" class="headerlink" title="13. Recommended reading"></a>13. Recommended reading</h3><p>Other demo tutorials can be seen <a href="https://dongzhang0725.github.io/dongzhang0725.github.io/archives/">here</a>.</p>
 
       
     </div>
@@ -779,8 +778,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/dongzhang0725.github.io/PhyloSuite-demo/five_ways_to_import/" rel="next" title="Five ways to import to PhyloSuite">
-                <i class="fa fa-chevron-left"></i> Five ways to import to PhyloSuite
+              <a href="/dongzhang0725.github.io/PhyloSuite-demo/five_ways_to_import/" rel="next" title="Five ways to import data into PhyloSuite">
+                <i class="fa fa-chevron-left"></i> Five ways to import data into PhyloSuite
               </a>
             
           </div>
@@ -789,8 +788,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/dongzhang0725.github.io/PhyloSuite-demo/single-gene-phylogeny/" rel="prev" title="Single gene phylogeny">
-                Single gene phylogeny <i class="fa fa-chevron-right"></i>
+              <a href="/dongzhang0725.github.io/PhyloSuite-demo/single-gene-phylogeny/" rel="prev" title="Single-gene phylogeny">
+                Single-gene phylogeny <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -865,7 +864,7 @@
                 
                   <a href="/dongzhang0725.github.io/archives/">
                 
-                    <span class="site-state-item-count">4</span>
+                    <span class="site-state-item-count">5</span>
                     <span class="site-state-item-name">posts</span>
                   </a>
                 </div>
@@ -935,7 +934,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-Sequence-download-and-preparation"><span class="nav-text">1. Sequence download and preparation</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-Sequence-standardization"><span class="nav-text">2. Sequence standardization</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-Sequence-extraction"><span class="nav-text">3. Sequence extraction</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-Multiple-sequence-alignment"><span class="nav-text">4. Multiple sequence alignment</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5-Sequence-concatenation"><span class="nav-text">5. Sequence concatenation</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#6-Optimal-partitioning-strategy-and-model-selection"><span class="nav-text">6. Optimal partitioning strategy and model selection</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#7-Phylogenetic-tree-reconstruction-based-on-the-Bayesian-method-BI"><span class="nav-text">7. Phylogenetic tree reconstruction based on the Bayesian method (BI)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#8-Maximum-likelihood-method-ML-phylogenetic-tree-reconstruction"><span class="nav-text">8. Maximum likelihood method (ML) phylogenetic tree reconstruction</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#9-Flowchart"><span class="nav-text">9. Flowchart</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#10-Phylogenetic-Tree-Annotation"><span class="nav-text">10. Phylogenetic Tree Annotation</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#11-Software-download-address"><span class="nav-text">11. Software download address</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#12-Reference"><span class="nav-text">12. Reference</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-Sequence-download-and-preparation"><span class="nav-text">1. Sequence download and preparation</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-Sequence-standardization"><span class="nav-text">2. Sequence standardization</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-Sequence-extraction"><span class="nav-text">3. Sequence extraction</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-Multiple-sequence-alignment"><span class="nav-text">4. Multiple sequence alignment</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5-Sequence-concatenation"><span class="nav-text">5. Sequence concatenation</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#6-Optimal-partitioning-strategy-and-model-selection"><span class="nav-text">6. Optimal partitioning strategy and model selection</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#7-Phylogenetic-tree-reconstruction-based-on-the-Bayesian-method-BI"><span class="nav-text">7. Phylogenetic tree reconstruction based on the Bayesian method (BI)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#8-Maximum-likelihood-method-ML-phylogenetic-tree-reconstruction"><span class="nav-text">8. Maximum likelihood method (ML) phylogenetic tree reconstruction</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#9-Flowchart"><span class="nav-text">9. Flowchart</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#10-Phylogenetic-Tree-Annotation"><span class="nav-text">10. Phylogenetic Tree Annotation</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#11-Software-download-address"><span class="nav-text">11. Software download address</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#12-Reference"><span class="nav-text">12. Reference</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#13-Recommended-reading"><span class="nav-text">13. Recommended reading</span></a></li></ol></div>
             
 
           </div>

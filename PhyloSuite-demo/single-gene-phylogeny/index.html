@@ -103,13 +103,13 @@
 
 
 
-  <meta name="description" content="PhyloSuite: from data aquisition to phylogenetic tree annotation (single gene tree building)">
+  <meta name="description" content="PhyloSuite: from data aquisition to phylogenetic tree annotation (single-gene dataset)">
 <meta name="keywords" content="PyQT5,Python,Bioinformatics">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Single gene phylogeny">
+<meta property="og:title" content="Single-gene phylogeny">
 <meta property="og:url" content="https://dongzhang0725.github.io/PhyloSuite-demo/single-gene-phylogeny/index.html">
 <meta property="og:site_name" content="PhyloSuite">
-<meta property="og:description" content="PhyloSuite: from data aquisition to phylogenetic tree annotation (single gene tree building)">
+<meta property="og:description" content="PhyloSuite: from data aquisition to phylogenetic tree annotation (single-gene dataset)">
 <meta property="og:locale" content="en">
 <meta property="og:image" content="https://github.com/dongzhang0725/PhyloSuite_tutorial/blob/master/images/single_gene_tutorial/cover.jpg?raw=true">
 <meta property="og:image" content="https://github.com/dongzhang0725/PhyloSuite_tutorial/blob/master/images/single_gene_tutorial/download_seq_en.jpg?raw=true">
@@ -134,10 +134,10 @@
 <meta property="og:image" content="https://github.com/dongzhang0725/PhyloSuite_tutorial/blob/master/images/single_gene_tutorial/itol_input_en.jpg?raw=true">
 <meta property="og:image" content="https://github.com/dongzhang0725/PhyloSuite_tutorial/blob/master/images/single_gene_tutorial/drag_gb_label_en.jpg?raw=true">
 <meta property="og:image" content="https://github.com/dongzhang0725/PhyloSuite_tutorial/blob/master/images/single_gene_tutorial/itol_color_en.jpg?raw=true">
-<meta property="og:updated_time" content="2019-03-04T09:04:18.077Z">
+<meta property="og:updated_time" content="2019-03-07T01:41:38.765Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Single gene phylogeny">
-<meta name="twitter:description" content="PhyloSuite: from data aquisition to phylogenetic tree annotation (single gene tree building)">
+<meta name="twitter:title" content="Single-gene phylogeny">
+<meta name="twitter:description" content="PhyloSuite: from data aquisition to phylogenetic tree annotation (single-gene dataset)">
 <meta name="twitter:image" content="https://github.com/dongzhang0725/PhyloSuite_tutorial/blob/master/images/single_gene_tutorial/cover.jpg?raw=true">
 
 
@@ -155,7 +155,7 @@
   };
 </script>
 
-  <title>Single gene phylogeny | PhyloSuite</title>
+  <title>Single-gene phylogeny | PhyloSuite</title>
   
 
 
@@ -417,7 +417,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Single gene phylogeny
+          <h1 class="post-title" itemprop="name headline">Single-gene phylogeny
 
               
             
@@ -460,7 +460,7 @@
                 
                   <span class="post-meta-item-text">Edited on</span>
                 
-                <time title="Modified: 2019-03-04 17:04:18" itemprop="dateModified" datetime="2019-03-04T17:04:18+08:00">2019-03-04</time>
+                <time title="Modified: 2019-03-07 09:41:38" itemprop="dateModified" datetime="2019-03-07T09:41:38+08:00">2019-03-07</time>
               
             
           </span>
@@ -512,9 +512,8 @@
       
 
       
-        <p>PhyloSuite: from data aquisition to phylogenetic tree annotation (single gene tree building)</p>
-<p><img src="https://github.com/dongzhang0725/PhyloSuite_tutorial/blob/master/images/single_gene_tutorial/cover.jpg?raw=true" alt></p>
-<a id="more"></a>
+        <p><img src="https://github.com/dongzhang0725/PhyloSuite_tutorial/blob/master/images/single_gene_tutorial/cover.jpg?raw=true" alt><br>PhyloSuite: from data aquisition to phylogenetic tree annotation (single-gene dataset)<br><a id="more"></a></p>
+<p><span style="color:red">Author’s Note: </span> the interface of some functions may change a bit in the version 1.1.15.</p>
 <p>In order to make it easier for users to get started, here is a tutorial to briefly introduce the use of PhyloSuite, using 51 ciliate 18S sequences as an example (<a href="https://onlinelibrary.wiley.com/doi/full/10.1111/j.1550-7408.2009.00413.x " target="_blank" rel="noopener">https://onlinelibrary.wiley.com/doi/full/10.1111/j.1550-7408.2009.00413.x</a>).</p>
 <h3 id="1-Sequence-download-and-preparation"><a href="#1-Sequence-download-and-preparation" class="headerlink" title="1. Sequence download and preparation"></a>1. Sequence download and preparation</h3><p>The accession numbers we will use are below (fetched from a table in the abovementioned paper):<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">AF164122 X65150 AY547546 U17356 EU286810</span><br><span class="line">AF100301 U47620 M97909 L31520 EU039903</span><br><span class="line">Z29442 U97110 EU039887 Z29438 AY007454</span><br><span class="line">AF060454 AY007445 U82204 X71134 X65149</span><br><span class="line">U57767 L26447 AF300281 AF530529 U17355</span><br><span class="line">AY331802 AY242119 AY331790 EU286812 DQ232761</span><br><span class="line">X71140 EU286811 AY331794 EU264561 EU286809</span><br><span class="line">X65151 U24248 AM292311 EU039899 DQ057347</span><br><span class="line">AF300286 EF123708 EU039896 L26446 U57765</span><br><span class="line">Z22931 AY007450 EU264560 AY378112 DQ834370</span><br><span class="line">U97112</span><br></pre></td></tr></table></figure></p>
 <p>First, download these IDs to the PhyloSuite workspace:</p>
@@ -550,7 +549,7 @@
 <li>Drag the modified <code>name_for_unification.csv</code> file into the area indicated in the figure, and the modified names will be automatically recognized.</li>
 </ol>
 <p><img src="https://github.com/dongzhang0725/PhyloSuite_tutorial/blob/master/images/single_gene_tutorial/modify_replace_names_en.jpg?raw=true" alt></p>
-<p>Just close the settings window, your new settings will be automatically saved. At this point, you only need to re-run the extraction anew to get the 18S sequence after replacing the name. After reopening the 18S.fas file in the rRNA folder, you will find only 42 sequences in it (remember we have a total of 51 IDs). Three more sequences, annotated as 16-like, are in the same folder. Because I wasn’t sure that these are homologues, I left them in a separate file so I can manually revise their homology. If you are certain, you can rename them to 18S as described above. The extraction of the remaining 6 missing sequences was not successful, the details of which can be found in the ‘StatFiles’ folder in files: <code>StatFiles/feature_unrecognized.csv</code> and <code>StatFiles/ID_with_no_features.csv</code>. Best way to see what went wrong is to open these sequences (main working window, find the ID, right-click, open) and compare them with successfully extracted files. Once/if you figure out what is wrong with them, you may manually edit these files in a text editor, save them, and re-extract all sequences. </p>
+<p>Just close the settings window, your new settings will be automatically saved. At this point, you only need to re-run the extraction anew to get the 18S sequence after replacing the name. After reopening the 18S.fas file in the rRNA folder, you will find only 42 sequences in it (remember we have a total of 51 IDs). Three more sequences, annotated as 16-like, are in the same folder. Because I wasn’t sure that these are homologues, I left them in a separate file so I can manually revise their homology. If you are certain, you can rename them to 18S as described above. The extraction of the remaining 6 missing sequences was not successful, the details of which can be found in the<code>overview.csv</code> file. See <code>Qualifiers set in the settings were not found in these features:</code> and <code>Features (rRNA &amp; misc_feature) set in the settings were not found in these species:</code> sections.  Best way to see what went wrong is to open these sequences (main working window, find the ID, right-click, open) and compare them with successfully extracted files. Once/if you figure out what is wrong with them, you may manually edit these files in a text editor, save them, and re-extract all sequences. </p>
 <p>However, if you are confident that all the sequences are 18S, here is an easy way:</p>
 <ol>
 <li>Check ‘Default’ instead of ‘Custom’ in the Extracter function and set the output file name;</li>
@@ -562,7 +561,7 @@
 <ol>
 <li><p>First, select the <code>extract_results</code> folder in the main PhyloSuite window (extracted in the previous step), and then open MAFFT through <code>Alignment--&gt;MAFFT</code> in the menu bar. The extracted sequences will be automatically imported into MAFFT;<br><img src="https://github.com/dongzhang0725/PhyloSuite_tutorial/blob/master/images/single_gene_tutorial/auto_load_en.jpg?raw=true" alt></p>
 </li>
-<li><p>You can select MAFFT from the Alignment menu, and then a pop-up window will automatically offer you available input file from the entire workspace. Scroll through them to find the results that you need, or click ‘No, thanks’ and select the input file manually.<br><img src="https://github.com/dongzhang0725/PhyloSuite_tutorial/blob/master/images/single_gene_tutorial/auto_prepare_en.jpg?raw=true" alt></p>
+<li><p>You can select MAFFT from the Alignment menu, and then a pop-up window will automatically offer you available input file from the entire workspace. Scroll through them to find the results that you need (for this demo, just select the latest result), or click ‘No, thanks’ and select the input file manually..<br><img src="https://github.com/dongzhang0725/PhyloSuite_tutorial/blob/master/images/single_gene_tutorial/auto_prepare_en.jpg?raw=true" alt></p>
 </li>
 </ol>
 <p>You will find that other plug-ins in PhyloSuite also use this interface to import files.</p>
@@ -643,6 +642,7 @@
 
 <h3 id="9-Software-download-website"><a href="#9-Software-download-website" class="headerlink" title="9. Software download website"></a>9. Software download website</h3><p><a href="https://github.com/dongzhang0725/PhyloSuite/releases" target="_blank" rel="noopener">https://github.com/dongzhang0725/PhyloSuite/releases</a></p>
 <h3 id="10-Reference"><a href="#10-Reference" class="headerlink" title="10. Reference"></a>10. Reference</h3><p>Zhang, D., Gao, F., Li, WX, Jakovlić, I., Zou, H., Zhang, J., and Wang, GT (2018). PhyloSuite: an integrated and scalable desktop platform for streamlined molecular sequence data Management and evolutionary phylogenetics studies. bioRxiv, doi: 10.1101/489088.</p>
+<h3 id="11-Recommended-reading"><a href="#11-Recommended-reading" class="headerlink" title="11. Recommended reading"></a>11. Recommended reading</h3><p>Other demo tutorials can be seen <a href="https://dongzhang0725.github.io/dongzhang0725.github.io/archives/">here</a>.</p>
 
       
     </div>
@@ -692,6 +692,10 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/dongzhang0725.github.io/PhyloSuite-demo/customize_extraction/" rel="prev" title="Customizing the extraction">
+                Customizing the extraction <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -765,7 +769,7 @@
                 
                   <a href="/dongzhang0725.github.io/archives/">
                 
-                    <span class="site-state-item-count">4</span>
+                    <span class="site-state-item-count">5</span>
                     <span class="site-state-item-name">posts</span>
                   </a>
                 </div>
@@ -835,7 +839,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-Sequence-download-and-preparation"><span class="nav-text">1. Sequence download and preparation</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-Sequence-extraction"><span class="nav-text">2. Sequence extraction</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-Multiple-sequence-alignment"><span class="nav-text">3. Multiple sequence alignment</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-Nucleotide-replacement-model-selection"><span class="nav-text">4. Nucleotide replacement model selection</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5-Phylogenetic-tree-reconstruction-based-on-Bayesian-Inference-BI"><span class="nav-text">5. Phylogenetic tree reconstruction based on Bayesian Inference (BI)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#6-Phylogenetic-tree-reconstruction-based-on-the-Maximum-Likelihood-method-ML"><span class="nav-text">6. Phylogenetic tree reconstruction based on the Maximum Likelihood method (ML)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#7-Flowchart"><span class="nav-text">7. Flowchart</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#8-Phylogenetic-tree-annotation"><span class="nav-text">8. Phylogenetic tree annotation</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#9-Software-download-website"><span class="nav-text">9. Software download website</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#10-Reference"><span class="nav-text">10. Reference</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-Sequence-download-and-preparation"><span class="nav-text">1. Sequence download and preparation</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-Sequence-extraction"><span class="nav-text">2. Sequence extraction</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-Multiple-sequence-alignment"><span class="nav-text">3. Multiple sequence alignment</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-Nucleotide-replacement-model-selection"><span class="nav-text">4. Nucleotide replacement model selection</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5-Phylogenetic-tree-reconstruction-based-on-Bayesian-Inference-BI"><span class="nav-text">5. Phylogenetic tree reconstruction based on Bayesian Inference (BI)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#6-Phylogenetic-tree-reconstruction-based-on-the-Maximum-Likelihood-method-ML"><span class="nav-text">6. Phylogenetic tree reconstruction based on the Maximum Likelihood method (ML)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#7-Flowchart"><span class="nav-text">7. Flowchart</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#8-Phylogenetic-tree-annotation"><span class="nav-text">8. Phylogenetic tree annotation</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#9-Software-download-website"><span class="nav-text">9. Software download website</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#10-Reference"><span class="nav-text">10. Reference</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#11-Recommended-reading"><span class="nav-text">11. Recommended reading</span></a></li></ol></div>
             
 
           </div>
