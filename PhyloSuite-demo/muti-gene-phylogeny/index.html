@@ -147,7 +147,7 @@
 <meta property="og:image" content="https://github.com/dongzhang0725/PhyloSuite_tutorial/blob/master/images/muti_gene_tutorial/gene_order_en.jpg?raw=true">
 <meta property="og:image" content="https://github.com/dongzhang0725/PhyloSuite_tutorial/blob/master/images/muti_gene_tutorial/itol_lcolor_en.jpg?raw=true">
 <meta property="og:image" content="https://github.com/dongzhang0725/PhyloSuite_tutorial/blob/master/images/muti_gene_tutorial/final_tree_en.jpg?raw=true">
-<meta property="og:updated_time" content="2019-03-07T01:48:09.897Z">
+<meta property="og:updated_time" content="2019-03-07T07:10:56.242Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Muti-gene phylogeny">
 <meta name="twitter:description" content="PhyloSuite: from data acquisition to phylogenetic tree annotation (muti-gene dataset)">
@@ -473,7 +473,7 @@
                 
                   <span class="post-meta-item-text">Edited on</span>
                 
-                <time title="Modified: 2019-03-07 09:48:09" itemprop="dateModified" datetime="2019-03-07T09:48:09+08:00">2019-03-07</time>
+                <time title="Modified: 2019-03-07 15:10:56" itemprop="dateModified" datetime="2019-03-07T15:10:56+08:00">2019-03-07</time>
               
             
           </span>
@@ -529,7 +529,7 @@
 <a id="more"></a>
 <p>In order to make it easier for users to get started, here we briefly introduce the use of PhyloSuite using an example of all available Monogenea (class) (Platyhelminthes) mitochondrial genomes (mitogenomes).</p>
 <p><span style="color:red">Author’s Note: </span>To save space, the contents duplicated with our <a href="https://dongzhang0725.github.io/dongzhang0725.github.io/PhyloSuite-demo/single-gene-phylogeny/#7-Flowchart">single-gene tutorial</a> will not be detailed in this article. The interface of some functions may change a bit in the version 1.1.15.</p>
-<h3 id="1-Sequence-download-and-preparation"><a href="#1-Sequence-download-and-preparation" class="headerlink" title="1. Sequence download and preparation"></a>1. Sequence download and preparation</h3><p>Since PhyloSuite is designed both for experts and students, we will briefly introduce how to search for sequences in GenBank. We will search for all available mitogenome sequences of the class Monogenea, but this method can be applied to any other taxonomic group. After entering the NCBI’s main website (https://www.ncbi.nlm.nih.gov/), follow the steps below:</p>
+<h3 id="1-Sequence-download-and-preparation"><a href="#1-Sequence-download-and-preparation" class="headerlink" title="1. Sequence download and preparation"></a>1. Sequence download and preparation</h3><p>Since PhyloSuite is designed both for experts and students, we will briefly introduce how to search for sequences in GenBank. We will search for all available mitogenome sequences of the class Monogenea, but this method can be applied to any other taxonomic group. After entering the NCBI’s main website (<a href="https://www.ncbi.nlm.nih.gov/" target="_blank" rel="noopener">https://www.ncbi.nlm.nih.gov/</a>), follow the steps below:</p>
 <ol>
 <li>Select the Nucleotide database;</li>
 <li>Enter <code>Monogenea[ORGN] AND (mitochondrion[TITL] OR mitochondrial[TITL]) AND 10000:50000[SLEN]</code> into the search box. This search comprises 3 parts: first we define the target taxonomic group  (<code>Monogenea[ORGN]</code>), then define sequence type <code>(mitochondrion[TITL] OR mitochondrial[TITL])</code>, and finally predefine the length range of the sequence (<code>10000:50000[SLEN]</code>). These keywords can be adjusted according to your needs;</li>
@@ -566,7 +566,7 @@
 <p>After clicking the Predict tRNA button, a window will pop up (see the figure below):</p>
 <ol>
 <li>Save the problematic tRNA gene sequences locally via the <code>Save to file</code> button;</li>
-<li>Click <code>ARWEN</code> link on the interface to open the ARWEN website. (<span style="color:red">Author’s note:</span> this sometimes does not work if you are using the Edge browser on Win10; use this link directly: <a href="http://130.235.46.10/ARWEN/)" target="_blank" rel="noopener">http://130.235.46.10/ARWEN/)</a>;</li>
+<li>Click <code>ARWEN</code> link on the interface to open the ARWEN website. (<span style="color:red">Author’s note:</span> this sometimes does not work if you are using the Edge browser on Win10; use this link directly: <a href="http://130.235.46.10/ARWEN/" target="_blank" rel="noopener">http://130.235.46.10/ARWEN/</a>);</li>
 <li>Import the file saved in the first step into ARWEN;</li>
 <li>The first parameter will be selected by default. If it is not a mammalian mitochondrial genome, please uncheck it.</li>
 <li>Click <code>Submit</code>.</li>
@@ -652,7 +652,7 @@
 <p><img src="https://github.com/dongzhang0725/PhyloSuite_tutorial/blob/master/images/muti_gene_tutorial/concatenation_en.jpg?raw=true" alt></p>
 <p>Since some species do not contain all 36 genes, there is a prompt that the missing genes will be replaced with “?”. Missing genes can be viewed in the <code>missing_genes.txt</code> file in the <code>concatenate_results</code> result folder.</p>
 <p><img src="https://github.com/dongzhang0725/PhyloSuite_tutorial/blob/master/images/muti_gene_tutorial/missing_genes_en.jpg?raw=true" alt></p>
-<h3 id="6-Optimal-partitioning-strategy-and-model-selection"><a href="#6-Optimal-partitioning-strategy-and-model-selection" class="headerlink" title="6. Optimal partitioning strategy and model selection"></a>6. Optimal partitioning strategy and model selection</h3><p>In the next step we will use <code>PartitionFinder2</code> to select the best-fit partitioning strategy and models for the concatenated sequences. Note that there is some functional overlap between this plug-in, ModelFinder and IQ-Tree, see the <a href="https://dongzhang0725.github.io/dongzhang0725.github.io/PhyloSuite-demo/single-gene-phylogeny/">single gene tutorial</a> for the other two tools. For more details about <code>PartitionFinder2</code> parameters, check the manual at <a href="http://www" target="_blank" rel="noopener">http://www</a>. Robertlanfear.com/partitionfinder/assets/Manual_v2.1.x.pdf.</p>
+<h3 id="6-Optimal-partitioning-strategy-and-model-selection"><a href="#6-Optimal-partitioning-strategy-and-model-selection" class="headerlink" title="6. Optimal partitioning strategy and model selection"></a>6. Optimal partitioning strategy and model selection</h3><p>In the next step we will use <code>PartitionFinder2</code> to select the best-fit partitioning strategy and models for the concatenated sequences. Note that there is some functional overlap between this plug-in, ModelFinder and IQ-Tree, see the <a href="https://dongzhang0725.github.io/dongzhang0725.github.io/PhyloSuite-demo/single-gene-phylogeny/">single gene tutorial</a> for the other two tools. For more details about <code>PartitionFinder2</code> parameters, check the manual at <a href="http://www. Robertlanfear.com/partitionfinder/assets/Manual_v2.1.x.pdf" target="_blank" rel="noopener">http://www. Robertlanfear.com/partitionfinder/assets/Manual_v2.1.x.pdf</a>.</p>
 <ol>
 <li>Select the <code>concatenate_results</code> folder;</li>
 <li>Open <code>Phylogeny--&gt;PartitionFinder2</code> through the menu bar, and the concatenated dataset with the position index of each gene will be automatically imported;</li>
