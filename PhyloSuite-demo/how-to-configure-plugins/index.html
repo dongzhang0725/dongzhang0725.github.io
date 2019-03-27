@@ -122,7 +122,7 @@
 <meta property="og:image" content="https://github.com/dongzhang0725/PhyloSuite_tutorial/blob/master/images/how-to-configure-plugins/install_PF2_script.jpg?raw=true">
 <meta property="og:image" content="https://github.com/dongzhang0725/PhyloSuite_tutorial/blob/master/images/how-to-configure-plugins/install_py27.jpg?raw=true">
 <meta property="og:image" content="https://github.com/dongzhang0725/PhyloSuite_tutorial/blob/master/images/how-to-configure-plugins/PF2_depen_absence.jpg?raw=true">
-<meta property="og:updated_time" content="2019-03-27T04:37:44.730Z">
+<meta property="og:updated_time" content="2019-03-27T06:49:16.292Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="How to configure plugins">
 <meta name="twitter:description" content="Open the plugin settings window via Settings--&amp;gt;Settings in the menu bar. There are two ways to configure your plugins: 1. Specify executable fileWhen you have the plugins already installed on your">
@@ -433,7 +433,7 @@
                 
               
 
-              <time title="Created: 2019-03-27 09:11:07 / Modified: 12:37:44" itemprop="dateCreated datePublished" datetime="2019-03-27T09:11:07+08:00">2019-03-27</time>
+              <time title="Created: 2019-03-27 09:11:07 / Modified: 14:49:16" itemprop="dateCreated datePublished" datetime="2019-03-27T09:11:07+08:00">2019-03-27</time>
             
 
             
@@ -573,7 +573,7 @@
 <li>Next you need to specify the executable files, as described in Section 1.<br> Rscript:<br> <img src="https://github.com/dongzhang0725/PhyloSuite_tutorial/blob/master/images/how-to-configure-plugins/specify_R.jpg?raw=true" alt><br> Python 2.7:<br> <img src="https://github.com/dongzhang0725/PhyloSuite_tutorial/blob/master/images/how-to-configure-plugins/specify_py27.jpg?raw=true" alt></li>
 </ol>
 <p>In addition, if the plugin download fails, you can download and install them manually, via a link provided directly below (click “here”). Once downloaded, unzip them to your computer and specify the path.<br><img src="https://github.com/dongzhang0725/PhyloSuite_tutorial/blob/master/images/how-to-configure-plugins/dowanload_manually.jpg?raw=true" alt></p>
-<h3 id="PartitionFinder2-and-Python-2-7-configuration"><a href="#PartitionFinder2-and-Python-2-7-configuration" class="headerlink" title="PartitionFinder2 and Python 2.7 configuration"></a>PartitionFinder2 and Python 2.7 configuration</h3><p>As PartitionFinder2 Python script relies on <code>Python 2.7</code>, and additional six dependencies should be configured, we have compiled <code>PartitionFinder2</code> so it does not rely on <code>Python 2.7</code> any more.</p>
+<h3 id="PartitionFinder2-configuration"><a href="#PartitionFinder2-configuration" class="headerlink" title="PartitionFinder2 configuration"></a>PartitionFinder2 configuration</h3><p>As PartitionFinder2 Python script relies on <code>Python 2.7</code>, and additional six dependencies should be configured, we have <span id="compiled">compiled</span> <code>PartitionFinder2</code> so it does not rely on <code>Python 2.7</code> any more.</p>
 <ol>
 <li>Open <code>PartitionFinder2</code> configuration window;</li>
 <li>Click <code>Download</code> button in the <code>Install compiled PartitionFinder2</code> box to download and install PartitionFinder2 automatically.<br><img src="https://github.com/dongzhang0725/PhyloSuite_tutorial/blob/master/images/how-to-configure-plugins/download_compiled_PF2.jpg?raw=true" alt></li>
@@ -588,8 +588,9 @@
 <li>Open <code>Python 2.7</code> configuration window;</li>
 <li>Click <code>Download</code> button in the <code>Download</code> box to download <code>Anaconda2</code>. For the additional steps to complete the Python 2.7 configuration please refer to Section 2.<br><img src="https://github.com/dongzhang0725/PhyloSuite_tutorial/blob/master/images/how-to-configure-plugins/install_py27.jpg?raw=true" alt><br><span style="color: red">Note: Anaconda Python distribution will download for Python 2.7 (because it contains all of the dependencies required by PartitionFinder2: numpy, pandas, pytables, pyparsing, scipy and sklearn). As it is around 500M in size, your download may take some time. That’s why we recommend that you download the compiled PartitionFinder2, which does not require Python 2.7.<span></span></span></li>
 </ol>
-<h4 id="Troubleshooting"><a href="#Troubleshooting" class="headerlink" title="Troubleshooting"></a>Troubleshooting</h4><p>If you specify the path to Python 2.7 pre-installed on your computer, sometimes you may encounter the error below, indicating the absence of the six dependencies.<br><img src="https://github.com/dongzhang0725/PhyloSuite_tutorial/blob/master/images/how-to-configure-plugins/PF2_depen_absence.jpg?raw=true" alt><br>There are two solutions:</p>
+<h4 id="Troubleshooting"><a href="#Troubleshooting" class="headerlink" title="Troubleshooting"></a>Troubleshooting</h4><p>If you specify the path to Python 2.7 pre-installed on your computer, sometimes you may encounter the error below, indicating the absence of the six dependencies.<br><img src="https://github.com/dongzhang0725/PhyloSuite_tutorial/blob/master/images/how-to-configure-plugins/PF2_depen_absence.jpg?raw=true" alt><br>There are three solutions:</p>
 <ol>
+<li>Install <a href="#compiled">compiled PartitionFinder2</a> (recommended);</li>
 <li>Install <code>Anaconda2</code> and specify the <code>python</code> executable file, as shown above;</li>
 <li>Install these six dependencies to Python 2.7: <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">pip install pandas</span><br><span class="line">pip install numpy</span><br><span class="line">pip install tables</span><br><span class="line">pip install pyparsing</span><br><span class="line">pip install scipy</span><br><span class="line">pip install sklearn</span><br></pre></td></tr></table></figure>
 </li>
@@ -812,7 +813,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-Specify-executable-file"><span class="nav-text">1. Specify executable file</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-Download-plugins-automatically"><span class="nav-text">2. Download plugins automatically</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#PartitionFinder2-and-Python-2-7-configuration"><span class="nav-text">PartitionFinder2 and Python 2.7 configuration</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#Troubleshooting"><span class="nav-text">Troubleshooting</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-Specify-executable-file"><span class="nav-text">1. Specify executable file</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-Download-plugins-automatically"><span class="nav-text">2. Download plugins automatically</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#PartitionFinder2-configuration"><span class="nav-text">PartitionFinder2 configuration</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#Troubleshooting"><span class="nav-text">Troubleshooting</span></a></li></ol></li></ol></div>
             
 
           </div>
