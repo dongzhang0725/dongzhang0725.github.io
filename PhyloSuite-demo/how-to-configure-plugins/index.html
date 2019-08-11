@@ -124,7 +124,7 @@
 <meta property="og:image" content="https://github.com/dongzhang0725/PhyloSuite_tutorial/blob/master/images/how-to-configure-plugins/install_py27.jpg?raw=true">
 <meta property="og:image" content="https://github.com/dongzhang0725/PhyloSuite_tutorial/blob/master/images/how-to-configure-plugins/PF2_depen_absence.jpg?raw=true">
 <meta property="og:image" content="https://github.com/dongzhang0725/PhyloSuite_tutorial/blob/master/images/how-to-configure-plugins/hmmcleaner_state.jpg?raw=true">
-<meta property="og:updated_time" content="2019-08-11T01:42:48.682Z">
+<meta property="og:updated_time" content="2019-08-11T01:54:13.932Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="How to configure plugins">
 <meta name="twitter:description" content="There are two ways to configure the plugins: 1. Download PhyloSuite with pluginsWhen using Windows and Mac OSX systems, you can download PhyloSuite_xxx_Win32/64_with_plugins.rar and PhyloSuite_xxx_Mac">
@@ -469,7 +469,7 @@
                 
                   <span class="post-meta-item-text">Edited on</span>
                 
-                <time title="Modified: 2019-08-11 09:42:48" itemprop="dateModified" datetime="2019-08-11T09:42:48+08:00">2019-08-11</time>
+                <time title="Modified: 2019-08-11 09:54:13" itemprop="dateModified" datetime="2019-08-11T09:54:13+08:00">2019-08-11</time>
               
             
           </span>
@@ -664,8 +664,9 @@
 <h4 id="2-4-HmmCleaner-configuration"><a href="#2-4-HmmCleaner-configuration" class="headerlink" title="2.4. HmmCleaner configuration"></a>2.4. HmmCleaner configuration</h4><p>HmmCleaner relies on HMMER, Perl 5 and a lot of <a href="https://cpandeps.grinnz.com/?dist=Bio-MUST-Apps-HmmCleaner&amp;phase=build&amp;perl_version=v5.30.0&amp;style=table" title="dependency" target="_blank" rel="noopener">dependencies</a>. Therefore, some users may have difficulty in configuring it. Here we make a brief tutorial for the configuration of HmmCleaner.</p>
 <h5 id="2-4-1-Configuration-of-HMMER"><a href="#2-4-1-Configuration-of-HMMER" class="headerlink" title="2.4.1. Configuration of HMMER"></a>2.4.1. Configuration of HMMER</h5><ol>
 <li>If you already have conda installed, you can install HMMER via <code>conda install -c bioconda hmmer</code> or <code>conda install -c bioconda/label/cf201901 hmmer</code> command.</li>
-<li>If you don’t have Conda, you need to download and install HMMER here: <a href="http://hmmer.org" target="_blank" rel="noopener">http://hmmer.org</a>. Please Note that all executables from HMMER have to be added in the environment variable ($PATH).</li>
+<li>If you don’t have Conda, you need to download and install HMMER here: <a href="http://hmmer.org" target="_blank" rel="noopener">http://hmmer.org</a>. </li>
 </ol>
+<p>Please Note that all executables from HMMER have to be added in the environment variable ($PATH).</p>
 <h5 id="2-4-2-Configuration-of-Perl-and-dependencies-installation"><a href="#2-4-2-Configuration-of-Perl-and-dependencies-installation" class="headerlink" title="2.4.2. Configuration of Perl and dependencies installation"></a>2.4.2. Configuration of Perl and dependencies installation</h5><p>Here I recommend Perl version 5.18.0, as I experienced failure in installing dependencies in version 5.26. </p>
 <p>When perl is installed, you can use cpanm to install HmmCleaner:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">cpan App::cpanminus</span><br><span class="line">cpanm Bio::MUST::Apps::HmmCleaner --force</span><br></pre></td></tr></table></figure></p>
 <p>Alternatively, you can also install HmmCleaner following this instruction: <a href="https://metacpan.org/source/ARNODF/Bio-MUST-Apps-HmmCleaner-0.180750/INSTALL" target="_blank" rel="noopener">https://metacpan.org/source/ARNODF/Bio-MUST-Apps-HmmCleaner-0.180750/INSTALL</a></p>
