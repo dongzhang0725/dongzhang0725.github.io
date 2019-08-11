@@ -123,7 +123,8 @@
 <meta property="og:image" content="https://github.com/dongzhang0725/PhyloSuite_tutorial/blob/master/images/how-to-configure-plugins/install_PF2_script.jpg?raw=true">
 <meta property="og:image" content="https://github.com/dongzhang0725/PhyloSuite_tutorial/blob/master/images/how-to-configure-plugins/install_py27.jpg?raw=true">
 <meta property="og:image" content="https://github.com/dongzhang0725/PhyloSuite_tutorial/blob/master/images/how-to-configure-plugins/PF2_depen_absence.jpg?raw=true">
-<meta property="og:updated_time" content="2019-05-12T08:05:04.919Z">
+<meta property="og:image" content="https://github.com/dongzhang0725/PhyloSuite_tutorial/blob/master/images/how-to-configure-plugins/hmmcleaner_state.jpg?raw=true">
+<meta property="og:updated_time" content="2019-08-11T01:42:48.682Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="How to configure plugins">
 <meta name="twitter:description" content="There are two ways to configure the plugins: 1. Download PhyloSuite with pluginsWhen using Windows and Mac OSX systems, you can download PhyloSuite_xxx_Win32/64_with_plugins.rar and PhyloSuite_xxx_Mac">
@@ -468,7 +469,7 @@
                 
                   <span class="post-meta-item-text">Edited on</span>
                 
-                <time title="Modified: 2019-05-12 16:05:04" itemprop="dateModified" datetime="2019-05-12T16:05:04+08:00">2019-05-12</time>
+                <time title="Modified: 2019-08-11 09:42:48" itemprop="dateModified" datetime="2019-08-11T09:42:48+08:00">2019-08-11</time>
               
             
           </span>
@@ -521,12 +522,12 @@
 
       
         <p>There are two ways to configure the plugins:</p>
-<h3 id="1-Download-PhyloSuite-with-plugins"><a href="#1-Download-PhyloSuite-with-plugins" class="headerlink" title="1. Download PhyloSuite with plugins"></a>1. Download PhyloSuite with plugins</h3><p>When using Windows and Mac OSX systems, you can download <code>PhyloSuite_xxx_Win32/64_with_plugins.rar</code> and <code>PhyloSuite_xxx_Mac_with_plugins.zip</code> from <a href="https://github.com/dongzhang0725/PhyloSuite/releases" target="_blank" rel="noopener">https://github.com/dongzhang0725/PhyloSuite/releases</a>, respectively. All plugins, except <code>Rscript</code>, are included.</p>
+<h3 id="1-Download-PhyloSuite-with-plugins"><a href="#1-Download-PhyloSuite-with-plugins" class="headerlink" title="1. Download PhyloSuite with plugins"></a>1. Download PhyloSuite with plugins</h3><p>When using Windows and Mac OSX systems, you can download <code>PhyloSuite_xxx_Win32/64_with_plugins.rar</code> and <code>PhyloSuite_xxx_Mac_with_plugins.zip</code> from <a href="https://github.com/dongzhang0725/PhyloSuite/releases" target="_blank" rel="noopener">https://github.com/dongzhang0725/PhyloSuite/releases</a>, respectively. All plugins, except <code>Python 2.7</code>, <code>Perl 5</code>, <code>Java</code>, <code>Rscript</code>, <code>HmmCleaner</code> and <code>trimAl</code> (MAC) are included.</p>
 <h3 id="2-Configure-plugins-separately"><a href="#2-Configure-plugins-separately" class="headerlink" title="2. Configure plugins separately"></a>2. Configure plugins separately</h3><p><img src="https://github.com/dongzhang0725/PhyloSuite_tutorial/blob/master/images/how-to-configure-plugins/install_state.jpg?raw=true" alt></p>
 <center><strong>Interpretation of the install state.</strong></center>
 
 <a id="more"></a>
-<p>Open the plugin settings window via <code>Settings--&gt;Settings</code> in the menu bar. There are two ways to configure your plugins:</p>
+<p>If Python 2.7, Perl 5, Java (JRE &gt; 1.5), HmmCleaner.pl and trimAl have been installed and added to the environment variable ($PATH), they will be automatically detected by PhyloSuite. Open the plugin settings window via <code>Settings--&gt;Settings</code> in the menu bar. There are two ways to configure your plugins:</p>
 <h4 id="2-1-Specify-executable-file"><a href="#2-1-Specify-executable-file" class="headerlink" title="2.1. Specify executable file"></a>2.1. Specify executable file</h4><p>When you have the plugins already installed on your computer, you can just specify the paths directly. </p>
 <ol>
 <li>Click the <code>Install</code> button of each plugin to open the configuration window;</li>
@@ -552,6 +553,18 @@
 <td>path-to-MAFFT/bin/mafft or <br> /usr/bin/mafft</td>
 </tr>
 <tr>
+<td><a href="https://www.java.com/en/download/" title="Java" target="_blank" rel="noopener">Java (JRE &gt; 1.5)</a></td>
+<td>path-to-Java/java.exe</td>
+<td>path-to-Java/java or usr/bin/java</td>
+<td>path-to-Java/java or usr/bin/java</td>
+</tr>
+<tr>
+<td><a href="https://bioweb.supagro.inra.fr/macse/index.php?menu=releases" title="MACSE" target="_blank" rel="noopener">MACSE v2.01b</a></td>
+<td>path-to-MACSE/macse_v2.03.jar</td>
+<td>path-to-MACSE/macse_v2.03.jar</td>
+<td>path-to-MACSE/macse_v2.03.jar</td>
+</tr>
+<tr>
 <td><a href="http://www.iqtree.org/" title="IQ-TREE" target="_blank" rel="noopener">IQ-TREE v. 1.6.8</a></td>
 <td>path-to-IQ-TREE/bin/iqtree.exe</td>
 <td>path-to-IQ-TREE/bin/iqtree</td>
@@ -574,6 +587,24 @@
 <td>path-to-Gblocks/Gblocks.exe</td>
 <td>path-to-Gblocks/Gblocks</td>
 <td>path-to-Gblocks/Gblocks</td>
+</tr>
+<tr>
+<td><a href="http://trimal.cgenomics.org/downloads" title="trimAl" target="_blank" rel="noopener">trimAl</a></td>
+<td>path-to-trimAl/trimal.exe</td>
+<td>path-to-trimAl/trimal or usr/bin/trimal</td>
+<td>path-to-trimAl/trimal or usr/bin/trimal</td>
+</tr>
+<tr>
+<td><a href="https://www.perl.org/get.html" title="Perl" target="_blank" rel="noopener">Perl 5</a></td>
+<td>path-to-Perl/perl.exe</td>
+<td>path-to-Perl/perl or usr/bin/perl</td>
+<td>path-to-Perl/perl or usr/bin/perl</td>
+</tr>
+<tr>
+<td><a href="https://metacpan.org/pod/distribution/Bio-MUST-Apps-HmmCleaner/bin/HmmCleaner.pl" title="HmmCleaner.pl" target="_blank" rel="noopener">HmmCleaner.pl</a></td>
+<td>path-to-HmmCleaner/HmmCleaner.pl</td>
+<td>path-to-HmmCleaner/HmmCleaner.pl or usr/bin/HmmCleaner.pl</td>
+<td>path-to-HmmCleaner/HmmCleaner.pl or usr/bin/HmmCleaner.pl</td>
 </tr>
 <tr>
 <td><a href="https://www.r-project.org/" title="Rscript" target="_blank" rel="noopener">Rscript 3.4.4</a></td>
@@ -630,6 +661,16 @@
 <li>Install these six dependencies to Python 2.7: <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">pip install pandas</span><br><span class="line">pip install numpy</span><br><span class="line">pip install tables</span><br><span class="line">pip install pyparsing</span><br><span class="line">pip install scipy</span><br><span class="line">pip install sklearn</span><br></pre></td></tr></table></figure>
 </li>
 </ol>
+<h4 id="2-4-HmmCleaner-configuration"><a href="#2-4-HmmCleaner-configuration" class="headerlink" title="2.4. HmmCleaner configuration"></a>2.4. HmmCleaner configuration</h4><p>HmmCleaner relies on HMMER, Perl 5 and a lot of <a href="https://cpandeps.grinnz.com/?dist=Bio-MUST-Apps-HmmCleaner&amp;phase=build&amp;perl_version=v5.30.0&amp;style=table" title="dependency" target="_blank" rel="noopener">dependencies</a>. Therefore, some users may have difficulty in configuring it. Here we make a brief tutorial for the configuration of HmmCleaner.</p>
+<h5 id="2-4-1-Configuration-of-HMMER"><a href="#2-4-1-Configuration-of-HMMER" class="headerlink" title="2.4.1. Configuration of HMMER"></a>2.4.1. Configuration of HMMER</h5><ol>
+<li>If you already have conda installed, you can install HMMER via <code>conda install -c bioconda hmmer</code> or <code>conda install -c bioconda/label/cf201901 hmmer</code> command.</li>
+<li>If you don’t have Conda, you need to download and install HMMER here: <a href="http://hmmer.org" target="_blank" rel="noopener">http://hmmer.org</a>. Please Note that all executables from HMMER have to be added in the environment variable ($PATH).</li>
+</ol>
+<h5 id="2-4-2-Configuration-of-Perl-and-dependencies-installation"><a href="#2-4-2-Configuration-of-Perl-and-dependencies-installation" class="headerlink" title="2.4.2. Configuration of Perl and dependencies installation"></a>2.4.2. Configuration of Perl and dependencies installation</h5><p>Here I recommend Perl version 5.18.0, as I experienced failure in installing dependencies in version 5.26. </p>
+<p>When perl is installed, you can use cpanm to install HmmCleaner:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">cpan App::cpanminus</span><br><span class="line">cpanm Bio::MUST::Apps::HmmCleaner --force</span><br></pre></td></tr></table></figure></p>
+<p>Alternatively, you can also install HmmCleaner following this instruction: <a href="https://metacpan.org/source/ARNODF/Bio-MUST-Apps-HmmCleaner-0.180750/INSTALL" target="_blank" rel="noopener">https://metacpan.org/source/ARNODF/Bio-MUST-Apps-HmmCleaner-0.180750/INSTALL</a></p>
+<p>It may take some times to install, if it installs successfully, <code>HmmCleaner.pl</code> will be automatically add to the environment variables. Then you need to close and reopen PhyloSuite to see if it installed successfully (if you see Uninstall button, it means success).</p>
+<p><img src="https://github.com/dongzhang0725/PhyloSuite_tutorial/blob/master/images/how-to-configure-plugins/hmmcleaner_state.jpg?raw=true" alt></p>
 
       
     </div>
@@ -848,7 +889,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-Download-PhyloSuite-with-plugins"><span class="nav-text">1. Download PhyloSuite with plugins</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-Configure-plugins-separately"><span class="nav-text">2. Configure plugins separately</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#2-1-Specify-executable-file"><span class="nav-text">2.1. Specify executable file</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-2-Download-plugins-automatically"><span class="nav-text">2.2. Download plugins automatically</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-3-PartitionFinder-configuration"><span class="nav-text">2.3. PartitionFinder configuration</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#2-3-1-Troubleshooting"><span class="nav-text">2.3.1. Troubleshooting</span></a></li></ol></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-Download-PhyloSuite-with-plugins"><span class="nav-text">1. Download PhyloSuite with plugins</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-Configure-plugins-separately"><span class="nav-text">2. Configure plugins separately</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#2-1-Specify-executable-file"><span class="nav-text">2.1. Specify executable file</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-2-Download-plugins-automatically"><span class="nav-text">2.2. Download plugins automatically</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-3-PartitionFinder-configuration"><span class="nav-text">2.3. PartitionFinder configuration</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#2-3-1-Troubleshooting"><span class="nav-text">2.3.1. Troubleshooting</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-4-HmmCleaner-configuration"><span class="nav-text">2.4. HmmCleaner configuration</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#2-4-1-Configuration-of-HMMER"><span class="nav-text">2.4.1. Configuration of HMMER</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#2-4-2-Configuration-of-Perl-and-dependencies-installation"><span class="nav-text">2.4.2. Configuration of Perl and dependencies installation</span></a></li></ol></li></ol></li></ol></div>
             
 
           </div>
