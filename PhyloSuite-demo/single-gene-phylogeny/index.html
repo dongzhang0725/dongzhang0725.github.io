@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222"><meta name="generator" content="Hexo 7.3.0">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/dongzhang0725.github.io/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/dongzhang0725.github.io/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/dongzhang0725.github.io/images/apple-touch-icon-next.png">
+  <link rel="mask-icon" href="/dongzhang0725.github.io/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/dongzhang0725.github.io/css/main.css">
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha256-VHqXKFhhMxcpubYf9xiWdCiojEbY9NexQ4jh8AxbvcM=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"dongzhang0725.github.io","root":"/dongzhang0725.github.io/","images":"/dongzhang0725.github.io/images","scheme":"Gemini","darkmode":false,"version":"8.25.0","exturl":false,"sidebar":{"position":"left","width_expanded":320,"width_dual_column":240,"display":"post","padding":18,"offset":12},"hljswrap":true,"codeblock":{"theme":{"light":"default","dark":"stackoverflow-dark"},"prism":{"light":"prism","dark":"prism-dark"},"copy_button":{"enable":false,"style":null},"fold":{"enable":false,"height":500},"language":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"duration":200,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"},"path":"/dongzhang0725.github.io/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/dongzhang0725.github.io/js/config.js" defer></script>
+
+    <meta name="description" content="PhyloSuite: from data aquisition to phylogenetic tree annotation (single gene tree building)">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Single gene phylogeny">
+<meta property="og:url" content="https://dongzhang0725.github.io/PhyloSuite-demo/single-gene-phylogeny/index.html">
+<meta property="og:site_name" content="PhyloSuite">
+<meta property="og:description" content="PhyloSuite: from data aquisition to phylogenetic tree annotation (single gene tree building)">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://github.com/dongzhang0725/PhyloSuite_tutorial/blob/master/images/single_gene_tutorial/cover.jpg?raw=true">
+<meta property="og:image" content="https://github.com/dongzhang0725/PhyloSuite_tutorial/blob/master/images/single_gene_tutorial/download_seq_en.jpg?raw=true">
+<meta property="og:image" content="https://github.com/dongzhang0725/PhyloSuite_tutorial/blob/master/images/single_gene_tutorial/auto_lineages_en.jpg?raw=true">
+<meta property="og:image" content="https://github.com/dongzhang0725/PhyloSuite_tutorial/blob/master/images/single_gene_tutorial/edit_lineages_en.jpg?raw=true">
+<meta property="og:image" content="https://github.com/dongzhang0725/PhyloSuite_tutorial/blob/master/images/single_gene_tutorial/extract_en.jpg?raw=true">
+<meta property="og:image" content="https://github.com/dongzhang0725/PhyloSuite_tutorial/blob/master/images/single_gene_tutorial/rRNA_en.jpg?raw=true">
+<meta property="og:image" content="https://github.com/dongzhang0725/PhyloSuite_tutorial/blob/master/images/single_gene_tutorial/name_for_unification_en.jpg?raw=true">
+<meta property="og:image" content="https://github.com/dongzhang0725/PhyloSuite_tutorial/blob/master/images/single_gene_tutorial/modify_replace_names_en.jpg?raw=true">
+<meta property="og:image" content="https://github.com/dongzhang0725/PhyloSuite_tutorial/blob/master/images/single_gene_tutorial/default_extract_en.jpg?raw=true">
+<meta property="og:image" content="https://github.com/dongzhang0725/PhyloSuite_tutorial/blob/master/images/single_gene_tutorial/auto_load_en.jpg?raw=true">
+<meta property="og:image" content="https://github.com/dongzhang0725/PhyloSuite_tutorial/blob/master/images/single_gene_tutorial/auto_prepare_en.jpg?raw=true">
+<meta property="og:image" content="https://github.com/dongzhang0725/PhyloSuite_tutorial/blob/master/images/single_gene_tutorial/mafft_en.jpg?raw=true">
+<meta property="og:image" content="https://github.com/dongzhang0725/PhyloSuite_tutorial/blob/master/images/single_gene_tutorial/edit_seq_en.jpg?raw=true">
+<meta property="og:image" content="https://github.com/dongzhang0725/PhyloSuite_tutorial/blob/master/images/single_gene_tutorial/modelfinder_en.jpg?raw=true">
+<meta property="og:image" content="https://github.com/dongzhang0725/PhyloSuite_tutorial/blob/master/images/single_gene_tutorial/mrbayes_en.jpg?raw=true">
+<meta property="og:image" content="https://github.com/dongzhang0725/PhyloSuite_tutorial/blob/master/images/single_gene_tutorial/IQ-TREE_en.jpg?raw=true">
+<meta property="og:image" content="https://github.com/dongzhang0725/PhyloSuite_tutorial/blob/master/images/single_gene_tutorial/flowchart_en.jpg?raw=true">
+<meta property="og:image" content="https://github.com/dongzhang0725/PhyloSuite_tutorial/blob/master/images/single_gene_tutorial/flowchart_set_en.jpg?raw=true">
+<meta property="og:image" content="https://github.com/dongzhang0725/PhyloSuite_tutorial/blob/master/images/single_gene_tutorial/flowchart_running_en.jpg?raw=true">
+<meta property="og:image" content="https://github.com/dongzhang0725/PhyloSuite_tutorial/blob/master/images/single_gene_tutorial/flowchart_summary_en.jpg?raw=true">
+<meta property="og:image" content="https://github.com/dongzhang0725/PhyloSuite_tutorial/blob/master/images/single_gene_tutorial/itol_input_en.jpg?raw=true">
+<meta property="og:image" content="https://github.com/dongzhang0725/PhyloSuite_tutorial/blob/master/images/single_gene_tutorial/drag_gb_label_en.jpg?raw=true">
+<meta property="og:image" content="https://github.com/dongzhang0725/PhyloSuite_tutorial/blob/master/images/single_gene_tutorial/itol_color_en.jpg?raw=true">
+<meta property="article:published_time" content="2019-03-02T03:06:19.000Z">
+<meta property="article:modified_time" content="2023-01-02T07:46:35.213Z">
+<meta property="article:author" content="Dong Zhang">
+<meta property="article:tag" content="PyQT5">
+<meta property="article:tag" content="Python">
+<meta property="article:tag" content="Bioinformatics">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://github.com/dongzhang0725/PhyloSuite_tutorial/blob/master/images/single_gene_tutorial/cover.jpg?raw=true">
+
+
+<link rel="canonical" href="https://dongzhang0725.github.io/PhyloSuite-demo/single-gene-phylogeny/">
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"en","comments":true,"permalink":"https://dongzhang0725.github.io/PhyloSuite-demo/single-gene-phylogeny/","path":"PhyloSuite-demo/single-gene-phylogeny/","title":"Single gene phylogeny"}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>Single gene phylogeny | PhyloSuite</title>
+  
+
+
+
+
+
+
+
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous" defer></script>
+<script src="/dongzhang0725.github.io/js/utils.js" defer></script><script src="/dongzhang0725.github.io/js/motion.js" defer></script><script src="/dongzhang0725.github.io/js/sidebar.js" defer></script><script src="/dongzhang0725.github.io/js/next-boot.js" defer></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-generator-searchdb/1.5.0/search.js" integrity="sha256-xFC6PJ82SL9b3WkGjFavNiA9gm5z6UBxWPiu4CYjptg=" crossorigin="anonymous" defer></script>
+<script src="/dongzhang0725.github.io/js/third-party/search/local-search.js" defer></script>
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  <noscript>
+    <link rel="stylesheet" href="/dongzhang0725.github.io/css/noscript.css">
+  </noscript>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <div class="column">
+      <header class="header" itemscope itemtype="http://schema.org/WPHeader"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="Toggle navigation bar" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/dongzhang0725.github.io/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <p class="site-title">PhyloSuite</p>
+      <i class="logo-line"></i>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger" aria-label="Search" role="button">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/dongzhang0725.github.io/" rel="section"><i class="fa fa-home fa-fw"></i>Home</a></li><li class="menu-item menu-item-documentation"><a href="/dongzhang0725.github.io/documentation/" rel="section"><i class="fa fa-navicon fa-fw"></i>documentation</a></li><li class="menu-item menu-item-installation"><a href="/dongzhang0725.github.io/installation/" rel="section"><i class="fa fa-download fa-fw"></i>installation</a></li><li class="menu-item menu-item-example"><a href="/dongzhang0725.github.io/example/" rel="section"><i class="fa fa-print fa-fw"></i>example</a></li><li class="menu-item menu-item-categories"><a href="/dongzhang0725.github.io/categories/" rel="section"><i class="fa fa-th fa-fw"></i>Categories</a></li><li class="menu-item menu-item-archives"><a href="/dongzhang0725.github.io/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>Archives</a></li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>Search
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+      <div class="search-header">
+        <span class="search-icon">
+          <i class="fa fa-search"></i>
+        </span>
+        <div class="search-input-container">
+          <input autocomplete="off" autocapitalize="off" maxlength="80"
+                placeholder="Searching..." spellcheck="false"
+                type="search" class="search-input">
+        </div>
+        <span class="popup-btn-close" role="button">
+          <i class="fa fa-times-circle"></i>
+        </span>
+      </div>
+      <div class="search-result-container">
+        <div class="search-result-icon">
+          <i class="fa fa-spinner fa-pulse fa-5x"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</header>
+        
+  
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          Table of Contents
+        </li>
+        <li class="sidebar-nav-overview">
+          Overview
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-Sequence-download-and-preparation"><span class="nav-text">1. Sequence download and preparation</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-Sequence-extraction"><span class="nav-text">2. Sequence extraction</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-Multiple-sequence-alignment"><span class="nav-text">3. Multiple sequence alignment</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-Nucleotide-replacement-model-selection"><span class="nav-text">4. Nucleotide replacement model selection</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5-Phylogenetic-tree-reconstruction-based-on-Bayesian-Inference-BI"><span class="nav-text">5. Phylogenetic tree reconstruction based on Bayesian Inference (BI)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#6-Phylogenetic-tree-reconstruction-based-on-the-Maximum-Likelihood-method-ML"><span class="nav-text">6. Phylogenetic tree reconstruction based on the Maximum Likelihood method (ML)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#7-Flowchart"><span class="nav-text">7. Flowchart</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#8-Phylogenetic-tree-annotation"><span class="nav-text">8. Phylogenetic tree annotation</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#9-Software-download-website"><span class="nav-text">9. Software download website</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#10-Reference"><span class="nav-text">10. Reference</span></a></li></ol></div>
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">Dong Zhang</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        <a href="/dongzhang0725.github.io/archives/">
+          <span class="site-state-item-count">7</span>
+          <span class="site-state-item-name">posts</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+          <a href="/dongzhang0725.github.io/categories/">
+        <span class="site-state-item-count">1</span>
+        <span class="site-state-item-name">categories</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+          <a href="/dongzhang0725.github.io/tags/">
+        <span class="site-state-item-count">3</span>
+        <span class="site-state-item-name">tags</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author animated">
+      <span class="links-of-author-item">
+        <a href="https://github.com/dongzhang0725/PhyloSuite" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;dongzhang0725&#x2F;PhyloSuite" rel="noopener me" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="mailto:dongzhang0725@gmail.com" title="E-Mail → mailto:dongzhang0725@gmail.com" rel="noopener me" target="_blank"><i class="fa fa-envelope fa-fw"></i>E-Mail</a>
+      </span>
+  </div>
+
+        </div>
+      </div>
+        <div class="back-to-top animated" role="button" aria-label="Back to top">
+          <i class="fa fa-arrow-up"></i>
+          <span>0%</span>
+        </div>
+    </div>
+
+    
+  </aside>
+
+
+    </div>
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="en">
+    <link itemprop="mainEntityOfPage" href="https://dongzhang0725.github.io/PhyloSuite-demo/single-gene-phylogeny/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/dongzhang0725.github.io/images/avatar.gif">
+      <meta itemprop="name" content="Dong Zhang">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="PhyloSuite">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="Single gene phylogeny | PhyloSuite">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          Single gene phylogeny
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+
+      <time title="Created: 2019-03-02 11:06:19" itemprop="dateCreated datePublished" datetime="2019-03-02T11:06:19+08:00">2019-03-02</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">Edited on</span>
+      <time title="Modified: 2023-01-02 15:46:35" itemprop="dateModified" datetime="2023-01-02T15:46:35+08:00">2023-01-02</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">In</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/dongzhang0725.github.io/categories/PhyloSuite-demo/" itemprop="url" rel="index"><span itemprop="name">PhyloSuite demo</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody"><p>PhyloSuite: from data aquisition to phylogenetic tree annotation (single gene tree building)</p>
+<p><img src="https://github.com/dongzhang0725/PhyloSuite_tutorial/blob/master/images/single_gene_tutorial/cover.jpg?raw=true"></p>
+<span id="more"></span>
+
+<p>In order to make it easier for users to get started, here is a tutorial to briefly introduce the use of PhyloSuite, using 51 ciliate 18S sequences as an example (<a target="_blank" rel="noopener" href="https://onlinelibrary.wiley.com/doi/full/10.1111/j.1550-7408.2009.00413.x ">https://onlinelibrary.wiley.com/doi/full/10.1111/j.1550-7408.2009.00413.x</a>).</p>
+<h3 id="1-Sequence-download-and-preparation"><a href="#1-Sequence-download-and-preparation" class="headerlink" title="1. Sequence download and preparation"></a>1. Sequence download and preparation</h3><p>The accession numbers we will use are below (fetched from a table in the abovementioned paper):</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">AF164122 X65150 AY547546 U17356 EU286810</span><br><span class="line">AF100301 U47620 M97909 L31520 EU039903</span><br><span class="line">Z29442 U97110 EU039887 Z29438 AY007454</span><br><span class="line">AF060454 AY007445 U82204 X71134 X65149</span><br><span class="line">U57767 L26447 AF300281 AF530529 U17355</span><br><span class="line">AY331802 AY242119 AY331790 EU286812 DQ232761</span><br><span class="line">X71140 EU286811 AY331794 EU264561 EU286809</span><br><span class="line">X65151 U24248 AM292311 EU039899 DQ057347</span><br><span class="line">AF300286 EF123708 EU039896 L26446 U57765</span><br><span class="line">Z22931 AY007450 EU264560 AY378112 DQ834370</span><br><span class="line">U97112</span><br></pre></td></tr></table></figure>
+<p>First, download these IDs to the PhyloSuite workspace:</p>
+<ol>
+<li>Select any of the work folders (here I chose ‘files’);</li>
+<li>Click Open file(s)&#x2F;Input ID(s) to open the input window.</li>
+<li>Copy the above IDs into the text box (spaces, line breaks, tabs, etc. are supported as separators);</li>
+<li>Enter your email (tell NCBI who is downloading the sequences);</li>
+<li>Click Start to download.</li>
+</ol>
+<p><img src="https://github.com/dongzhang0725/PhyloSuite_tutorial/blob/master/images/single_gene_tutorial/download_seq_en.jpg?raw=true"></p>
+<p>After the sequence is downloaded to the workspace, we find that some taxonomic groups are designated as N&#x2F;A, indicating that the taxonomic group is not recognized. Select all sequences (CTRL+A), then right-click, and select Get taxonomy (NCBI). You will get a prompt after the selection asking to confirm that you are sure that you wish to replace the current taxonomy with the taxonomic information from NCBI’s taxonomy database (this is important for subsequent phylogenetic tree annotation).</p>
+<p><img src="https://github.com/dongzhang0725/PhyloSuite_tutorial/blob/master/images/single_gene_tutorial/auto_lineages_en.jpg?raw=true"></p>
+<p>After the above steps are completed, there may still be some IDs that are not recognized, indicating their taxonomic group is not in the latest NCBI’s taxonomic classification system. You may also wish change the current names manually, in which case you can double-click the corresponding cell and enter the correct taxonomic group name.</p>
+<p><img src="https://github.com/dongzhang0725/PhyloSuite_tutorial/blob/master/images/single_gene_tutorial/edit_lineages_en.jpg?raw=true"></p>
+<h3 id="2-Sequence-extraction"><a href="#2-Sequence-extraction" class="headerlink" title="2. Sequence extraction"></a>2. Sequence extraction</h3><p>Select all sequences (Ctrl+A) and open the context menu (right-click).</p>
+<ol>
+<li>Choose Extract</li>
+<li>Since we are extracting 18S sequences, we select 18S here;</li>
+<li>Choose the name-type you wish to use for each sequence: organism, ID, isolate, etc..</li>
+<li>Select the taxonomic categories relevant for your study; in this case it is ‘class’.</li>
+<li>Here you can select colors to designate taxa in the phylogenetic tree in iTOL. Double-click to modify the color. If the number of colors that you set is lesser than the number of studied taxonomic groups, random colors will be assigned to the remaining taxa. For example, there are 11 classes, and I only set 5 colors, so the remaining 6 classes will use random colors;</li>
+<li>Click Start to run the Extraction function.</li>
+</ol>
+<p><img src="https://github.com/dongzhang0725/PhyloSuite_tutorial/blob/master/images/single_gene_tutorial/extract_en.jpg?raw=true"></p>
+<p>After the extraction, open the <code>extract_results/rRNA</code> folder (the <code>feature</code> identity of 18S is rRNA, so the folder name is rRNA). We can see that different entries use different names for 18S, so we need to unify the names first.</p>
+<p><img src="https://github.com/dongzhang0725/PhyloSuite_tutorial/blob/master/images/single_gene_tutorial/rRNA_en.jpg?raw=true"></p>
+<p>Open the <code>extract_results/StatFiles</code> folder, find the <code>name_for_unification.csv</code> file, change the name to 18S in the <code>New Name</code> column, and save (you must save as csv format). As I am not sure that 16S-like entries are homologous to 18S, I will leave them unchanged.</p>
+<p><img src="https://github.com/dongzhang0725/PhyloSuite_tutorial/blob/master/images/single_gene_tutorial/name_for_unification_en.jpg?raw=true"></p>
+<p>Then go back to the window to extract the sequence</p>
+<ol>
+<li>Click the Settings button next to the sequence type to enter the settings interface;</li>
+<li>Drag the modified <code>name_for_unification.csv</code> file into the area indicated in the figure, and the modified names will be automatically recognized.</li>
+</ol>
+<p><img src="https://github.com/dongzhang0725/PhyloSuite_tutorial/blob/master/images/single_gene_tutorial/modify_replace_names_en.jpg?raw=true"></p>
+<p>Just close the settings window, your new settings will be automatically saved. At this point, you only need to re-run the extraction anew to get the 18S sequence after replacing the name. After reopening the 18S.fas file in the rRNA folder, you will find only 42 sequences in it (remember we have a total of 51 IDs). Three more sequences, annotated as 16-like, are in the same folder. Because I wasn’t sure that these are homologues, I left them in a separate file so I can manually revise their homology. If you are certain, you can rename them to 18S as described above. The extraction of the remaining 6 missing sequences was not successful, the details of which can be found in the ‘StatFiles’ folder in files: <code>StatFiles/feature_unrecognized.csv</code> and <code>StatFiles/ID_with_no_features.csv</code>. Best way to see what went wrong is to open these sequences (main working window, find the ID, right-click, open) and compare them with successfully extracted files. Once&#x2F;if you figure out what is wrong with them, you may manually edit these files in a text editor, save them, and re-extract all sequences. </p>
+<p>However, if you are confident that all the sequences are 18S, here is an easy way:</p>
+<ol>
+<li>Check ‘Default’ instead of ‘Custom’ in the Extracter function and set the output file name;</li>
+<li>Start to extract.</li>
+</ol>
+<p><img src="https://github.com/dongzhang0725/PhyloSuite_tutorial/blob/master/images/single_gene_tutorial/default_extract_en.jpg?raw=true"></p>
+<p>Double-clicking the “18S.fas” file will open the sequence viewer, where you will see that all 51 sequences were successfully extracted. </p>
+<h3 id="3-Multiple-sequence-alignment"><a href="#3-Multiple-sequence-alignment" class="headerlink" title="3. Multiple sequence alignment"></a>3. Multiple sequence alignment</h3><p>Now that we have extracted all sequences, we can start the phylogenetic analysis. For this, we have to align them first using MAFFT. There are many ways to do this, only two of which will be shown here.</p>
+<ol>
+<li><p>First, select the <code>extract_results</code> folder in the main PhyloSuite window (extracted in the previous step), and then open MAFFT through <code>Alignment--&gt;MAFFT</code> in the menu bar. The extracted sequences will be automatically imported into MAFFT;<br><img src="https://github.com/dongzhang0725/PhyloSuite_tutorial/blob/master/images/single_gene_tutorial/auto_load_en.jpg?raw=true"></p>
+</li>
+<li><p>You can select MAFFT from the Alignment menu, and then a pop-up window will automatically offer you available input file from the entire workspace. Scroll through them to find the results that you need, or click ‘No, thanks’ and select the input file manually.<br><img src="https://github.com/dongzhang0725/PhyloSuite_tutorial/blob/master/images/single_gene_tutorial/auto_prepare_en.jpg?raw=true"></p>
+</li>
+</ol>
+<p>You will find that other plug-ins in PhyloSuite also use this interface to import files.</p>
+<p>Next is the sequence alignment</p>
+<ol>
+<li>First you may choose to delete the 16S sequence files using the delete button (the button next to it can be used to view the sequence). </li>
+<li>Align the sequences using Normal mode;</li>
+<li>Other parameters can be set according to your own requirements; and then click Start.</li>
+</ol>
+<p><img src="https://github.com/dongzhang0725/PhyloSuite_tutorial/blob/master/images/single_gene_tutorial/mafft_en.jpg?raw=true"></p>
+<p>After the alignment is completed, you can view the sequence and modify them.</p>
+<ol>
+<li>Select the <code>mafft_results</code> folder;</li>
+<li>Double-click the alignment result to open it in the sequence viewer.</li>
+<li>If necessary, manual correction of the sequence can be performed in the same way as in MEGA.</li>
+</ol>
+<p><img src="https://github.com/dongzhang0725/PhyloSuite_tutorial/blob/master/images/single_gene_tutorial/edit_seq_en.jpg?raw=true"></p>
+<h3 id="4-Nucleotide-replacement-model-selection"><a href="#4-Nucleotide-replacement-model-selection" class="headerlink" title="4. Nucleotide replacement model selection"></a>4. Nucleotide replacement model selection</h3><p>Next is the evolution model selection. Since ModelFinder does not recognize the results of MAFFT automatically (<code>Concatenation</code> function ordinarily serves as a bridge between these two functions, but we won’t use it for a single-gene dataset), we need to manually import it. The operation is also simple:</p>
+<ol>
+<li>Double-click <code>mafft_results</code> to open the folder;</li>
+<li>Open the ModelFinder software window via <code>Phylogeny--&gt;ModelFinder</code> in the menu bar and drag the aligned 18S sequence into the file input box of ModelFinder.</li>
+<li>Select <code>Mrbayes</code> in <code>Model for</code> to select the optimal models for <code>Mrbayes</code>;</li>
+<li>Other parameters can be selected according to your needs. After settings, you can click <code>Start</code> to start the program.</li>
+</ol>
+<p><img src="https://github.com/dongzhang0725/PhyloSuite_tutorial/blob/master/images/single_gene_tutorial/modelfinder_en.jpg?raw=true"></p>
+<h3 id="5-Phylogenetic-tree-reconstruction-based-on-Bayesian-Inference-BI"><a href="#5-Phylogenetic-tree-reconstruction-based-on-Bayesian-Inference-BI" class="headerlink" title="5. Phylogenetic tree reconstruction based on Bayesian Inference (BI)"></a>5. Phylogenetic tree reconstruction based on Bayesian Inference (BI)</h3><ol>
+<li>Double-click <code>*.iqtree</code> in the <code>ModelFinder_results</code> folder to view the selection result of the optimal model;</li>
+<li>Select the <code>ModelFinder_results</code> folder in the main PhyloSuite interface;</li>
+<li>Open the Bayesian software <code>Phylogeny--&gt;MrBayes</code> from the menu bar;</li>
+<li>You can see that the alignment and model selection results have been automatically imported into <code>MrBayes</code>. You may choose to select one or more outgroups through the <code>Outgroup</code> drop-down menu;</li>
+<li>Select the number of generations you wish to run;</li>
+<li>Set other parameters if you wish to do so; and then click <code>Start</code>.</li>
+</ol>
+<p><img src="https://github.com/dongzhang0725/PhyloSuite_tutorial/blob/master/images/single_gene_tutorial/mrbayes_en.jpg?raw=true"></p>
+<h3 id="6-Phylogenetic-tree-reconstruction-based-on-the-Maximum-Likelihood-method-ML"><a href="#6-Phylogenetic-tree-reconstruction-based-on-the-Maximum-Likelihood-method-ML" class="headerlink" title="6. Phylogenetic tree reconstruction based on the Maximum Likelihood method (ML)"></a>6. Phylogenetic tree reconstruction based on the Maximum Likelihood method (ML)</h3><p>IQ-TREE is able to select the best-fit model and conduct phylogenetic analysis, you can complete both in one step.</p>
+<ol>
+<li>Drag the aligned sequences (*.fas) directly into the IQ-TREE file input box.</li>
+<li>By selecting the <code>Auto</code> model, you are allowing IQ-TREE to select the optimal evolutionary model first, and then use it to conduct the phylogenetic analysis;</li>
+<li>You can choose +R to calculate the FreeRate model, which is recommended by the IQ-TREE author;</li>
+<li>Since 18S is small, it is best to use the standard bootstrap method based on the author’s recommendation;</li>
+<li>Other parameters can be selected according to your needs; then run it by clicking <code>Start</code>.</li>
+</ol>
+<p><img src="https://github.com/dongzhang0725/PhyloSuite_tutorial/blob/master/images/single_gene_tutorial/IQ-TREE_en.jpg?raw=true"></p>
+<h3 id="7-Flowchart"><a href="#7-Flowchart" class="headerlink" title="7. Flowchart"></a>7. Flowchart</h3><p>In addition to the above-mentioned conventional operation, PhyloSuite also provides a streamlined workflow mode that allows to conduct the analysis described above (sections 3 to 6) in a single go. You only need to input the file in the first program (MAFFT) and the remaining steps will be executed automatically in the default order: alignment–&gt;concatenation–&gt;model selection–&gt;reconstruct the phylogenetic tree; with results of the upstream program being used as the input file for the downstream program.</p>
+<ol>
+<li>Click <code>Flowchart</code> in the menu bar to open the program window;</li>
+<li>Select the analyses you want to conduct; here it will be <code>MAFFT</code>, <code>Concatenation</code> (although it is a single gene, the Concatenation must also be selected, because the downstream programs can only recognize concatenated results as input files, in this way, the Concatenation function served as format convertion), <code>ModelFinder</code>, <code>IQ-TREE</code>, and MrBayes;</li>
+<li>Click on the red <code>Input file here</code> to open the MAFFT program window;</li>
+<li>Click on the MAFFT file input box select one of the automatically prepared input files (see section 3 for details);</li>
+<li>Select the extraction results from before (note that I only kept 18S);</li>
+<li>Just close the window and MAFFT will automatically save the input file and the parameters that you set (also applied to other programs).</li>
+</ol>
+<p><img src="https://github.com/dongzhang0725/PhyloSuite_tutorial/blob/master/images/single_gene_tutorial/flowchart_en.jpg?raw=true"></p>
+<p>After inputting the file into the MAFFT and setting the parameters, you may also wish to set the parameters for other programs.</p>
+<ol>
+<li>Click the <code>Check | Start</code> button, and a parameter summary window will pop up, allowing you to modify and check the parameters;</li>
+<li>Click the blue words to set the parameters (the corresponding widgets will be highlighted in the pop-up window);</li>
+<li>After setting the parameters for each software, just close the window to save the settings;</li>
+<li>PhyloSuite also provides the ability to automatically check the conflicting parameters. For example, if the model selected by Modelfinder does not use partition model, you should also turn off partition mode for <code>MrBayes</code>. Click <code>autocorrect</code> to do this automatically.</li>
+<li>After the parameters are checked (note that for the demo purpose, we chose very short running times for MrBayes and IQ-TREE), you can click <code>Ok, start</code> to start the program.</li>
+</ol>
+<p><img src="https://github.com/dongzhang0725/PhyloSuite_tutorial/blob/master/images/single_gene_tutorial/flowchart_set_en.jpg?raw=true"></p>
+<p>IQ-TREE and MrBayes programs can be run simultaneously (they don’t have upstream&#x2F;downstream program relationship). After a program has finished, you can view the results by clicking the button next to the program name. </p>
+<p><img src="https://github.com/dongzhang0725/PhyloSuite_tutorial/blob/master/images/single_gene_tutorial/flowchart_running_en.jpg?raw=true"></p>
+<p>After all the programs have finished, the main interface will give you a summary description of the operation, as well as references to the software used, both of which can be useful for writing the Materials &amp; Methods section of your manuscript. </p>
+<p><img src="https://github.com/dongzhang0725/PhyloSuite_tutorial/blob/master/images/single_gene_tutorial/flowchart_summary_en.jpg?raw=true"></p>
+<h3 id="8-Phylogenetic-tree-annotation"><a href="#8-Phylogenetic-tree-annotation" class="headerlink" title="8. Phylogenetic tree annotation"></a>8. Phylogenetic tree annotation</h3><p>After phylogenetic tree reconstruction, the last step is to annotate the phylogenetic tree. Here we will use the results of IQ-TREE as an example.<br>1.	First open iTOL’s home page <a target="_blank" rel="noopener" href="https://itol.embl.de/">https://itol.embl.de/</a>, log in to your account, and select <code>My Trees</code>;<br>2.	Double-click <code>IQtree_results</code> to open the tree of the IQ-TREE, and drag the *.treefile file into the area shown in the figure to automatically import the phylogenetic tree;<br>   <img src="https://github.com/dongzhang0725/PhyloSuite_tutorial/blob/master/images/single_gene_tutorial/itol_input_en.jpg?raw=true"><br>3. Click on the tree title to enter the editing interface.<br>4. Double-click <code>extract_results</code> to open the extraction files (that we generated in section 2). The files within the <code>itolFiles</code> folder are used for iTOL annotation. The operation is very simple, just drag the file into the iTOL interface. As shown in the figure, after dragging in <code>itol_gb_labels.txt</code>, you will find that the name of the species has been replaced with the accession number (in my case, there is an error log showing that some of the listed IDs were not found, because 9 sequences have not been extracted; as it will not affect the annotation, we can ignore it for the purpose of this demo). Two more files can be used to replace names (<code>itol_labels.txt</code> and <code>itol_ori_labels.txt</code>);<br>    <img src="https://github.com/dongzhang0725/PhyloSuite_tutorial/blob/master/images/single_gene_tutorial/drag_gb_label_en.jpg?raw=true"><br>5. Check file names to see which taxonomic category information they carry. For example, <code>itol_Class_ColourStrip.txt</code> and <code>itol_Class_Text.txt</code> can be used to annotate (colourize) different classes.<br>&emsp;a. Drag these two file (<code>itol_Class_ColourStrip.txt</code> and <code>itol_Class_Text.txt</code>) together into the iTOL interface;<br>&emsp;b. Each file is treated as a different dataset by the iTOL. You can set the parameters for each dataset by clicking the jagged setting button;<br>&emsp;c. Set the <code>Text size factor</code> of the <code>Class text</code> dataset to change the font size for the name of the class;<br>&emsp;d. Set the <code>Strip width</code> of the <code>color_strip</code> dataset to change the width of the vertical block.<br>&emsp;<img src="https://github.com/dongzhang0725/PhyloSuite_tutorial/blob/master/images/single_gene_tutorial/itol_color_en.jpg?raw=true"><br>&emsp; When we extracted the sequences (section 2), there was an option to set the color for the taxonomic groups. The colors of the five classes that we set before can be seen here, while the colors of other classes were randomly chosen. Note that the location of the taxonomic group name may not be in the middle of the colour strip representing the clade (see Colpodea in the figure above), but you can export the tree into an SVG format file and then fine-tune it using Adobe Illustrator.<br>&emsp; The advantages of this annotation method are especially pronounced when you have hundreds of species, or when you want to compare multiple topologies based on the same dataset. Colourated annotation is very helpful in such cases, especially for identifying paraphyly and polyphyly</p>
+<p>When annotating the BI tree, just drag the *.con.tre tree file into iTOL, and the rest of the operations are the same as for the IQ-TREE tree. </p>
+<p>At this point, the single-gene phylogenetic analysis process is finished. This is the complete operation from data acquisition to phylogenetic tree annotation. Of course, you can start from any step. For example, it is possible to start directly from the MAFFT multiple sequence alignment, but in this way there is no way to annotate the phylogenetic tree.</p>
+<hr>
+
+<h3 id="9-Software-download-website"><a href="#9-Software-download-website" class="headerlink" title="9. Software download website"></a>9. Software download website</h3><p><a target="_blank" rel="noopener" href="https://github.com/dongzhang0725/PhyloSuite/releases">https://github.com/dongzhang0725/PhyloSuite/releases</a> or <a href="https://dongzhang0725.github.io/dongzhang0725.github.io/installation/#Chinese_download_link">https://dongzhang0725.github.io/dongzhang0725.github.io/installation/#Chinese_download_link</a> (China)</p>
+<h3 id="10-Reference"><a href="#10-Reference" class="headerlink" title="10. Reference"></a>10. Reference</h3><p>Zhang, D., F. Gao, I. Jakovlić, H. Zou, J. Zhang, W.X. Li, and G.T. Wang, PhyloSuite: An integrated and scalable desktop platform for streamlined molecular sequence data management and evolutionary phylogenetics studies. Molecular Ecology Resources, 2020. 20(1): p. 348–355. DOI: 10.1111&#x2F;1755-0998.13096. </p>
+
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/dongzhang0725.github.io/tags/PyQT5/" rel="tag"># PyQT5</a>
+              <a href="/dongzhang0725.github.io/tags/Python/" rel="tag"># Python</a>
+              <a href="/dongzhang0725.github.io/tags/Bioinformatics/" rel="tag"># Bioinformatics</a>
+          </div>
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/dongzhang0725.github.io/PhyloSuite-demo/five_ways_to_import/" rel="prev" title="Five ways to import data into PhyloSuite">
+                  <i class="fa fa-angle-left"></i> Five ways to import data into PhyloSuite
+                </a>
+            </div>
+            <div class="post-nav-item">
+                <a href="/dongzhang0725.github.io/PhyloSuite-demo/multi-gene-phylogeny/" rel="next" title="Muti-gene phylogeny">
+                  Muti-gene phylogeny <i class="fa fa-angle-right"></i>
+                </a>
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+    <div class="comments gitalk-container"></div>
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+  <div class="copyright">
+    &copy; 
+    <span itemprop="copyrightYear">2025</span>
+    <span class="with-love">
+      <i class="user"></i>
+    </span>
+    <span class="author" itemprop="copyrightHolder">Dong Zhang</span>
+  </div>
+  <div class="powered-by">Powered by <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/" rel="noopener" target="_blank">NexT.Gemini</a>
+  </div>
+
+    </div>
+  </footer>
+
+  
+  <div class="toggle sidebar-toggle" role="button">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+  <div class="sidebar-dimmer"></div>
+  <div class="reading-progress-bar"></div>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/gitalk/1.8.0/gitalk.css" integrity="sha256-AJnUHL7dBv6PGaeyPQJcgQPDjt/Hn/PvYZde1iqfp8U=" crossorigin="anonymous">
+
+<script class="next-config" data-name="gitalk" type="application/json">{"enable":true,"github_id":"dongzhang0725","repo":"PhyloSuite","client_id":"55e7b2bd2c9d294158bf","client_secret":"b0716af44800887bfab50497c5e0309525a353b8","admin_user":"dongzhang0725","distraction_free_mode":true,"proxy":"https://cors-anywhere.azm.workers.dev/https://github.com/login/oauth/access_token","language":null,"js":{"url":"https://cdnjs.cloudflare.com/ajax/libs/gitalk/1.8.0/gitalk.min.js","integrity":"sha256-MVK9MGD/XJaGyIghSVrONSnoXoGh3IFxLw0zfvzpxR4="},"path_md5":"5a20207e814d4c7ac67fba63944a383c"}</script>
+<script src="/dongzhang0725.github.io/js/third-party/comments/gitalk.js" defer></script>
+
+</body>
+</html>

@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222"><meta name="generator" content="Hexo 7.3.0">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/dongzhang0725.github.io/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/dongzhang0725.github.io/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/dongzhang0725.github.io/images/apple-touch-icon-next.png">
+  <link rel="mask-icon" href="/dongzhang0725.github.io/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/dongzhang0725.github.io/css/main.css">
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha256-VHqXKFhhMxcpubYf9xiWdCiojEbY9NexQ4jh8AxbvcM=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"dongzhang0725.github.io","root":"/dongzhang0725.github.io/","images":"/dongzhang0725.github.io/images","scheme":"Gemini","darkmode":false,"version":"8.25.0","exturl":false,"sidebar":{"position":"left","width_expanded":320,"width_dual_column":240,"display":"post","padding":18,"offset":12},"hljswrap":true,"codeblock":{"theme":{"light":"default","dark":"stackoverflow-dark"},"prism":{"light":"prism","dark":"prism-dark"},"copy_button":{"enable":false,"style":null},"fold":{"enable":false,"height":500},"language":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"duration":200,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"},"path":"/dongzhang0725.github.io/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/dongzhang0725.github.io/js/config.js" defer></script>
+
+    <meta name="description" content="There are two ways to configure the plugins: 1. Download PhyloSuite with pluginsWhen using Windows and Mac OSX systems, you can download PhyloSuite_xxx_Win32&#x2F;64_with_plugins.rar and PhyloSuite_xxx_Mac">
+<meta property="og:type" content="article">
+<meta property="og:title" content="How to configure plugins">
+<meta property="og:url" content="https://dongzhang0725.github.io/PhyloSuite-demo/how-to-configure-plugins/index.html">
+<meta property="og:site_name" content="PhyloSuite">
+<meta property="og:description" content="There are two ways to configure the plugins: 1. Download PhyloSuite with pluginsWhen using Windows and Mac OSX systems, you can download PhyloSuite_xxx_Win32&#x2F;64_with_plugins.rar and PhyloSuite_xxx_Mac">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://github.com/dongzhang0725/PhyloSuite_tutorial/blob/master/images/how-to-configure-plugins/install_state.jpg?raw=true">
+<meta property="og:image" content="https://github.com/dongzhang0725/PhyloSuite_tutorial/blob/master/images/how-to-configure-plugins/specify_window.jpg?raw=true">
+<meta property="og:image" content="https://github.com/dongzhang0725/PhyloSuite_tutorial/blob/master/images/how-to-configure-plugins/download_plugins.jpg?raw=true">
+<meta property="og:image" content="https://github.com/dongzhang0725/PhyloSuite_tutorial/blob/master/images/how-to-configure-plugins/download_finished.jpg?raw=true">
+<meta property="og:image" content="https://github.com/dongzhang0725/PhyloSuite_tutorial/blob/master/images/how-to-configure-plugins/install_R.jpg?raw=true">
+<meta property="og:image" content="https://github.com/dongzhang0725/PhyloSuite_tutorial/blob/master/images/how-to-configure-plugins/specify_R.jpg?raw=true">
+<meta property="og:image" content="https://github.com/dongzhang0725/PhyloSuite_tutorial/blob/master/images/how-to-configure-plugins/specify_py27.jpg?raw=true">
+<meta property="og:image" content="https://github.com/dongzhang0725/PhyloSuite_tutorial/blob/master/images/how-to-configure-plugins/dowanload_manually.jpg?raw=true">
+<meta property="og:image" content="https://github.com/dongzhang0725/PhyloSuite_tutorial/blob/master/images/how-to-configure-plugins/download_compiled_PF2.jpg?raw=true">
+<meta property="og:image" content="https://github.com/dongzhang0725/PhyloSuite_tutorial/blob/master/images/how-to-configure-plugins/install_PF2_script.jpg?raw=true">
+<meta property="og:image" content="https://github.com/dongzhang0725/PhyloSuite_tutorial/blob/master/images/how-to-configure-plugins/install_py27.jpg?raw=true">
+<meta property="og:image" content="https://github.com/dongzhang0725/PhyloSuite_tutorial/blob/master/images/how-to-configure-plugins/PF2_depen_absence.jpg?raw=true">
+<meta property="og:image" content="https://github.com/dongzhang0725/PhyloSuite_tutorial/blob/master/images/how-to-configure-plugins/hmmcleaner_state.jpg?raw=true">
+<meta property="article:published_time" content="2019-03-27T01:11:07.000Z">
+<meta property="article:modified_time" content="2023-01-02T07:46:35.212Z">
+<meta property="article:author" content="Dong Zhang">
+<meta property="article:tag" content="PyQT5">
+<meta property="article:tag" content="Python">
+<meta property="article:tag" content="Bioinformatics">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://github.com/dongzhang0725/PhyloSuite_tutorial/blob/master/images/how-to-configure-plugins/install_state.jpg?raw=true">
+
+
+<link rel="canonical" href="https://dongzhang0725.github.io/PhyloSuite-demo/how-to-configure-plugins/">
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"en","comments":true,"permalink":"https://dongzhang0725.github.io/PhyloSuite-demo/how-to-configure-plugins/","path":"PhyloSuite-demo/how-to-configure-plugins/","title":"How to configure plugins"}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>How to configure plugins | PhyloSuite</title>
+  
+
+
+
+
+
+
+
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous" defer></script>
+<script src="/dongzhang0725.github.io/js/utils.js" defer></script><script src="/dongzhang0725.github.io/js/motion.js" defer></script><script src="/dongzhang0725.github.io/js/sidebar.js" defer></script><script src="/dongzhang0725.github.io/js/next-boot.js" defer></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-generator-searchdb/1.5.0/search.js" integrity="sha256-xFC6PJ82SL9b3WkGjFavNiA9gm5z6UBxWPiu4CYjptg=" crossorigin="anonymous" defer></script>
+<script src="/dongzhang0725.github.io/js/third-party/search/local-search.js" defer></script>
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  <noscript>
+    <link rel="stylesheet" href="/dongzhang0725.github.io/css/noscript.css">
+  </noscript>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <div class="column">
+      <header class="header" itemscope itemtype="http://schema.org/WPHeader"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="Toggle navigation bar" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/dongzhang0725.github.io/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <p class="site-title">PhyloSuite</p>
+      <i class="logo-line"></i>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger" aria-label="Search" role="button">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/dongzhang0725.github.io/" rel="section"><i class="fa fa-home fa-fw"></i>Home</a></li><li class="menu-item menu-item-documentation"><a href="/dongzhang0725.github.io/documentation/" rel="section"><i class="fa fa-navicon fa-fw"></i>documentation</a></li><li class="menu-item menu-item-installation"><a href="/dongzhang0725.github.io/installation/" rel="section"><i class="fa fa-download fa-fw"></i>installation</a></li><li class="menu-item menu-item-example"><a href="/dongzhang0725.github.io/example/" rel="section"><i class="fa fa-print fa-fw"></i>example</a></li><li class="menu-item menu-item-categories"><a href="/dongzhang0725.github.io/categories/" rel="section"><i class="fa fa-th fa-fw"></i>Categories</a></li><li class="menu-item menu-item-archives"><a href="/dongzhang0725.github.io/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>Archives</a></li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>Search
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+      <div class="search-header">
+        <span class="search-icon">
+          <i class="fa fa-search"></i>
+        </span>
+        <div class="search-input-container">
+          <input autocomplete="off" autocapitalize="off" maxlength="80"
+                placeholder="Searching..." spellcheck="false"
+                type="search" class="search-input">
+        </div>
+        <span class="popup-btn-close" role="button">
+          <i class="fa fa-times-circle"></i>
+        </span>
+      </div>
+      <div class="search-result-container">
+        <div class="search-result-icon">
+          <i class="fa fa-spinner fa-pulse fa-5x"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</header>
+        
+  
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          Table of Contents
+        </li>
+        <li class="sidebar-nav-overview">
+          Overview
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-Download-PhyloSuite-with-plugins"><span class="nav-text">1. Download PhyloSuite with plugins</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-Configure-plugins-separately"><span class="nav-text">2. Configure plugins separately</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#2-1-Specify-executable-file"><span class="nav-text">2.1. Specify executable file</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-2-Download-plugins-automatically"><span class="nav-text">2.2. Download plugins automatically</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-3-PartitionFinder-configuration"><span class="nav-text">2.3. PartitionFinder configuration</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#2-3-1-Troubleshooting"><span class="nav-text">2.3.1. Troubleshooting</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-4-HmmCleaner-configuration"><span class="nav-text">2.4. HmmCleaner configuration</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#2-4-1-Configuration-of-HMMER"><span class="nav-text">2.4.1. Configuration of HMMER</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#2-4-2-Configuration-of-Perl-and-dependencies-installation"><span class="nav-text">2.4.2. Configuration of Perl and dependencies installation</span></a></li></ol></li></ol></li></ol></div>
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">Dong Zhang</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        <a href="/dongzhang0725.github.io/archives/">
+          <span class="site-state-item-count">7</span>
+          <span class="site-state-item-name">posts</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+          <a href="/dongzhang0725.github.io/categories/">
+        <span class="site-state-item-count">1</span>
+        <span class="site-state-item-name">categories</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+          <a href="/dongzhang0725.github.io/tags/">
+        <span class="site-state-item-count">3</span>
+        <span class="site-state-item-name">tags</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author animated">
+      <span class="links-of-author-item">
+        <a href="https://github.com/dongzhang0725/PhyloSuite" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;dongzhang0725&#x2F;PhyloSuite" rel="noopener me" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="mailto:dongzhang0725@gmail.com" title="E-Mail → mailto:dongzhang0725@gmail.com" rel="noopener me" target="_blank"><i class="fa fa-envelope fa-fw"></i>E-Mail</a>
+      </span>
+  </div>
+
+        </div>
+      </div>
+        <div class="back-to-top animated" role="button" aria-label="Back to top">
+          <i class="fa fa-arrow-up"></i>
+          <span>0%</span>
+        </div>
+    </div>
+
+    
+  </aside>
+
+
+    </div>
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="en">
+    <link itemprop="mainEntityOfPage" href="https://dongzhang0725.github.io/PhyloSuite-demo/how-to-configure-plugins/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/dongzhang0725.github.io/images/avatar.gif">
+      <meta itemprop="name" content="Dong Zhang">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="PhyloSuite">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="How to configure plugins | PhyloSuite">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          How to configure plugins
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+
+      <time title="Created: 2019-03-27 09:11:07" itemprop="dateCreated datePublished" datetime="2019-03-27T09:11:07+08:00">2019-03-27</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">Edited on</span>
+      <time title="Modified: 2023-01-02 15:46:35" itemprop="dateModified" datetime="2023-01-02T15:46:35+08:00">2023-01-02</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">In</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/dongzhang0725.github.io/categories/PhyloSuite-demo/" itemprop="url" rel="index"><span itemprop="name">PhyloSuite demo</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody"><p>There are two ways to configure the plugins:</p>
+<h3 id="1-Download-PhyloSuite-with-plugins"><a href="#1-Download-PhyloSuite-with-plugins" class="headerlink" title="1. Download PhyloSuite with plugins"></a>1. Download PhyloSuite with plugins</h3><p>When using Windows and Mac OSX systems, you can download <code>PhyloSuite_xxx_Win32/64_with_plugins.rar</code> and <code>PhyloSuite_xxx_Mac_with_plugins.zip</code> from <a target="_blank" rel="noopener" href="https://github.com/dongzhang0725/PhyloSuite/releases">https://github.com/dongzhang0725/PhyloSuite/releases</a>, respectively. All plugins, except <code>Python 2.7</code>, <code>Perl 5</code>, <code>Java</code>, <code>Rscript</code>, <code>HmmCleaner</code> and <code>trimAl</code> (MAC) are included.</p>
+<h3 id="2-Configure-plugins-separately"><a href="#2-Configure-plugins-separately" class="headerlink" title="2. Configure plugins separately"></a>2. Configure plugins separately</h3><p><img src="https://github.com/dongzhang0725/PhyloSuite_tutorial/blob/master/images/how-to-configure-plugins/install_state.jpg?raw=true"></p>
+<center><strong>Interpretation of the install state.</strong></center>
+
+<span id="more"></span>
+<p>If Python 2.7, Perl 5, Java (JRE &gt; 1.5), HmmCleaner.pl and trimAl have been installed and added to the environment variable ($PATH), they will be automatically detected by PhyloSuite. Open the plugin settings window via <code>Settings--&gt;Settings</code> in the menu bar. There are two ways to configure your plugins:</p>
+<h4 id="2-1-Specify-executable-file"><a href="#2-1-Specify-executable-file" class="headerlink" title="2.1. Specify executable file"></a>2.1. Specify executable file</h4><p>When you have the plugins already installed on your computer, you can just specify the paths directly. </p>
+<ol>
+<li>Click the <code>Install</code> button of each plugin to open the configuration window;</li>
+<li>In the <code>Specify</code> box, click <code>Add</code> button to select files;</li>
+<li>Select the executable file (see the table below);</li>
+<li>Select <code>Open</code>;</li>
+<li>Click <code>Ok</code>.<br><img src="https://github.com/dongzhang0725/PhyloSuite_tutorial/blob/master/images/how-to-configure-plugins/specify_window.jpg?raw=true"></li>
+</ol>
+<p>Programs | Executable File (Win) | Executable File (MAC) | Executable File (Linux)<br>——– | — | — | — | —<br><a target="_blank" rel="noopener" href="https://mafft.cbrc.jp/alignment/software/" title="MAFFT">MAFFT v7.313</a> | path-to-MAFFT&#x2F;mafft-win&#x2F;mafft.bat | path-to-MAFFT&#x2F;mafft-mac&#x2F;mafft.bat | path-to-MAFFT&#x2F;bin&#x2F;mafft or <br> &#x2F;usr&#x2F;bin&#x2F;mafft<br><a target="_blank" rel="noopener" href="https://www.java.com/en/download/" title="Java">Java (JRE &gt; 1.5)</a> | path-to-Java&#x2F;java.exe | path-to-Java&#x2F;java or usr&#x2F;bin&#x2F;java | path-to-Java&#x2F;java or usr&#x2F;bin&#x2F;java<br><a target="_blank" rel="noopener" href="https://bioweb.supagro.inra.fr/macse/index.php?menu=releases" title="MACSE">MACSE v2.01b</a> | path-to-MACSE&#x2F;macse_v2.03.jar | path-to-MACSE&#x2F;macse_v2.03.jar | path-to-MACSE&#x2F;macse_v2.03.jar<br><a target="_blank" rel="noopener" href="http://www.iqtree.org/" title="IQ-TREE">IQ-TREE v. 1.6.8</a> | path-to-IQ-TREE&#x2F;bin&#x2F;iqtree.exe | path-to-IQ-TREE&#x2F;bin&#x2F;iqtree | path-to-IQ-TREE&#x2F;bin&#x2F;iqtree<br><a target="_blank" rel="noopener" href="http://mrbayes.sourceforge.net/" title="MrBayes">MrBayes 3.2.6</a> | path-to-MrBayes&#x2F;mrbayes_x64.exe or <br>path-to-MrBayes&#x2F;mrbayes_x86.exe | path-to-MrBayes&#x2F;mb | path-to-MrBayes&#x2F;bin&#x2F;mb<br><a target="_blank" rel="noopener" href="http://www.robertlanfear.com/partitionfinder/" title="PartitionFinder2">PartitionFinder2</a> | path-to-PartitionFinder2&#x2F;partitionfinder-2.1.1 | path-to-PartitionFinder2&#x2F;partitionfinder-2.1.1 | path-to-PartitionFinder2&#x2F;partitionfinder-2.1.1<br><a target="_blank" rel="noopener" href="http://molevol.cmima.csic.es/castresana/Gblocks/Gblocks_documentation.html" title="Gblocks">Gblocks 0.91b</a> | path-to-Gblocks&#x2F;Gblocks.exe | path-to-Gblocks&#x2F;Gblocks | path-to-Gblocks&#x2F;Gblocks<br><a target="_blank" rel="noopener" href="http://trimal.cgenomics.org/downloads" title="trimAl">trimAl</a> | path-to-trimAl&#x2F;trimal.exe | path-to-trimAl&#x2F;trimal or usr&#x2F;bin&#x2F;trimal | path-to-trimAl&#x2F;trimal or usr&#x2F;bin&#x2F;trimal<br><a target="_blank" rel="noopener" href="https://www.perl.org/get.html" title="Perl">Perl 5</a> | path-to-Perl&#x2F;perl.exe | path-to-Perl&#x2F;perl or usr&#x2F;bin&#x2F;perl | path-to-Perl&#x2F;perl or usr&#x2F;bin&#x2F;perl<br><a target="_blank" rel="noopener" href="https://metacpan.org/pod/distribution/Bio-MUST-Apps-HmmCleaner/bin/HmmCleaner.pl" title="HmmCleaner.pl">HmmCleaner.pl</a> | path-to-HmmCleaner&#x2F;HmmCleaner.pl | path-to-HmmCleaner&#x2F;HmmCleaner.pl or usr&#x2F;bin&#x2F;HmmCleaner.pl | path-to-HmmCleaner&#x2F;HmmCleaner.pl or usr&#x2F;bin&#x2F;HmmCleaner.pl<br><a target="_blank" rel="noopener" href="https://www.r-project.org/" title="Rscript">Rscript 3.4.4</a> | path-to-R&#x2F;bin&#x2F;Rscript.exe | path-to-R&#x2F;bin&#x2F;Rscript | path-to-R&#x2F;bin&#x2F;Rscript<br><a target="_blank" rel="noopener" href="https://www.anaconda.com/download/" title="Python 2.7">Python 2.7</a> | path-to-Python2.7&#x2F;python.exe | path-to-Python2.7&#x2F;bin&#x2F;python | path-to-Python2.7&#x2F;bin&#x2F;python<br><a target="_blank" rel="noopener" href="https://www.ncbi.nlm.nih.gov/genbank/tbl2asn2/" title="tbl2asn">tbl2asn</a> | path-to-tbl2asn&#x2F;win.tbl2asn&#x2F;tbl2asn.exe | not allowed | not allowed<br><a target="_blank" rel="noopener" href="https://www.mpich.org/">MPICH2</a> | not allowed | not allowed | path-to-MPICH2&#x2F;bin&#x2F;mpiexec or <br> path-to-MPICH2&#x2F;bin&#x2F;mpirun</p>
+<h4 id="2-2-Download-plugins-automatically"><a href="#2-2-Download-plugins-automatically" class="headerlink" title="2.2. Download plugins automatically"></a>2.2. Download plugins automatically</h4><p>PhyloSuite also allows user to download the plugins and configure them automatically. Just click the <code>Download</code> button, and the plugin will be downloaded and installed on your computer automatically.<br><img src="https://github.com/dongzhang0725/PhyloSuite_tutorial/blob/master/images/how-to-configure-plugins/download_plugins.jpg?raw=true"><br><img src="https://github.com/dongzhang0725/PhyloSuite_tutorial/blob/master/images/how-to-configure-plugins/download_finished.jpg?raw=true"></p>
+<p>However, for <code>Rscript</code> and <code>Python 2.7</code>, there are two additional steps:</p>
+<ol>
+<li>When they are downloaded, you need to select a folder to install them;<br><img src="https://github.com/dongzhang0725/PhyloSuite_tutorial/blob/master/images/how-to-configure-plugins/install_R.jpg?raw=true"></li>
+<li>Next you need to specify the executable files, as described in Section 1.<br> Rscript:<br> <img src="https://github.com/dongzhang0725/PhyloSuite_tutorial/blob/master/images/how-to-configure-plugins/specify_R.jpg?raw=true"><br> Python 2.7:<br> <img src="https://github.com/dongzhang0725/PhyloSuite_tutorial/blob/master/images/how-to-configure-plugins/specify_py27.jpg?raw=true"></li>
+</ol>
+<p>In addition, if the plugin download fails, you can download and install them manually, via a link provided directly below (click “here”). Once downloaded, unzip them to your computer and specify the path.<br><img src="https://github.com/dongzhang0725/PhyloSuite_tutorial/blob/master/images/how-to-configure-plugins/dowanload_manually.jpg?raw=true"></p>
+<h4 id="2-3-PartitionFinder-configuration"><a href="#2-3-PartitionFinder-configuration" class="headerlink" title="2.3. PartitionFinder configuration"></a>2.3. PartitionFinder configuration</h4><p>As PartitionFinder2 Python script relies on <code>Python 2.7</code>, and additional six dependencies should be configured, we have <span id="compiled">compiled</span> <code>PartitionFinder2</code> (MAC and Windows only) so it does not rely on <code>Python 2.7</code> any more.</p>
+<ol>
+<li>Open <code>PartitionFinder2</code> configuration window;</li>
+<li>Click <code>Download</code> button in the <code>Install compiled PartitionFinder2</code> box to download and install PartitionFinder2 automatically.<br><img src="https://github.com/dongzhang0725/PhyloSuite_tutorial/blob/master/images/how-to-configure-plugins/download_compiled_PF2.jpg?raw=true"></li>
+</ol>
+<p>You may also select to install Python 2.7 and PartitionFinder2 Python script:<br>PartitionFinder2</p>
+<ol>
+<li>Open <code>PartitionFinder2</code> configuration window;</li>
+<li>Click <code>Download</code> button in the <code>Install python 2.7 and PartitionFinder2</code> box to download and install it automatically.<br><img src="https://github.com/dongzhang0725/PhyloSuite_tutorial/blob/master/images/how-to-configure-plugins/install_PF2_script.jpg?raw=true"></li>
+</ol>
+<p>Python 2.7</p>
+<ol>
+<li>Open <code>Python 2.7</code> configuration window;</li>
+<li>Click <code>Download</code> button in the <code>Download</code> box to download <code>Anaconda2</code>. For the additional steps to complete the Python 2.7 configuration please refer to Section 2.<br><img src="https://github.com/dongzhang0725/PhyloSuite_tutorial/blob/master/images/how-to-configure-plugins/install_py27.jpg?raw=true"></li>
+</ol>
+<p><span style="color: red">Note: Anaconda Python distribution will download for Python 2.7 (because it contains all of the dependencies required by PartitionFinder2: numpy, pandas, pytables, pyparsing, scipy and sklearn). As it is around 500M in size, your download may take some time. That’s why we recommend that you download the compiled PartitionFinder2, which does not require Python 2.7.<span></p>
+<h5 id="2-3-1-Troubleshooting"><a href="#2-3-1-Troubleshooting" class="headerlink" title="2.3.1. Troubleshooting"></a>2.3.1. Troubleshooting</h5><p>If you specify the path to Python 2.7 pre-installed on your computer, sometimes you may encounter the error below, indicating the absence of the six dependencies.<br><img src="https://github.com/dongzhang0725/PhyloSuite_tutorial/blob/master/images/how-to-configure-plugins/PF2_depen_absence.jpg?raw=true"><br>There are three solutions:</p>
+<ol>
+<li>Install <a href="#compiled">compiled PartitionFinder2</a> (recommended, MAC and Windows only);</li>
+<li>Install <code>Anaconda2</code> and specify the <code>python</code> executable file, as shown above;</li>
+<li>Install these six dependencies to Python 2.7: <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">pip install pandas</span><br><span class="line">pip install numpy</span><br><span class="line">pip install tables</span><br><span class="line">pip install pyparsing</span><br><span class="line">pip install scipy</span><br><span class="line">pip install sklearn</span><br></pre></td></tr></table></figure></li>
+</ol>
+<h4 id="2-4-HmmCleaner-configuration"><a href="#2-4-HmmCleaner-configuration" class="headerlink" title="2.4. HmmCleaner configuration"></a>2.4. HmmCleaner configuration</h4><p>HmmCleaner relies on HMMER, Perl 5 and a lot of <a target="_blank" rel="noopener" href="https://cpandeps.grinnz.com/?dist=Bio-MUST-Apps-HmmCleaner&phase=build&perl_version=v5.30.0&style=table" title="dependency">dependencies</a>. Therefore, some users may have difficulty in configuring it. Here we make a brief tutorial for the configuration of HmmCleaner.</p>
+<h5 id="2-4-1-Configuration-of-HMMER"><a href="#2-4-1-Configuration-of-HMMER" class="headerlink" title="2.4.1. Configuration of HMMER"></a>2.4.1. Configuration of HMMER</h5><ol>
+<li>If you already have conda installed, you can install HMMER via <code>conda install -c bioconda hmmer</code> or <code>conda install -c bioconda/label/cf201901 hmmer</code> command.</li>
+<li>If you don’t have Conda, you need to download and install HMMER here: <a target="_blank" rel="noopener" href="http://hmmer.org/">http://hmmer.org</a>.</li>
+</ol>
+<p>Please Note that all executables from HMMER have to be added in the environment variable ($PATH).</p>
+<h5 id="2-4-2-Configuration-of-Perl-and-dependencies-installation"><a href="#2-4-2-Configuration-of-Perl-and-dependencies-installation" class="headerlink" title="2.4.2. Configuration of Perl and dependencies installation"></a>2.4.2. Configuration of Perl and dependencies installation</h5><p>Here I recommend Perl version 5.18.0, as I experienced failure in installing dependencies in version 5.26. </p>
+<p>When perl is installed, you can use cpanm to install HmmCleaner:</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">cpan App::cpanminus</span><br><span class="line">cpanm Bio::MUST::Apps::HmmCleaner --force</span><br></pre></td></tr></table></figure>
+<p>Alternatively, you can also install HmmCleaner following this instruction: <a target="_blank" rel="noopener" href="https://metacpan.org/source/ARNODF/Bio-MUST-Apps-HmmCleaner-0.180750/INSTALL">https://metacpan.org/source/ARNODF/Bio-MUST-Apps-HmmCleaner-0.180750/INSTALL</a></p>
+<p>It may take some times to install, if it installs successfully, <code>HmmCleaner.pl</code> will be automatically add to the environment variables. Then you need to close and reopen PhyloSuite to see if it installed successfully (if you see Uninstall button, it means success).</p>
+<p><img src="https://github.com/dongzhang0725/PhyloSuite_tutorial/blob/master/images/how-to-configure-plugins/hmmcleaner_state.jpg?raw=true"></p>
+
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/dongzhang0725.github.io/tags/PyQT5/" rel="tag"># PyQT5</a>
+              <a href="/dongzhang0725.github.io/tags/Python/" rel="tag"># Python</a>
+              <a href="/dongzhang0725.github.io/tags/Bioinformatics/" rel="tag"># Bioinformatics</a>
+          </div>
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/dongzhang0725.github.io/PhyloSuite-demo/customize_extraction/" rel="prev" title="Customizing the extraction">
+                  <i class="fa fa-angle-left"></i> Customizing the extraction
+                </a>
+            </div>
+            <div class="post-nav-item">
+                <a href="/dongzhang0725.github.io/PhyloSuite-demo/videoes/" rel="next" title="Tutorial videoes">
+                  Tutorial videoes <i class="fa fa-angle-right"></i>
+                </a>
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+    <div class="comments gitalk-container"></div>
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+  <div class="copyright">
+    &copy; 
+    <span itemprop="copyrightYear">2025</span>
+    <span class="with-love">
+      <i class="user"></i>
+    </span>
+    <span class="author" itemprop="copyrightHolder">Dong Zhang</span>
+  </div>
+  <div class="powered-by">Powered by <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/" rel="noopener" target="_blank">NexT.Gemini</a>
+  </div>
+
+    </div>
+  </footer>
+
+  
+  <div class="toggle sidebar-toggle" role="button">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+  <div class="sidebar-dimmer"></div>
+  <div class="reading-progress-bar"></div>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/gitalk/1.8.0/gitalk.css" integrity="sha256-AJnUHL7dBv6PGaeyPQJcgQPDjt/Hn/PvYZde1iqfp8U=" crossorigin="anonymous">
+
+<script class="next-config" data-name="gitalk" type="application/json">{"enable":true,"github_id":"dongzhang0725","repo":"PhyloSuite","client_id":"55e7b2bd2c9d294158bf","client_secret":"b0716af44800887bfab50497c5e0309525a353b8","admin_user":"dongzhang0725","distraction_free_mode":true,"proxy":"https://cors-anywhere.azm.workers.dev/https://github.com/login/oauth/access_token","language":null,"js":{"url":"https://cdnjs.cloudflare.com/ajax/libs/gitalk/1.8.0/gitalk.min.js","integrity":"sha256-MVK9MGD/XJaGyIghSVrONSnoXoGh3IFxLw0zfvzpxR4="},"path_md5":"8a5410afb955b4b2f5f42533cbef26af"}</script>
+<script src="/dongzhang0725.github.io/js/third-party/comments/gitalk.js" defer></script>
+
+</body>
+</html>

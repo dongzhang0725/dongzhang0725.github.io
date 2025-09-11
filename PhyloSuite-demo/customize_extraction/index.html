@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222"><meta name="generator" content="Hexo 7.3.0">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/dongzhang0725.github.io/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/dongzhang0725.github.io/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/dongzhang0725.github.io/images/apple-touch-icon-next.png">
+  <link rel="mask-icon" href="/dongzhang0725.github.io/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/dongzhang0725.github.io/css/main.css">
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha256-VHqXKFhhMxcpubYf9xiWdCiojEbY9NexQ4jh8AxbvcM=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"dongzhang0725.github.io","root":"/dongzhang0725.github.io/","images":"/dongzhang0725.github.io/images","scheme":"Gemini","darkmode":false,"version":"8.25.0","exturl":false,"sidebar":{"position":"left","width_expanded":320,"width_dual_column":240,"display":"post","padding":18,"offset":12},"hljswrap":true,"codeblock":{"theme":{"light":"default","dark":"stackoverflow-dark"},"prism":{"light":"prism","dark":"prism-dark"},"copy_button":{"enable":false,"style":null},"fold":{"enable":false,"height":500},"language":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"duration":200,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"},"path":"/dongzhang0725.github.io/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/dongzhang0725.github.io/js/config.js" defer></script>
+
+    <meta name="description" content="When extracting sequences, you should use different settings for different data-types. PhyloSuite has five predefined data-types, Mitogenome, general, cox1, 16S and 18S, but you can easily add your ow">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Customizing the extraction">
+<meta property="og:url" content="https://dongzhang0725.github.io/PhyloSuite-demo/customize_extraction/index.html">
+<meta property="og:site_name" content="PhyloSuite">
+<meta property="og:description" content="When extracting sequences, you should use different settings for different data-types. PhyloSuite has five predefined data-types, Mitogenome, general, cox1, 16S and 18S, but you can easily add your ow">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://github.com/dongzhang0725/PhyloSuite_tutorial/blob/master/images/customize_extraction/open_gb.jpg?raw=true">
+<meta property="og:image" content="https://github.com/dongzhang0725/PhyloSuite_tutorial/blob/master/images/customize_extraction/general_extraction.jpg?raw=true">
+<meta property="og:image" content="https://github.com/dongzhang0725/PhyloSuite_tutorial/blob/master/images/customize_extraction/overview.jpg?raw=true">
+<meta property="og:image" content="https://github.com/dongzhang0725/PhyloSuite_tutorial/blob/master/images/customize_extraction/open_settings.jpg?raw=true">
+<meta property="og:image" content="https://github.com/dongzhang0725/PhyloSuite_tutorial/blob/master/images/customize_extraction/add_feature.jpg?raw=true">
+<meta property="og:image" content="https://github.com/dongzhang0725/PhyloSuite_tutorial/blob/master/images/customize_extraction/hover.jpg?raw=true">
+<meta property="og:image" content="https://github.com/dongzhang0725/PhyloSuite_tutorial/blob/master/images/customize_extraction/modify.jpg?raw=true">
+<meta property="og:image" content="https://github.com/dongzhang0725/PhyloSuite_tutorial/blob/master/images/customize_extraction/self_extract.jpg?raw=true">
+<meta property="article:published_time" content="2019-03-04T11:06:19.000Z">
+<meta property="article:modified_time" content="2023-01-02T07:46:35.212Z">
+<meta property="article:author" content="Dong Zhang">
+<meta property="article:tag" content="PyQT5">
+<meta property="article:tag" content="Python">
+<meta property="article:tag" content="Bioinformatics">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://github.com/dongzhang0725/PhyloSuite_tutorial/blob/master/images/customize_extraction/open_gb.jpg?raw=true">
+
+
+<link rel="canonical" href="https://dongzhang0725.github.io/PhyloSuite-demo/customize_extraction/">
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"en","comments":true,"permalink":"https://dongzhang0725.github.io/PhyloSuite-demo/customize_extraction/","path":"PhyloSuite-demo/customize_extraction/","title":"Customizing the extraction"}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>Customizing the extraction | PhyloSuite</title>
+  
+
+
+
+
+
+
+
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous" defer></script>
+<script src="/dongzhang0725.github.io/js/utils.js" defer></script><script src="/dongzhang0725.github.io/js/motion.js" defer></script><script src="/dongzhang0725.github.io/js/sidebar.js" defer></script><script src="/dongzhang0725.github.io/js/next-boot.js" defer></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-generator-searchdb/1.5.0/search.js" integrity="sha256-xFC6PJ82SL9b3WkGjFavNiA9gm5z6UBxWPiu4CYjptg=" crossorigin="anonymous" defer></script>
+<script src="/dongzhang0725.github.io/js/third-party/search/local-search.js" defer></script>
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  <noscript>
+    <link rel="stylesheet" href="/dongzhang0725.github.io/css/noscript.css">
+  </noscript>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <div class="column">
+      <header class="header" itemscope itemtype="http://schema.org/WPHeader"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="Toggle navigation bar" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/dongzhang0725.github.io/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <p class="site-title">PhyloSuite</p>
+      <i class="logo-line"></i>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger" aria-label="Search" role="button">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/dongzhang0725.github.io/" rel="section"><i class="fa fa-home fa-fw"></i>Home</a></li><li class="menu-item menu-item-documentation"><a href="/dongzhang0725.github.io/documentation/" rel="section"><i class="fa fa-navicon fa-fw"></i>documentation</a></li><li class="menu-item menu-item-installation"><a href="/dongzhang0725.github.io/installation/" rel="section"><i class="fa fa-download fa-fw"></i>installation</a></li><li class="menu-item menu-item-example"><a href="/dongzhang0725.github.io/example/" rel="section"><i class="fa fa-print fa-fw"></i>example</a></li><li class="menu-item menu-item-categories"><a href="/dongzhang0725.github.io/categories/" rel="section"><i class="fa fa-th fa-fw"></i>Categories</a></li><li class="menu-item menu-item-archives"><a href="/dongzhang0725.github.io/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>Archives</a></li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>Search
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+      <div class="search-header">
+        <span class="search-icon">
+          <i class="fa fa-search"></i>
+        </span>
+        <div class="search-input-container">
+          <input autocomplete="off" autocapitalize="off" maxlength="80"
+                placeholder="Searching..." spellcheck="false"
+                type="search" class="search-input">
+        </div>
+        <span class="popup-btn-close" role="button">
+          <i class="fa fa-times-circle"></i>
+        </span>
+      </div>
+      <div class="search-result-container">
+        <div class="search-result-icon">
+          <i class="fa fa-spinner fa-pulse fa-5x"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</header>
+        
+  
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          Table of Contents
+        </li>
+        <li class="sidebar-nav-overview">
+          Overview
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-GenBank-file-format"><span class="nav-text">1. GenBank file format</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-General-extraction"><span class="nav-text">2. General extraction</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-Customize-extraction"><span class="nav-text">3. Customize extraction</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-Extracting-with-customized-settings"><span class="nav-text">4. Extracting with customized settings</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5-Recommended-reading"><span class="nav-text">5. Recommended reading</span></a></li></ol></div>
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">Dong Zhang</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        <a href="/dongzhang0725.github.io/archives/">
+          <span class="site-state-item-count">7</span>
+          <span class="site-state-item-name">posts</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+          <a href="/dongzhang0725.github.io/categories/">
+        <span class="site-state-item-count">1</span>
+        <span class="site-state-item-name">categories</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+          <a href="/dongzhang0725.github.io/tags/">
+        <span class="site-state-item-count">3</span>
+        <span class="site-state-item-name">tags</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author animated">
+      <span class="links-of-author-item">
+        <a href="https://github.com/dongzhang0725/PhyloSuite" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;dongzhang0725&#x2F;PhyloSuite" rel="noopener me" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="mailto:dongzhang0725@gmail.com" title="E-Mail → mailto:dongzhang0725@gmail.com" rel="noopener me" target="_blank"><i class="fa fa-envelope fa-fw"></i>E-Mail</a>
+      </span>
+  </div>
+
+        </div>
+      </div>
+        <div class="back-to-top animated" role="button" aria-label="Back to top">
+          <i class="fa fa-arrow-up"></i>
+          <span>0%</span>
+        </div>
+    </div>
+
+    
+  </aside>
+
+
+    </div>
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="en">
+    <link itemprop="mainEntityOfPage" href="https://dongzhang0725.github.io/PhyloSuite-demo/customize_extraction/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/dongzhang0725.github.io/images/avatar.gif">
+      <meta itemprop="name" content="Dong Zhang">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="PhyloSuite">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="Customizing the extraction | PhyloSuite">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          Customizing the extraction
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+
+      <time title="Created: 2019-03-04 19:06:19" itemprop="dateCreated datePublished" datetime="2019-03-04T19:06:19+08:00">2019-03-04</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">Edited on</span>
+      <time title="Modified: 2023-01-02 15:46:35" itemprop="dateModified" datetime="2023-01-02T15:46:35+08:00">2023-01-02</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">In</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/dongzhang0725.github.io/categories/PhyloSuite-demo/" itemprop="url" rel="index"><span itemprop="name">PhyloSuite demo</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody"><p>When extracting sequences, you should use different settings for different data-types. PhyloSuite has five predefined data-types, Mitogenome, general, cox1, 16S and 18S, but you can easily add your own data-type extraction settings, suited to your data. </p>
+<p>Here I will demonstrate the process of making the extraction settings for the mitochondrial genome data-type.</p>
+<span id="more"></span>
+
+<h3 id="1-GenBank-file-format"><a href="#1-GenBank-file-format" class="headerlink" title="1. GenBank file format"></a>1. GenBank file format</h3><p>The GenBank file format (<code>Feature</code> section) is shown below (for detailed GenBank format please visit <a target="_blank" rel="noopener" href="https://www.ncbi.nlm.nih.gov/Sitemap/samplerecord.html">https://www.ncbi.nlm.nih.gov/Sitemap/samplerecord.html</a>):</p>
+<pre>
+FEATURES             Location/Qualifiers
+    source[<span id="feature" style="color: red">Feature</span>] 1..5028
+                    /organism[<span id="qualifier" style="color: red">Qualifier</span>]  ="Saccharomyces cerevisiae[<span id="value" style="color: red">Value or Name</span>]"
+                    /db_xref[<span style="color: red">Qualifier</span>]   ="taxon:4932[<span style="color: red">Value or Name</span>]"
+                    /chromosome[<span style="color: red">Qualifier</span>]="IX[<span style="color: red">Value or Name</span>]"
+                    /map[<span style="color: red">Qualifier</span>]       ="9[<span style="color: red">Value or Name</span>]"
+    CDS[<span style="color: red">Feature</span>]    1..206
+                    /product[<span style="color: red">Qualifier</span>]   ="TCP1-beta[<span style="color: red">Value or Name</span>]"
+</pre>
+
+<p>Three terms, Feature, Qualifier and Name (see above), are important for us to extract a sequence. After <a href="https://dongzhang0725.github.io/dongzhang0725.github.io/PhyloSuite-demo/five_ways_to_import/">importing</a > your sequences into PhyloSuite (see <a href="https://dongzhang0725.github.io/dongzhang0725.github.io/documentation/#4-3-3-1-Brief-example">this example</a> for how to select and download mitogenomes), you can open the sequence to check which features and qualifiers it contains.<br><img src="https://github.com/dongzhang0725/PhyloSuite_tutorial/blob/master/images/customize_extraction/open_gb.jpg?raw=true"></p>
+<h3 id="2-General-extraction"><a href="#2-General-extraction" class="headerlink" title="2. General extraction"></a>2. General extraction</h3><p>See <a href="https://dongzhang0725.github.io/dongzhang0725.github.io/documentation/#5-1-1-Brief-example">this brief demo</a> for how to operate the extraction function.</p>
+<p>By default, PhyloSuite provides settings for six data-types (loci): <code>Mitogenome</code>, <code>chloroplast genome</code>, <code>general</code>, <code>cox1</code>, <code>16S</code> and <code>18S</code>. You can inspect them via <code>Settings--&gt;GenBank File Extracting</code>. When you are not sure which data-type setting to use, you can choose <code>general</code>.</p>
+<p><img src="https://github.com/dongzhang0725/PhyloSuite_tutorial/blob/master/images/customize_extraction/general_extraction.jpg?raw=true"></p>
+<p>After the extraction, you can open <code>overview.csv</code> file to see the summary of this extraction.</p>
+<p>From this file, you can see the features that these data contain, and settings for the <code>general</code> data-type. In my example, you can see that many genes are synonymous (for example, COI, COX1 and COXI are synonymous); they can be unified in the following step.</p>
+<p><img src="https://github.com/dongzhang0725/PhyloSuite_tutorial/blob/master/images/customize_extraction/overview.jpg?raw=true"></p>
+<h3 id="3-Customize-extraction"><a href="#3-Customize-extraction" class="headerlink" title="3. Customize extraction"></a>3. Customize extraction</h3><p>For detailed description of the extraction settings, please refer <a href="https://dongzhang0725.github.io/dongzhang0725.github.io/documentation/#4-4-3-Features-Extract">here</a>.</p>
+<p>Based on the overview, now we can adjust the settings to suit our sequences.</p>
+<ol>
+<li>Click <code>gear</code> button to open the settings;</li>
+<li>Click <code>Current version</code> button, then select <code>Add new version</code>; you can name it <code>mtDNA</code> in the popup window.<br><img src="https://github.com/dongzhang0725/PhyloSuite_tutorial/blob/master/images/customize_extraction/open_settings.jpg?raw=true"></li>
+</ol>
+<p>You will see that only <code>rRNA</code> feature is predefined, so we can add more features according to the <code>overview.csv</code> file above. Click the add button, and then enter the feature name that you intend to include into your extraction. You can refer to “Features found in sequences” section in the overview file to decide which features to include (note that feature names are case-sensitive). Here, I added <code>CDS</code>, <code>tRNA</code> and <code>misc_feature</code>. Every time we add a feature, its default qualifiers are <code>gene</code>, <code>product</code> and <code>note</code>. Generally, they are sufficient to cover most cases, but you can add other qualifiers via the corresponding <code>add</code> button.</p>
+<p><img src="https://github.com/dongzhang0725/PhyloSuite_tutorial/blob/master/images/customize_extraction/add_feature.jpg?raw=true"></p>
+<p>Qualifiers are used to recognize gene names: PhyloSuite will search the <a href="#value">value&#x2F;name</a> of qualifiers one by one. In the example below (see screenshot), PhyloSuite will first search the <a href="#value">value&#x2F;name</a> of <code>gene</code> for <code>CDS</code>, if there is no <code>gene</code> qualifier, then it searches the <a href="#value">value&#x2F;name</a> of <code>product</code>, and finally the <a href="#value">value&#x2F;name</a> of <code>note</code>. If none of the specified qualifiers are found for the feature, it will be recorded in the <code>summary.csv</code> file.</p>
+<p><img src="https://github.com/dongzhang0725/PhyloSuite_tutorial/blob/master/images/customize_extraction/hover.jpg?raw=true"></p>
+<p>Finally, we need to unify synonymous gene names. In the extracted results folder (the one from the section 2 of this demo), go to <code>StatFiles</code> folder and open the <code>name_for_unification.csv</code> file.</p>
+<ol>
+<li>Modify gene aliases to the chosen standard name in the “New Name” column;</li>
+<li>Drag the modified “name_for_unification.csv” file and drop it into the area specified below (see screenshot).<br><img src="https://github.com/dongzhang0725/PhyloSuite_tutorial/blob/master/images/customize_extraction/modify.jpg?raw=true"></li>
+</ol>
+<p>Closing the settings window will save your parameters automatically. See also  <a href="https://dongzhang0725.github.io/dongzhang0725.github.io/PhyloSuite-demo/single-gene-phylogeny/#2-Sequence-extraction">https://dongzhang0725.github.io/dongzhang0725.github.io/PhyloSuite-demo/single-gene-phylogeny/#2-Sequence-extraction</a>.</p>
+<h3 id="4-Extracting-with-customized-settings"><a href="#4-Extracting-with-customized-settings" class="headerlink" title="4. Extracting with customized settings"></a>4. Extracting with customized settings</h3><p>Now we can use the customized setting to extract the sequences anew. The multiple gene name aliases should be unified in the extracted file (see screenshot).</p>
+<p><img src="https://github.com/dongzhang0725/PhyloSuite_tutorial/blob/master/images/customize_extraction/self_extract.jpg?raw=true"></p>
+<h3 id="5-Recommended-reading"><a href="#5-Recommended-reading" class="headerlink" title="5. Recommended reading"></a>5. Recommended reading</h3><p>Other demo tutorials can be seen <a href="https://dongzhang0725.github.io/dongzhang0725.github.io/archives/">here</a>.</p>
+
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/dongzhang0725.github.io/tags/PyQT5/" rel="tag"># PyQT5</a>
+              <a href="/dongzhang0725.github.io/tags/Python/" rel="tag"># Python</a>
+              <a href="/dongzhang0725.github.io/tags/Bioinformatics/" rel="tag"># Bioinformatics</a>
+          </div>
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/dongzhang0725.github.io/PhyloSuite-demo/multi-gene-phylogeny/" rel="prev" title="Muti-gene phylogeny">
+                  <i class="fa fa-angle-left"></i> Muti-gene phylogeny
+                </a>
+            </div>
+            <div class="post-nav-item">
+                <a href="/dongzhang0725.github.io/PhyloSuite-demo/how-to-configure-plugins/" rel="next" title="How to configure plugins">
+                  How to configure plugins <i class="fa fa-angle-right"></i>
+                </a>
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+    <div class="comments gitalk-container"></div>
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+  <div class="copyright">
+    &copy; 
+    <span itemprop="copyrightYear">2025</span>
+    <span class="with-love">
+      <i class="user"></i>
+    </span>
+    <span class="author" itemprop="copyrightHolder">Dong Zhang</span>
+  </div>
+  <div class="powered-by">Powered by <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/" rel="noopener" target="_blank">NexT.Gemini</a>
+  </div>
+
+    </div>
+  </footer>
+
+  
+  <div class="toggle sidebar-toggle" role="button">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+  <div class="sidebar-dimmer"></div>
+  <div class="reading-progress-bar"></div>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/gitalk/1.8.0/gitalk.css" integrity="sha256-AJnUHL7dBv6PGaeyPQJcgQPDjt/Hn/PvYZde1iqfp8U=" crossorigin="anonymous">
+
+<script class="next-config" data-name="gitalk" type="application/json">{"enable":true,"github_id":"dongzhang0725","repo":"PhyloSuite","client_id":"55e7b2bd2c9d294158bf","client_secret":"b0716af44800887bfab50497c5e0309525a353b8","admin_user":"dongzhang0725","distraction_free_mode":true,"proxy":"https://cors-anywhere.azm.workers.dev/https://github.com/login/oauth/access_token","language":null,"js":{"url":"https://cdnjs.cloudflare.com/ajax/libs/gitalk/1.8.0/gitalk.min.js","integrity":"sha256-MVK9MGD/XJaGyIghSVrONSnoXoGh3IFxLw0zfvzpxR4="},"path_md5":"bf8ae17daa3b285b142975655c7ca93d"}</script>
+<script src="/dongzhang0725.github.io/js/third-party/comments/gitalk.js" defer></script>
+
+</body>
+</html>

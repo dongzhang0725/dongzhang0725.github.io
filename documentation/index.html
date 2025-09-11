@@ -1,0 +1,1166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222"><meta name="generator" content="Hexo 7.3.0">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/dongzhang0725.github.io/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/dongzhang0725.github.io/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/dongzhang0725.github.io/images/apple-touch-icon-next.png">
+  <link rel="mask-icon" href="/dongzhang0725.github.io/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/dongzhang0725.github.io/css/main.css">
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha256-VHqXKFhhMxcpubYf9xiWdCiojEbY9NexQ4jh8AxbvcM=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"dongzhang0725.github.io","root":"/dongzhang0725.github.io/","images":"/dongzhang0725.github.io/images","scheme":"Gemini","darkmode":false,"version":"8.25.0","exturl":false,"sidebar":{"position":"left","width_expanded":320,"width_dual_column":240,"display":"post","padding":18,"offset":12},"hljswrap":true,"codeblock":{"theme":{"light":"default","dark":"stackoverflow-dark"},"prism":{"light":"prism","dark":"prism-dark"},"copy_button":{"enable":false,"style":null},"fold":{"enable":false,"height":500},"language":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"duration":200,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"},"path":"/dongzhang0725.github.io/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/dongzhang0725.github.io/js/config.js" defer></script>
+
+    <meta name="description" content="Download PDF  PhyloSuite An integrated and scalable desktop platform for streamlined molecular sequence data management and evolutionary phylogenetics studies  Homepage: https:&#x2F;&#x2F;dongzhang0725.github.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="PhyloSuite">
+<meta property="og:url" content="https://dongzhang0725.github.io/documentation/index.html">
+<meta property="og:site_name" content="PhyloSuite">
+<meta property="og:description" content="Download PDF  PhyloSuite An integrated and scalable desktop platform for streamlined molecular sequence data management and evolutionary phylogenetics studies  Homepage: https:&#x2F;&#x2F;dongzhang0725.github.">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://github.com/dongzhang0725/PhyloSuite_tutorial/blob/master/images/manual/all_flowchart_english.jpg?raw=true">
+<meta property="og:image" content="https://github.com/dongzhang0725/PhyloSuite_tutorial/blob/master/images/manual/mainwindow.jpg?raw=true">
+<meta property="og:image" content="https://github.com/dongzhang0725/PhyloSuite_tutorial/blob/master/images/manual/hover_root.jpg?raw=true">
+<meta property="og:image" content="https://github.com/dongzhang0725/PhyloSuite_tutorial/blob/master/images/manual/hover_workfolder.jpg?raw=true">
+<meta property="og:image" content="https://github.com/dongzhang0725/PhyloSuite_tutorial/blob/master/images/manual/hover_results_folder.jpg?raw=true">
+<meta property="og:image" content="https://github.com/dongzhang0725/PhyloSuite_tutorial/blob/master/images/manual/double_click.jpg?raw=true">
+<meta property="og:image" content="https://github.com/dongzhang0725/PhyloSuite_tutorial/blob/master/images/manual/hover_menubar.jpg?raw=true">
+<meta property="og:image" content="https://github.com/dongzhang0725/PhyloSuite_tutorial/blob/master/images/manual/download_seq_en.jpg?raw=true">
+<meta property="og:image" content="https://github.com/dongzhang0725/PhyloSuite_tutorial/blob/master/images/manual/search_ncbi.jpg?raw=true">
+<meta property="og:image" content="https://github.com/dongzhang0725/PhyloSuite_tutorial/blob/master/images/manual/IQ-TREE-autoinput.jpg?raw=true">
+<meta property="og:image" content="https://github.com/dongzhang0725/PhyloSuite_tutorial/blob/master/images/manual/IQ-TREE_en.jpg?raw=true">
+<meta property="og:image" content="https://github.com/dongzhang0725/PhyloSuite_tutorial/blob/master/images/manual/extract_demo.jpg?raw=true">
+<meta property="og:image" content="https://github.com/dongzhang0725/PhyloSuite_tutorial/blob/master/images/manual/mafft_demo.jpg?raw=true">
+<meta property="og:image" content="https://github.com/dongzhang0725/PhyloSuite_tutorial/blob/master/images/manual/MACSE_demo.jpg?raw=true">
+<meta property="og:image" content="https://github.com/dongzhang0725/PhyloSuite_tutorial/blob/master/images/manual/trimAl_demo.jpg?raw=true">
+<meta property="og:image" content="https://github.com/dongzhang0725/PhyloSuite_tutorial/blob/master/images/manual/HmmCleaner_demo.jpg?raw=true">
+<meta property="og:image" content="https://github.com/dongzhang0725/PhyloSuite_tutorial/blob/master/images/manual/gblocks_demo.jpg?raw=true">
+<meta property="og:image" content="https://github.com/dongzhang0725/PhyloSuite_tutorial/blob/master/images/manual/concatenation_demo.jpg?raw=true">
+<meta property="og:image" content="https://github.com/dongzhang0725/PhyloSuite_tutorial/blob/master/images/manual/convertFMT_demo.jpg?raw=true">
+<meta property="og:image" content="https://github.com/dongzhang0725/PhyloSuite_tutorial/blob/master/images/manual/modelfinder_demo_2.jpg?raw=true">
+<meta property="og:image" content="https://github.com/dongzhang0725/PhyloSuite_tutorial/blob/master/images/manual/pf_demo_2.jpg?raw=true">
+<meta property="og:image" content="https://github.com/dongzhang0725/PhyloSuite_tutorial/blob/master/images/manual/part_edit1.jpg?raw=true">
+<meta property="og:image" content="https://github.com/dongzhang0725/PhyloSuite_tutorial/blob/master/images/manual/part_edit2.jpg?raw=true">
+<meta property="og:image" content="https://github.com/dongzhang0725/PhyloSuite_tutorial/blob/master/images/manual/part_edit3.jpg?raw=true">
+<meta property="og:image" content="https://github.com/dongzhang0725/PhyloSuite_tutorial/blob/master/images/manual/part_edit4.jpg?raw=true">
+<meta property="og:image" content="https://github.com/dongzhang0725/PhyloSuite_tutorial/blob/master/images/manual/part_edit5.jpg?raw=true">
+<meta property="og:image" content="https://github.com/dongzhang0725/PhyloSuite_tutorial/blob/master/images/manual/iqtree_demo.jpg?raw=true">
+<meta property="og:image" content="https://github.com/dongzhang0725/PhyloSuite_tutorial/blob/master/images/manual/mrbayes_demo.jpg?raw=true">
+<meta property="og:image" content="https://github.com/dongzhang0725/PhyloSuite_tutorial/blob/master/images/manual/mb_cipres.jpg?raw=true">
+<meta property="og:image" content="https://github.com/dongzhang0725/PhyloSuite_tutorial/blob/master/images/manual/stop_mb_run.jpg?raw=true">
+<meta property="og:image" content="https://github.com/dongzhang0725/PhyloSuite_tutorial/blob/master/images/manual/mb_continue.jpg?raw=true">
+<meta property="og:image" content="https://github.com/dongzhang0725/PhyloSuite_tutorial/blob/master/images/manual/flowchart_en.jpg?raw=true">
+<meta property="og:image" content="https://github.com/dongzhang0725/PhyloSuite_tutorial/blob/master/images/manual/flowchart_settings.jpg?raw=true">
+<meta property="og:image" content="https://github.com/dongzhang0725/PhyloSuite_tutorial/blob/master/images/manual/annotations.jpg?raw=true">
+<meta property="og:image" content="https://github.com/dongzhang0725/PhyloSuite_tutorial/blob/master/images/manual/parseANNT_demo.jpg?raw=true">
+<meta property="og:image" content="https://github.com/dongzhang0725/PhyloSuite_tutorial/blob/master/images/manual/compare_table_demo.jpg?raw=true">
+<meta property="og:image" content="https://github.com/dongzhang0725/PhyloSuite_tutorial/blob/master/images/manual/compare_table_notorg.jpg?raw=true">
+<meta property="og:image" content="https://github.com/dongzhang0725/PhyloSuite_tutorial/blob/master/images/manual/RSCU_demo.jpg?raw=true">
+<meta property="og:image" content="https://github.com/dongzhang0725/PhyloSuite_tutorial/blob/master/images/manual/update_failed.jpg?raw=true">
+<meta property="og:image" content="https://github.com/dongzhang0725/PhyloSuite_tutorial/blob/master/images/manual/open_phylosuite.jpg?raw=true">
+<meta property="og:image" content="https://github.com/dongzhang0725/PhyloSuite_tutorial/blob/master/images/manual/exe_mb_terminal.jpg?raw=true">
+<meta property="og:image" content="https://github.com/dongzhang0725/PhyloSuite_tutorial/blob/master/images/manual/mrbayes_error_win.png?raw=true">
+<meta property="article:published_time" content="2019-08-11T13:24:04.000Z">
+<meta property="article:modified_time" content="2023-01-02T07:46:35.214Z">
+<meta property="article:author" content="Dong Zhang">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://github.com/dongzhang0725/PhyloSuite_tutorial/blob/master/images/manual/all_flowchart_english.jpg?raw=true">
+
+
+<link rel="canonical" href="https://dongzhang0725.github.io/documentation/">
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":false,"lang":"en","comments":true,"permalink":"https://dongzhang0725.github.io/documentation/index.html","path":"documentation/index.html","title":""}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title> | PhyloSuite
+</title>
+  
+
+
+
+
+
+
+
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous" defer></script>
+<script src="/dongzhang0725.github.io/js/utils.js" defer></script><script src="/dongzhang0725.github.io/js/motion.js" defer></script><script src="/dongzhang0725.github.io/js/sidebar.js" defer></script><script src="/dongzhang0725.github.io/js/next-boot.js" defer></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-generator-searchdb/1.5.0/search.js" integrity="sha256-xFC6PJ82SL9b3WkGjFavNiA9gm5z6UBxWPiu4CYjptg=" crossorigin="anonymous" defer></script>
+<script src="/dongzhang0725.github.io/js/third-party/search/local-search.js" defer></script>
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  <noscript>
+    <link rel="stylesheet" href="/dongzhang0725.github.io/css/noscript.css">
+  </noscript>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <div class="column">
+      <header class="header" itemscope itemtype="http://schema.org/WPHeader"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="Toggle navigation bar" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/dongzhang0725.github.io/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <p class="site-title">PhyloSuite</p>
+      <i class="logo-line"></i>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger" aria-label="Search" role="button">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/dongzhang0725.github.io/" rel="section"><i class="fa fa-home fa-fw"></i>Home</a></li><li class="menu-item menu-item-documentation"><a href="/dongzhang0725.github.io/documentation/" rel="section"><i class="fa fa-navicon fa-fw"></i>documentation</a></li><li class="menu-item menu-item-installation"><a href="/dongzhang0725.github.io/installation/" rel="section"><i class="fa fa-download fa-fw"></i>installation</a></li><li class="menu-item menu-item-example"><a href="/dongzhang0725.github.io/example/" rel="section"><i class="fa fa-print fa-fw"></i>example</a></li><li class="menu-item menu-item-categories"><a href="/dongzhang0725.github.io/categories/" rel="section"><i class="fa fa-th fa-fw"></i>Categories</a></li><li class="menu-item menu-item-archives"><a href="/dongzhang0725.github.io/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>Archives</a></li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>Search
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+      <div class="search-header">
+        <span class="search-icon">
+          <i class="fa fa-search"></i>
+        </span>
+        <div class="search-input-container">
+          <input autocomplete="off" autocapitalize="off" maxlength="80"
+                placeholder="Searching..." spellcheck="false"
+                type="search" class="search-input">
+        </div>
+        <span class="popup-btn-close" role="button">
+          <i class="fa fa-times-circle"></i>
+        </span>
+      </div>
+      <div class="search-result-container">
+        <div class="search-result-icon">
+          <i class="fa fa-spinner fa-pulse fa-5x"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</header>
+        
+  
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          Table of Contents
+        </li>
+        <li class="sidebar-nav-overview">
+          Overview
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#1-Introduction"><span class="nav-text">1. Introduction</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-1-Background"><span class="nav-text">1.1. Background</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1-2-Functions"><span class="nav-text">1.2. Functions</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#2-License-Disclaimer"><span class="nav-text">2. License &amp; Disclaimer</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#2-1-License"><span class="nav-text">2.1. License</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-2-Disclaimer"><span class="nav-text">2.2. Disclaimer</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#3-Operating-systems-and-installation"><span class="nav-text">3. Operating systems and installation</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#3-1-Install-compiled-PhyloSuite"><span class="nav-text">3.1. Install compiled PhyloSuite</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#3-1-1-Windows"><span class="nav-text">3.1.1. Windows</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-1-2-Mac-OSX-nbsp-Linux"><span class="nav-text">3.1.2. Mac OSX &amp; Linux</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-2-Install-using-pip"><span class="nav-text">3.2. Install using pip</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#4-Management"><span class="nav-text">4. Management</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#4-1-Interface-operation"><span class="nav-text">4.1. Interface operation</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#4-1-1-Brief-example"><span class="nav-text">4.1.1. Brief example</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-2-Plugins-installation"><span class="nav-text">4.2. Plugins installation</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#4-2-1-Brief-example"><span class="nav-text">4.2.1. Brief example</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-3-Import-Files"><span class="nav-text">4.3. Import Files</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#4-3-1-GenBank-file"><span class="nav-text">4.3.1. GenBank file</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#4-3-1-1-Brief-example"><span class="nav-text">4.3.1.1. Brief example</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-3-2-Other-types-of-files"><span class="nav-text">4.3.2. Other types of files</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-3-3-Search-in-the-NCBI"><span class="nav-text">4.3.3. Search in the NCBI</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#4-3-3-1-Brief-example"><span class="nav-text">4.3.3.1. Brief example</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-4-GenBank-file-settings"><span class="nav-text">4.4. GenBank file settings</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#4-4-1-Lineage-recognition"><span class="nav-text">4.4.1. Lineage recognition</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-4-2-Information-display-and-modification"><span class="nav-text">4.4.2. Information display and modification</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-4-3-Features-extraction"><span class="nav-text">4.4.3. Features extraction</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#4-4-3-1-Brief-example"><span class="nav-text">4.4.3.1. Brief example</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-5-File-operation"><span class="nav-text">4.5. File operation</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#4-5-1-Input-files"><span class="nav-text">4.5.1. Input files</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#4-5-1-1-Autodetect-input-files"><span class="nav-text">4.5.1.1. Autodetect input files</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#4-5-1-2-Specify-input-files"><span class="nav-text">4.5.1.2. Specify input files</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-5-2-Output-files"><span class="nav-text">4.5.2. Output files</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#4-5-2-1-Brief-example"><span class="nav-text">4.5.2.1. Brief example</span></a></li></ol></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#5-Data-analysis"><span class="nav-text">5. Data analysis</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#5-1-Extract-GenBank-file"><span class="nav-text">5.1. Extract GenBank file</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#5-1-1-Brief-example"><span class="nav-text">5.1.1. Brief example</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#5-2-MAFFT"><span class="nav-text">5.2. MAFFT</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#5-2-1-Brief-example"><span class="nav-text">5.2.1. Brief example</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#5-3-MACSE"><span class="nav-text">5.3. MACSE</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#5-3-1-Brief-example"><span class="nav-text">5.3.1. Brief example</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#5-4-trimAl"><span class="nav-text">5.4. trimAl</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#5-4-1-Brief-example"><span class="nav-text">5.4.1. Brief example</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#5-5-HmmCleaner"><span class="nav-text">5.5. HmmCleaner</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#5-5-1-Brief-example"><span class="nav-text">5.5.1. Brief example</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#5-6-Gblocks"><span class="nav-text">5.6. Gblocks</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#5-6-1-Brief-example"><span class="nav-text">5.6.1. Brief example</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#5-7-Concatenate-Sequences"><span class="nav-text">5.7. Concatenate Sequences</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#5-7-1-Brief-example"><span class="nav-text">5.7.1. Brief example</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#5-8-Convert-format"><span class="nav-text">5.8. Convert format</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#5-8-1-Brief-example"><span class="nav-text">5.8.1. Brief example</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#5-9-ModelFinder"><span class="nav-text">5.9. ModelFinder</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#5-9-1-Brief-example"><span class="nav-text">5.9.1. Brief example</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#5-10-PartitionFinder"><span class="nav-text">5.10. PartitionFinder</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#5-10-1-Brief-example"><span class="nav-text">5.10.1. Brief example</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5-10-2-Brief-tutorial-for-partition-editor"><span class="nav-text">5.10.2. Brief tutorial for partition editor</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#5-11-IQ-TREE"><span class="nav-text">5.11. IQ-TREE</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#5-11-1-Brief-example"><span class="nav-text">5.11.1. Brief example</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#5-12-MrBayes"><span class="nav-text">5.12. MrBayes</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#5-12-1-Brief-example"><span class="nav-text">5.12.1. Brief example</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#5-13-Flowchart"><span class="nav-text">5.13. Flowchart</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#5-13-1-Brief-example"><span class="nav-text">5.13.1. Brief example</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#5-14-Mitogenome"><span class="nav-text">5.14. Mitogenome</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#5-14-1-Parse-annotations"><span class="nav-text">5.14.1. Parse annotations</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#5-14-1-1-Brief-example"><span class="nav-text">5.14.1.1. Brief example</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5-14-2-Compare-tables"><span class="nav-text">5.14.2. Compare tables</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#5-14-2-1-Brief-example"><span class="nav-text">5.14.2.1. Brief example</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5-14-3-Draw-RSCU-figure"><span class="nav-text">5.14.3. Draw RSCU figure</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#5-14-3-1-Brief-example"><span class="nav-text">5.14.3.1. Brief example</span></a></li></ol></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#6-Citations-and-codes"><span class="nav-text">6. Citations and codes</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#7-Troubleshooting"><span class="nav-text">7. Troubleshooting</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#7-1-Update-failed-how-to-revert-to-previous-settings-and-plugins"><span class="nav-text">7.1. Update failed: how to revert to previous settings and plugins</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#7-2-PhyloSuite-run-failed"><span class="nav-text">7.2. PhyloSuite run failed</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#7-3-MrBayes-does-not-work"><span class="nav-text">7.3. MrBayes does not work</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#7-4-PhyloSuite-get-stuck"><span class="nav-text">7.4. PhyloSuite get stuck</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#8-Acknowledgements"><span class="nav-text">8. Acknowledgements</span></a></li></ol></div>
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">Dong Zhang</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        <a href="/dongzhang0725.github.io/archives/">
+          <span class="site-state-item-count">7</span>
+          <span class="site-state-item-name">posts</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+          <a href="/dongzhang0725.github.io/categories/">
+        <span class="site-state-item-count">1</span>
+        <span class="site-state-item-name">categories</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+          <a href="/dongzhang0725.github.io/tags/">
+        <span class="site-state-item-count">3</span>
+        <span class="site-state-item-name">tags</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author animated">
+      <span class="links-of-author-item">
+        <a href="https://github.com/dongzhang0725/PhyloSuite" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;dongzhang0725&#x2F;PhyloSuite" rel="noopener me" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="mailto:dongzhang0725@gmail.com" title="E-Mail → mailto:dongzhang0725@gmail.com" rel="noopener me" target="_blank"><i class="fa fa-envelope fa-fw"></i>E-Mail</a>
+      </span>
+  </div>
+
+        </div>
+      </div>
+        <div class="back-to-top animated" role="button" aria-label="Back to top">
+          <i class="fa fa-arrow-up"></i>
+          <span>0%</span>
+        </div>
+    </div>
+
+    
+  </aside>
+
+
+    </div>
+
+    <div class="main-inner page posts-expand">
+
+
+    
+    
+    
+    <div class="post-block" lang="en"><header class="post-header">
+
+<h1 class="post-title" itemprop="name headline">
+</h1>
+
+<div class="post-meta-container">
+</div>
+
+</header>
+
+      
+      
+      
+      <div class="post-body">
+          <p><a id="download" target="_blank" rel="noopener" href="https://raw.githubusercontent.com/dongzhang0725/PhyloSuite/master/PhyloSuite/manual/Manual.pdf"><i class="fa fa-download"></i><span> Download PDF</span> </a></p>
+<center style="font-size:30px"><strong>PhyloSuite</strong></center>
+<center style="font-size:17px"><strong>An integrated and scalable desktop platform for streamlined molecular sequence data management and evolutionary phylogenetics studies</strong></center>
+<br>
+<center><strong>Homepage: </strong><a href="https://dongzhang0725.github.io">https://dongzhang0725.github.io</a></center>
+<center><strong>Examples and test run: </strong><a href="https://dongzhang0725.github.io/dongzhang0725.github.io/example/">https://dongzhang0725.github.io/dongzhang0725.github.io/example/</a></center>
+<center><strong>Demo tutorials: </strong><a href="https://dongzhang0725.github.io/dongzhang0725.github.io/archives/">https://dongzhang0725.github.io/dongzhang0725.github.io/archives/</a></center>
+<br>
+<center style="font-size:17px">Dong Zhang, Fangluan Gao, Ivan Jakovlić, Hong Zou, Jin Zhang, Wen X. Li and Gui T. Wang</center>
+<center style="font-size:17px">Version 1.2.3 || October 18, 2022</center>
+
+<hr>
+
+<h1 id="1-Introduction"><a href="#1-Introduction" class="headerlink" title="1. Introduction"></a>1. Introduction</h1><h2 id="1-1-Background"><a href="#1-1-Background" class="headerlink" title="1.1. Background"></a>1.1. <em>Background</em></h2><p>Advancements in the next-generation sequencing (NGS) technologies have resulted in a huge increase in the amount of genetic data available through public databases. While this opens a multitude of research possibilities, retrieving and managing such large amounts of data may be difficult and time-consuming for researchers who are not computer-savvy. Therefore, multifunctional, workflow-type and batch-processing enabled software packages, which can save researchers a lot of time, are becoming increasingly needed by a broad range of evolutionary biologists. PhyloSuite was designed to fill that gap: a user-friendly workflow desktop platform dedicated to streamlining molecular sequence data management and evolutionary phylogenetics studies.</p>
+<h2 id="1-2-Functions"><a href="#1-2-Functions" class="headerlink" title="1.2. Functions"></a>1.2. <em>Functions</em></h2><p>PhyloSuite is a user-friendly stand-alone GUI-based software written in Python 3.6.7 and PyQT5. The functions are:</p>
+<ul>
+<li>retrieving, extracting, organizing and managing molecular sequence data, including GenBank entries, nucleotide and amino acid sequences, and sequences annotated in Word documents; </li>
+<li>batch alignment of sequences with MAFFT, for which we added a codon alignment (translation align) mode; </li>
+<li>batch alignment of protein-coding sequences or refinement of alignments with MACSE;</li>
+<li>batch optimization of ambiguously aligned regions using trimAl, HmmCleaner or Gblocks; </li>
+<li>batch conversion of alignment formats (FASTA, PHYLIP, PAML, AXT and NEXUS); </li>
+<li>concatenation of multiple alignments into a single dataset and preparation of a partition file for downstream analyses; </li>
+<li>selection of the best-fit evolutionary model and&#x2F;or partitioning scheme using ModelFinder or PartitionFinder; </li>
+<li>phylogeny reconstruction using IQ-TREE (maximum likelihood) and&#x2F;or MrBayes (Bayesian inference); </li>
+<li>linking the functions from (ii) to (viii) into a workflow; </li>
+<li>annotating phylogenetic trees in the iTOL webtool using datasets generated by the (i) function; </li>
+<li>comprehensive bioinformatic analysis of mitochondrial genomes (mitogenomes); </li>
+<li>visualization and editing of sequences using a MEGA-like sequence viewer; </li>
+<li>storing, organizing and visualizing data and results of each analysis in the PhyloSuite workspace.<br><img src="https://github.com/dongzhang0725/PhyloSuite_tutorial/blob/master/images/manual/all_flowchart_english.jpg?raw=true"></li>
+</ul>
+<h1 id="2-License-Disclaimer"><a href="#2-License-Disclaimer" class="headerlink" title="2. License &amp; Disclaimer"></a>2. License &amp; Disclaimer</h1><h2 id="2-1-License"><a href="#2-1-License" class="headerlink" title="2.1. License"></a>2.1. <em>License</em></h2><p>PhyloSuite is a free software, and you are welcome to redistribute it under certain conditions. It is released under the GNU General Public License, Version 3. See <a target="_blank" rel="noopener" href="http://www.gnu.org/licenses/gpl-3.0.en.html">http://www.gnu.org/licenses/gpl-3.0.en.html</a>.</p>
+<h2 id="2-2-Disclaimer"><a href="#2-2-Disclaimer" class="headerlink" title="2.2. Disclaimer"></a>2.2. <em>Disclaimer</em></h2><p>This program comes with absolutely no warranty. No guarantee of the functionality of this software, or of the accuracy of results obtained, is expressed or implied. Please inspect your results carefully.</p>
+<h1 id="3-Operating-systems-and-installation"><a href="#3-Operating-systems-and-installation" class="headerlink" title="3. Operating systems and installation"></a>3. Operating systems and installation</h1><h2 id="3-1-Install-compiled-PhyloSuite"><a href="#3-1-Install-compiled-PhyloSuite" class="headerlink" title="3.1. Install compiled PhyloSuite"></a>3.1. <em>Install compiled PhyloSuite</em></h2><p>Installers for all platforms can be downloaded from <a target="_blank" rel="noopener" href="https://github.com/dongzhang0725/PhyloSuite/releases">https://github.com/dongzhang0725/PhyloSuite/releases</a>.</p>
+<p><a id="download" target="_blank" rel="noopener" href="https://github.com/dongzhang0725/PhyloSuite/releases"><i class="fa fa-download"></i><span> Download Now</span> </a></p>
+<p><a id="download" target="_blank" rel="noopener" href="http://phylosuite.jushengwu.com/dongzhang0725.github.io/installation/#Chinese_download_link"><i class="fa fa-download"></i><span> Chinese download links</span> </a></p>
+<h3 id="3-1-1-Windows"><a href="#3-1-1-Windows" class="headerlink" title="3.1.1. Windows"></a>3.1.1. Windows</h3><p>Windows 7, 8 and 10 are supported, just double click the <code>PhyloSuite_xxx_win_setup.exe</code> to install, and run “PhyloSuite.exe” file after the installation. If the installation fails, download <code>PhyloSuite_xxx_Win.rar</code>, unzip it, and run PhyloSuite directly from this folder.</p>
+<h3 id="3-1-2-Mac-OSX-nbsp-Linux"><a href="#3-1-2-Mac-OSX-nbsp-Linux" class="headerlink" title="3.1.2. Mac OSX &amp;&nbsp;Linux"></a>3.1.2. Mac OSX &amp;&nbsp;Linux</h3><p>Unzip <code>PhyloSuite_xxx_Mac.zip/PhyloSuite_xxx_Linux.tar.gz</code> to anywhere you like, and double click “PhyloSuite” (in PhyloSuite folder) to start, or use the following command: </p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">cd path/to/PhyloSuite</span><br><span class="line">./PhyloSuite</span><br></pre></td></tr></table></figure>
+<p>If you encounter an error of “permission denied”, try to use the following command:</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">chmod -R 755 path/to/PhyloSuite(folder)</span><br></pre></td></tr></table></figure>
+
+<p><span style="color:red">Note that both 64 bit and 32 bit Windows is supported (Windows 7 and above), whereas only 64 bit has been tested in Linux (Ubuntu 14.04.1 and above) and Mac OSX (macOS Sierra version 10.12.3 and above).</span></p>
+<h2 id="3-2-Install-using-pip"><a href="#3-2-Install-using-pip" class="headerlink" title="3.2. Install using pip"></a>3.2. <em>Install using pip</em></h2><p>First, Python (version 3.6) should be installed and added to the environment variable in your computer. Then open the terminal and type:</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pip install PhyloSuite</span><br></pre></td></tr></table></figure>
+
+<p>It will take some time to install. If it installs successfully, PhyloSuite will be automatically added to the environment variables. Then open the terminal again and type:<br> <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">PhyloSuite</span><br></pre></td></tr></table></figure></p>
+<p>If the above <code>pip</code> command failed to install PhyloSuite, you can use compiled PhyloSuite (see <code>section 1</code>) or find and download the source codes here (<a target="_blank" rel="noopener" href="https://pypi.org/project/PhyloSuite/#files">https://pypi.org/project/PhyloSuite/#files</a> or <a target="_blank" rel="noopener" href="https://github.com/dongzhang0725/PhyloSuite">https://github.com/dongzhang0725/PhyloSuite</a>), and install it manually.</p>
+<h1 id="4-Management"><a href="#4-Management" class="headerlink" title="4. Management"></a>4. Management</h1><h2 id="4-1-Interface-operation"><a href="#4-1-Interface-operation" class="headerlink" title="4.1. Interface operation"></a>4.1. <em>Interface operation</em></h2><p><span id="operation"><img src="https://github.com/dongzhang0725/PhyloSuite_tutorial/blob/master/images/manual/mainwindow.jpg?raw=true"></span></p>
+<p>PhyloSuite uses a workplace for data management (although you don’t have to use it), which is set when you first use the program. Later you can change it through the <code>WorkPlace</code> menu. There are two kinds of root folders in each workplace, <strong>GenBank_File</strong> and <strong>Other_File</strong>. The <strong>GenBank_File</strong> folder is used to manage GenBank files and deposit the results of related analyses. The <strong>Other_File</strong> folder is used to manage other types of sequence files and Word annotation files (nucleotide and amino acid sequences), as well as deposit related results. Below (one level down) from the root folders, you will find work folders, which contain the associated results folders (another level down). In each root folder, PhyloSuite will add <code>files</code> and <code>flowchart</code> work folders by default. You can create a new work folder to deposit your new work (recommended) by mousing over the root folder (GenBank_File and Other_File), either via the green ‘plus’ icon on the right or via the context (right-click) menu. You can remove a work folder via the context menu of the selected folder or by pressing the <code>Delete</code> button in your keyboard. Deleted folders are stored in, and can be recovered from, the <code>recycled</code> folder of the root folder. Once a folder is deleted from the recycle bin, it cannot be recovered. However, it is recommended to delete folders&#x2F;files from your local file system, as that will enable you to recover them using the inbuilt operating system file recovery function. <span style="color:red">Note that almost all of the selected settings, such as the window size, position, parameter settings, etc., will be remembered automatically when you close the windows (i.e., there is no need to save the settings before you close a window).</span></p>
+<p>You can access a brief example demo of each function via the <code>question mark</code> button in the window of the corresponding function.</p>
+<h3 id="4-1-1-Brief-example"><a href="#4-1-1-Brief-example" class="headerlink" title="4.1.1. Brief example"></a>4.1.1. Brief example</h3><ul>
+<li>Clicking <code>GenBank_File</code> or <code>Other_File</code> root folders will display the home page of PhyloSuite. Hover mouse over the root folder to view <code>Add Work Folder</code> and <code>Open in Explorer</code> buttons; the former can be used to create new work folders, whereas the latter opens the folder in your local file explorer;<br><img src="https://github.com/dongzhang0725/PhyloSuite_tutorial/blob/master/images/manual/hover_root.jpg?raw=true"></li>
+<li>Selecting any of your work folders (one level below the root folders) will display a list of your saved datasets. Lists of GenBank records are stored in the <code>GenBank_File</code> root folder, and sequence files are stored in the <code>Other_File</code> root folder. Hover mouse over work folders to see <code>Open in Explorer</code> and <code>GenBank File Information Display Setting</code> buttons; the later can be used to control which data (for each ID) will be displayed on the main page.<br><img src="https://github.com/dongzhang0725/PhyloSuite_tutorial/blob/master/images/manual/hover_workfolder.jpg?raw=true"></li>
+<li>Selecting results folder (one level below the work folders) will display the results. Hover mouse over results folder to see <code>Open in Explorer button</code>;<br><img src="https://github.com/dongzhang0725/PhyloSuite_tutorial/blob/master/images/manual/hover_results_folder.jpg?raw=true"></li>
+<li>Double-clicking any of the above folders (root, work and results) will open the folder in your local file explorer;<br><img src="https://github.com/dongzhang0725/PhyloSuite_tutorial/blob/master/images/manual/double_click.jpg?raw=true"></li>
+<li>Hovering mouse over menu bar to select functions to use.<br><img src="https://github.com/dongzhang0725/PhyloSuite_tutorial/blob/master/images/manual/hover_menubar.jpg?raw=true"></li>
+</ul>
+<h2 id="4-2-Plugins-installation"><a href="#4-2-Plugins-installation" class="headerlink" title="4.2. Plugins installation"></a>4.2. <em>Plugins installation</em></h2><p><span id="plugins">PhyloSuite</span> integrates eight plugin programs:</p>
+<table>
+<thead>
+<tr>
+<th>Programs</th>
+<th>Executable File</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><a target="_blank" rel="noopener" href="https://mafft.cbrc.jp/alignment/software/" title="MAFFT">MAFFT v7.313</a></td>
+<td>mafft.bat</td>
+<td>Multiple alignment of amino acid or nucleotide sequences</td>
+</tr>
+<tr>
+<td><a target="_blank" rel="noopener" href="http://www.iqtree.org/" title="IQ-TREE">IQ-TREE v. 1.6.8</a></td>
+<td>iqtree.exe</td>
+<td>Efficient software for phylogenomic inference</td>
+</tr>
+<tr>
+<td><a target="_blank" rel="noopener" href="http://mrbayes.sourceforge.net/" title="MrBayes">MrBayes 3.2.6</a></td>
+<td>mrbayes_x64.exe or <br>mrbayes_x86.exe</td>
+<td>Bayesian inference of phylogeny</td>
+</tr>
+<tr>
+<td><a target="_blank" rel="noopener" href="http://www.robertlanfear.com/partitionfinder/" title="PartitionFinder2">PartitionFinder2</a></td>
+<td>partitionfinder folder</td>
+<td>Selection of best-fit partitioning schemes and models of molecular evolution for phylogenetic analyses</td>
+</tr>
+<tr>
+<td><a target="_blank" rel="noopener" href="http://molevol.cmima.csic.es/castresana/Gblocks/Gblocks_documentation.html" title="Gblocks">Gblocks 0.91b</a></td>
+<td>Gblocks.exe</td>
+<td>Selection of conserved blocks from multiple alignments for use in phylogenetic analysis</td>
+</tr>
+<tr>
+<td><a target="_blank" rel="noopener" href="https://www.r-project.org/" title="Rscript">Rscript 3.4.4</a></td>
+<td>Rscript.exe</td>
+<td>Required  for drawing RSCU figure</td>
+</tr>
+<tr>
+<td><a target="_blank" rel="noopener" href="https://www.anaconda.com/download/" title="Python 2.7">Python 2.7</a></td>
+<td>python.exe</td>
+<td>Required by PartitionFinder2</td>
+</tr>
+<tr>
+<td><a target="_blank" rel="noopener" href="https://www.ncbi.nlm.nih.gov/genbank/tbl2asn2/" title="tbl2asn">tbl2asn</a></td>
+<td>tbl2asn.exe</td>
+<td>Automates the creation of sequence records for submission to GenBank (Windows only)</td>
+</tr>
+<tr>
+<td><a target="_blank" rel="noopener" href="https://www.mpich.org/">MPICH2</a></td>
+<td>mpirun or mpiexec</td>
+<td>A high-performance and widely portable implementation of the Message Passing Interface (MPI) standard that enables a multi-thread MrBayes operation (Linux only)</td>
+</tr>
+<tr>
+<td><a target="_blank" rel="noopener" href="https://bioweb.supagro.inra.fr/macse/index.php?menu=releases">MACSE</a></td>
+<td>macse_v2.03.jar</td>
+<td>Multiple Alignment of Coding Sequences Accounting for Frameshifts and Stop Codons.</td>
+</tr>
+<tr>
+<td><a target="_blank" rel="noopener" href="https://www.java.com/en/download/">Java (JRE &gt; 1.5)</a></td>
+<td>java.exe</td>
+<td>Required by MACSE</td>
+</tr>
+<tr>
+<td><a target="_blank" rel="noopener" href="http://trimal.cgenomics.org/downloads">trimAl</a></td>
+<td>trimal.exe</td>
+<td>A tool for automated alignment trimming</td>
+</tr>
+<tr>
+<td><a target="_blank" rel="noopener" href="https://metacpan.org/pod/distribution/Bio-MUST-Apps-HmmCleaner/bin/HmmCleaner.pl">HmmCleaner</a></td>
+<td>HmmCleaner.pl</td>
+<td>Removing low similarity segments from your MSA</td>
+</tr>
+<tr>
+<td><a target="_blank" rel="noopener" href="https://www.perl.org/get.html">Perl 5</a></td>
+<td>perl.exe</td>
+<td>Required by HmmCleaner</td>
+</tr>
+</tbody></table>
+<p>These plugins can be installed in <span style="color: #C72591"><code>Settings--&gt;Plugins</code></span>.<br>This can be done in three ways:</p>
+<ol>
+<li>If Python 2.7, Perl 5, Java (JRE &gt; 1.5), HmmCleaner.pl and trimAl have been installed and added to the environment variable ($PATH), they will be automatically detected by PhyloSuite.</li>
+<li>If you already have these programs installed on your computer, you can specify the executable file directly (as indicated in the table above). <span style="color: red">Note that for PartitionFinder2 you should specify the ‘partitionfinder-2.1.1’ folder.<span></li>
+<li>If you don’t have these programs, you can use the download button to download and install them automatically. <span style="color: red">Note: Anaconda Python distribution will download for Python 2.7 (because it contains all of the dependencies required by PartitionFinder2: numpy, pandas, pytables, pyparsing, scipy and sklearn). As it is around 500M in size, so your download may take some time.<span></li>
+</ol>
+<p><span style="color: red">Note that the paths of these plugin programs should not contain special characters (^, {, @, etc.).<span></p>
+<h3 id="4-2-1-Brief-example"><a href="#4-2-1-Brief-example" class="headerlink" title="4.2.1. Brief example"></a>4.2.1. Brief example</h3><p>See <a href="https://dongzhang0725.github.io/dongzhang0725.github.io/PhyloSuite-demo/how-to-configure-plugins/">How to configure plugins</a >.  </p>
+<h2 id="4-3-Import-Files"><a href="#4-3-Import-Files" class="headerlink" title="4.3. Import Files"></a>4.3. <em>Import Files</em></h2><p>PhyloSuite accepts numerous file formats and extensions:</p>
+<ul>
+<li>GenBank file: *.gb, *.gbk, *.gbf, *.gbff</li>
+<li>fasta: *.fas, *.fasta</li>
+<li>phylip: *.phy, *.phylip</li>
+<li>nexus: *.nex, *.nxs, *.nexus</li>
+<li>Word document file: *.docx</li>
+</ul>
+<p>For the demo tutorial of how to import sequences to PhyloSuite, please see <a href="https://dongzhang0725.github.io/dongzhang0725.github.io/PhyloSuite-demo/five_ways_to_import/">five ways to import data into PhyloSuite</a >.</p>
+<h3 id="4-3-1-GenBank-file"><a href="#4-3-1-GenBank-file" class="headerlink" title="4.3.1. GenBank file"></a>4.3.1. GenBank file</h3><p><font color="red">TIP: GenBank file should be in the standard format (see <a target="_blank" rel="noopener" href="https://www.ncbi.nlm.nih.gov/Sitemap/samplerecord.html" title="GenBank Flat File Format">detail</a></font>).<br></p>
+<p>PhyloSuite provides three ways to import GenBank files into the work folder of the <strong>GenBank_File</strong> root folder:</p>
+<ol>
+<li>By using the <code>Import file(s) or ID(s)</code> function under the <strong>File</strong> menu or <code>Open file(s)</code> in the main <a href="#operation">display area</a>. This mode supports the import of complete GenBank files and lists of GenBank accession numbers (IDs), which will then be automatically retrieved from the GenBank by PhyloSuite;</li>
+<li>Drag-and-drop GenBank format files into the <a href="#operation">display area</a>. </li>
+<li>Copy GenBank file contents and paste them into the <a href="#operation">display area</a>.</li>
+</ol>
+<h4 id="4-3-1-1-Brief-example"><a href="#4-3-1-1-Brief-example" class="headerlink" title="4.3.1.1. Brief example"></a>4.3.1.1. <span id="import_gb">Brief</span> example</h4><ol>
+<li>Select any of the work folders (here I chose files);</li>
+<li>Click Open file(s)&#x2F;Input ID(s) to open the input window.</li>
+<li>Copy the IDs into the text box (spaces, line breaks, tabs, etc. are supported as separators);</li>
+<li>Enter your email (tell NCBI who is downloading the sequences);</li>
+<li>Click Start to download.</li>
+</ol>
+<p><img src="https://github.com/dongzhang0725/PhyloSuite_tutorial/blob/master/images/manual/download_seq_en.jpg?raw=true"></p>
+<p>After importing GenBank files, there are options to play with, accessible via the context (right-click) menu, if not specified otherwise:</p>
+<ul>
+<li>Files (IDs) can be added to the dataset that you are working on either by drag&#x2F;drop or via the context menu (”Add file”).</li>
+<li>The annotation of GenBank files can be standardized (this includes the gene names unification, discussed above) via the <code>File --&gt; Standardize GenBank file</code> function or via the context menu as <code>Standardization</code>. This function opens a new pop-up window, displaying eventual errors and warnings in your dataset, in which you may manually edit the files (mitogenome data only). These usually involve missing genes or non-standardized annotation. For the latter, you may click on the gear button (Settings) in the upper right corner of this window, which opens the <a href="#extract">GenBank File Extracting settings</a> window discussed above. By ticking the Set NCR threshold box, you may prompt PhyloSuite to recognize the non-coding regions as well (this allows you extract them later using the <code>extract</code> function). You can set the threshold for the size (in bp) of the NCRs you wish to be recognized.</li>
+<li>For mitogenomic data, a <code>Predict tRNA (LEU and SER)</code> button is available, via which you may reannotate ambiguously annotated tRNAs with the help of ARWEN.</li>
+<li>You can select the information contained within the files you wish to display via the <code>Settings --&gt; GenBank File Information Display</code>. Examples are: ID, organism, lineages, references, source, etc. (see <a href="#display">Information Display</a> section).</li>
+<li>The IDs containing identical sequences (<span style="color: red">duplicates</span>) can be identified and automatically deleted using the <code>Highlight Identical Sequences</code> button (star-shaped, bottom&#x2F;right)</li>
+<li>You can use the button adjacent to it, <code>Find Records by IDs</code>, to search for specific IDs.</li>
+<li>Each ID can be opened with any text viewer program (Notepad for example) through the context menu, and then manually edited.</li>
+<li>Selected IDs can be exported (context menu) as a GenBank (.gb) file, or a table (.csv) containing the information displayed in the GUI.</li>
+<li>Selected IDs can be imported into a different work folder via drag-and-drop.</li>
+</ul>
+<h3 id="4-3-2-Other-types-of-files"><a href="#4-3-2-Other-types-of-files" class="headerlink" title="4.3.2. Other types of files"></a>4.3.2. Other types of files</h3><p>Similar to GenBank files, PhyloSuite provides two ways to import alignment files or Microsoft Word document files into the work folder under <strong>Other_File</strong> root folder:</p>
+<ol>
+<li>Using <code>Import file(s) or ID(s)</code> function under the <strong>File</strong> menu or <code>Open file(s)</code> in the <a href="#operation">display area</a>.</li>
+<li>Drag-and-drop the files into the  <a href="#operation">display area</a>.</li>
+</ol>
+<p>After importing files, again there are many options to play with:</p>
+<ul>
+<li>For multiple sequence files, the number of sequences in the file and alignment status (aligned or non-aligned) will be displayed.</li>
+<li>Files and sequences can be deleted, exported, or added.</li>
+<li>The alignment can be directly used as input file for any (relevant) plug-in function: <code>MAFFT</code>, <code>Gblocks</code>, <code>Concatenate Sequence</code>, <code>Convert Sequence Format</code>, <code>Sequence Viewer</code>, <code>Partitionfinder2</code>, <code>ModelFinder</code>, <code>IQ-TREE</code>, and <code>MrBayes</code> functions.</li>
+<li><code>Parse Annotation</code> function is available only for *.docx files.</li>
+<li>All alignments could be managed in <code>Sequence Viewer</code>, they can be <em>reversed</em>, <em>complement</em>, <em>reverse complement</em> and <em>pruned</em>.</li>
+</ul>
+<p><span style="color: red">Note that FASTA format files can also be imported into any work folder under the GenBank_File root folder, in which case the file will be automatically converted to the GenBank file format (see <a href="https://dongzhang0725.github.io/dongzhang0725.github.io/PhyloSuite-demo/five_ways_to_import/">five ways to import data into PhyloSuite</a > for details).</span></p>
+<h3 id="4-3-3-Search-in-the-NCBI"><a href="#4-3-3-Search-in-the-NCBI" class="headerlink" title="4.3.3. Search in the NCBI"></a>4.3.3. Search in the NCBI</h3><p>You can search sequences from the NCBI’s Nucleotide and Protein databases via the <code>File --&gt; Search in NCBI</code> function.</p>
+<h4 id="4-3-3-1-Brief-example"><a href="#4-3-3-1-Brief-example" class="headerlink" title="4.3.3.1. Brief example"></a>4.3.3.1. Brief example</h4><ol>
+<li>   Open <code>File--&gt;Search in NCBI</code> in the menu bar;</li>
+<li>   Enter keywords (<code>Monogenea[ORGN] AND (mitochondrion[TITL] OR mitochondrial[TITL]) AND 10000:50000[SLEN]</code>);</li>
+<li>   Enter your email to tell NCBI who is downloading the sequences;</li>
+<li>   Press Enter key or click search button to start searching;</li>
+<li>   After the search is completed, select a work folder to deposit the sequences; selecting a work folder within the <code>GenBank_File</code> root folder will download sequences in the GenBank format, whereas selecting a work folder within the <code>Other_File</code> root folder will download sequences in the FASTA format;</li>
+<li>   Click the <code>Download</code> button to start downloading.<br><img src="https://github.com/dongzhang0725/PhyloSuite_tutorial/blob/master/images/manual/search_ncbi.jpg?raw=true"></li>
+</ol>
+<h2 id="4-4-GenBank-file-settings"><a href="#4-4-GenBank-file-settings" class="headerlink" title="4.4. GenBank file settings"></a>4.4. <em>GenBank file settings</em></h2><p>The format of GenBank file is show below (for detailed GenBank format please visit <a target="_blank" rel="noopener" href="https://www.ncbi.nlm.nih.gov/Sitemap/samplerecord.html">https://www.ncbi.nlm.nih.gov/Sitemap/samplerecord.html</a>):</p>
+<pre>
+FEATURES             Location/Qualifiers
+    source[<span id="feature" style="color: red">Feature</span>] 1..5028
+                    /organism[<span id="qualifier" style="color: red">Qualifier</span>]  ="Saccharomyces cerevisiae[<span id="value" style="color: red">Value or Name</span>]"
+                    /db_xref[<span style="color: red">Qualifier</span>]   ="taxon:4932[<span style="color: red">Value or Name</span>]"
+                    /chromosome[<span style="color: red">Qualifier</span>]="IX[<span style="color: red">Value or Name</span>]"
+                    /map[<span style="color: red">Qualifier</span>]       ="9[<span style="color: red">Value or Name</span>]"
+    CDS[<span style="color: red">Feature</span>]    1..206
+                    /product[<span style="color: red">Qualifier</span>]   ="TCP1-beta[<span style="color: red">Value or Name</span>]"
+</pre>
+
+<h3 id="4-4-1-Lineage-recognition"><a href="#4-4-1-Lineage-recognition" class="headerlink" title="4.4.1. Lineage recognition"></a>4.4.1. Lineage recognition</h3><p><span id="Recognition">This</span> can be set in <code>Settings--&gt;Settings--&gt;Taxonomy Recognition</code>.<br>You can define the identifier of each <a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Taxonomic_rank" title="taxonomic rank">taxonomic rank</a>. It supports the <a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Wildcard_character" title="Wildcard character">wildcard character</a> <code>*</code>, for example, most of the family names end with “dae”, thus you can define the family taxonomic rank as <code>*dae</code>. However, in some taxonomic groups, rank names don’t necessarily follow the same rule, as for example in the Malacostraca, Hoplocarida and Peracarida both end with “carida”, but they are a subclass and a superorder respectively. In this case, you’d better use the full name as the identifier. Additionally, you can exclude terms when you use the wildcard character; for example, if you use <code>*oda</code> to recognize the orders in crustaceans, you will have to exclude Arthropoda by adding <code>-Arthropoda</code> in a new row of the order column, because it is a phylum.</p>
+<p>&#8195;Taxonomic ranks can be added or deleted. For example, you can add a <code>Suborder</code> through the <code>Add Column</code> button, or delete any taxonomic rank by selecting it and clicking the <code>Delete Column</code> button. Please ensure that taxonomic ranks are arranged (left to right) from high to low level. You can change the order of taxonomic ranks by dragging them. Whenever you change the settings, you can update the table through the <code>Refresh table</code> option accessed via the right-click menu in the display area.</p>
+<p>&#8195;Note that taxonomic lineages of each ID&#x2F;species listed in the <a href="#operation">display area</a> (GenBank_File workspace) are automatically recognized from GenBank files. If you wish, you may replace them with taxonomic data from the NCBI’s Taxonomy database (<a target="_blank" rel="noopener" href="https://www.ncbi.nlm.nih.gov/taxonomy">https://www.ncbi.nlm.nih.gov/taxonomy</a>) or WoRMS database (<a target="_blank" rel="noopener" href="http://www.marinespecies.org/index.php">http://www.marinespecies.org/index.php</a>) via the context (right-click) menu of the selected ID&#x2F;species. </p>
+<h3 id="4-4-2-Information-display-and-modification"><a href="#4-4-2-Information-display-and-modification" class="headerlink" title="4.4.2. Information display and modification"></a>4.4.2. Information display and modification</h3><p><span id="display">For</span> each work folder (of GenBank_File) you can define which information will be displayed. This can be set in <code>Settings--&gt;GenBank File Information Display</code> (you should select a work folder before) or click the <code>GenBank File Information Display Setting</code> button to the right of the name of each GenBank_File work folder.</p>
+<p>There are numerous data in GenBank files that can be displayed, so PhyloSuite classifies them into four sections: Annotations, Lineages, Reference and Sources (<a href="#qualifier">qualifiers</a> from source feature).</p>
+<table>
+<thead>
+<tr>
+<th>Annotations</th>
+<th>Lineages</th>
+<th>Reference</th>
+<th>Sources</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>ID</td>
+<td>Class</td>
+<td>author(s)</td>
+<td>host</td>
+</tr>
+<tr>
+<td>Length</td>
+<td>Order</td>
+<td>title(s)</td>
+<td>specimen_voucher</td>
+</tr>
+<tr>
+<td>AT%</td>
+<td>Superfamily</td>
+<td>journal(s)</td>
+<td>collection_date</td>
+</tr>
+<tr>
+<td>Name</td>
+<td>Family</td>
+<td>pubmed ID(s)</td>
+<td>isolation_source</td>
+</tr>
+<tr>
+<td>Organism</td>
+<td>Subfamily</td>
+<td>comment(s)</td>
+<td>country</td>
+</tr>
+<tr>
+<td>Definition</td>
+<td>Genus</td>
+<td></td>
+<td>collected_by</td>
+</tr>
+<tr>
+<td>Date</td>
+<td>…</td>
+<td></td>
+<td>organelle</td>
+</tr>
+<tr>
+<td>Keywords</td>
+<td></td>
+<td></td>
+<td>note</td>
+</tr>
+<tr>
+<td>Molecule type</td>
+<td></td>
+<td></td>
+<td>mol_type</td>
+</tr>
+<tr>
+<td>Topology</td>
+<td></td>
+<td></td>
+<td>strain</td>
+</tr>
+<tr>
+<td>Accessions</td>
+<td></td>
+<td></td>
+<td>db_xref</td>
+</tr>
+<tr>
+<td>Sequence version</td>
+<td></td>
+<td></td>
+<td>…</td>
+</tr>
+<tr>
+<td>Source</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Latest modified</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody></table>
+<p><span style="color: red">Note that the information for <code>Lineages</code> and <code>Sources</code> is variable. <code>Lineages</code> can be configured (see <a href="#Recognition">Lineage Recognition</a>). All of the qualifiers in the <code>source</code> <a href="#feature">feature</a> of GenBank files from all IDs in the <a href="#operation">work folder</a> will be presented as available options. In this way, the available options for <code>Source</code> are dependent on the GenBank files in this work folder.</span></p>
+<p>Additionally, some of the information can be modified by double-clicking the corresponding cell. For example, there may be some errors in the lineage names, which you can correct in the <a href="#operation">display area</a>. The new name will then be used in <a href="#extracter">GenBank File Extracter</a> and other functions. Fields that cannot be modified are “ID”, “Length”, “AT%”, “State”, “Date”, “Latest modified”, “author(s)”, “title(s)”, “journal(s)”, “pubmed ID(s)”, “comment(s)”, “Keywords”, “Molecule type”, “Topology”, “Accessions”, “Sequence version”, “Source”, “State”.</p>
+<h3 id="4-4-3-Features-extraction"><a href="#4-4-3-Features-extraction" class="headerlink" title="4.4.3. Features extraction"></a>4.4.3. Features extraction</h3><p><span id="extract">This</span> is a flexible function, details of which can be set in <code>Settings--&gt;GenBank File Extracting</code>.<br>There are three main steps:</p>
+<ul>
+<li>First, you can define which <a href="#feature">features</a> you wish to extract, such as <strong>CDS</strong>, <strong>rRNA</strong> and <strong>tRNA</strong> etc. </li>
+<li>Second, you can define the value of a GenBank file <a href="#qualifier">qualifiers</a> that is to be used as the name of a feature. For example, you can select to extract only the value of the qualifier <code>product</code> for <strong>rRNA</strong>, and simultaneously select to extract the value of the qualifiers <code>gene</code> and <code>product</code> for <strong>CDS</strong>. In this case, PhyloSuite will first search the <a href="#value">value&#x2F;name</a> of <code>gene</code> for CDS, if there is no <code>gene</code> qualifier it will search the <a href="#value">value&#x2F;name</a> of <code>product</code> (<span style="color:red">note that qualifiers can be reordered by dragging</span>). If none of the specified qualifiers are found for features, it will be recorded in a table file when using the <a href="#extracter">GenBank File Extracter</a> function, or marked as an error when using the Standardization function.</li>
+<li>Finally, you can uniformize the annotation of your dataset by replacing the <a href="#value">values&#x2F;names</a> searched in the previous step via the <code>Names unification</code> table. The ‘Old Name’ will be replaced with the ‘New Name’ if found in the corresponding qualifiers when using <a href="#extracter">GenBank File Extracter</a> or Standardization functions. If you wish to extract only a subset of features (genes) for which <a href="#value">value&#x2F;name</a> are available in this table, you may do so by checking the <code>Only extract these genes</code> checkbox. This table can be exported, or imported (<code>export/import settings</code> function below the table) from a comma-separated table (*.csv). There is a convenient way to uniformize names: if you extract genes without any settings for the first time, a “name_for_unification.csv” file will be generated, which can be used to set the new names and then imported into the settings (“csv” format is mandatory). <span style="color:red">Note that values&#x2F;names of all qualifiers of all features are included in a single table.</span></li>
+</ul>
+<p>By default, PhyloSuite provides settings for six data types (loci): Mitogenome, chloroplast genome, general, cox1, 16S and 18S. You may add more data types as desired and switch between them via the <code>Current version</code> button (bottom&#x2F;left). You are allowed to associate different settings with each data type. The three features (CDS, tRNA and rRNA) of the Mitogenome data type are fixed, so they cannot be deleted, but new features can be added. If you are not sure which data type to use, you can select <code>general</code> and then adjust the settings according to your needs.</p>
+<h4 id="4-4-3-1-Brief-example"><a href="#4-4-3-1-Brief-example" class="headerlink" title="4.4.3.1. Brief example"></a>4.4.3.1. Brief example</h4><p>Please see <a href="https://dongzhang0725.github.io/dongzhang0725.github.io/PhyloSuite-demo/customize_extraction/">https://dongzhang0725.github.io/dongzhang0725.github.io/PhyloSuite-demo/customize_extraction&#x2F;</a>.</p>
+<h2 id="4-5-File-operation"><a href="#4-5-File-operation" class="headerlink" title="4.5. File operation"></a>4.5. <em>File operation</em></h2><h3 id="4-5-1-Input-files"><a href="#4-5-1-Input-files" class="headerlink" title="4.5.1. Input files"></a>4.5.1. Input files</h3><p><span id="input">For</span> input files for the functions implemented in PhyloSuite, you can either allow the software to <strong>autodetect</strong> them from workplace or you can <strong>specify input files</strong> yourself. </p>
+<h4 id="4-5-1-1-Autodetect-input-files"><a href="#4-5-1-1-Autodetect-input-files" class="headerlink" title="4.5.1.1. Autodetect input files"></a>4.5.1.1. Autodetect input files</h4><p><span id="autodetect">PhyloSuite</span> can autodetect and prepare input files for each function. For example, the <code>IQ-TREE</code> function accepts the results of <code>Concatenate Sequence (concatenate_results)</code>, <code>Partitionfinder2 (PartFind_results)</code>, <code>ModelFinder (ModelFinder_results)</code> and the <code>alignment file</code> in <code>Other_File</code>.<br>This function could be triggered in three ways:</p>
+<ol>
+<li>If you open <strong>IQ-TREE</strong> with the listed folders or alignment files selected, they will auto load to <strong>IQ-TREE</strong>.<br><br><img src="https://github.com/dongzhang0725/PhyloSuite_tutorial/blob/master/images/manual/IQ-TREE-autoinput.jpg?raw=true"></li>
+<li>Every time when you open the <strong>IQ-TREE</strong>, PhyloSuite will search the entire workplace, and sort all acceptable input files for <strong>IQ-TREE</strong>.<br><img src="https://github.com/dongzhang0725/PhyloSuite_tutorial/blob/master/images/manual/IQ-TREE_en.jpg?raw=true"></li>
+<li>If you are in the interface of the <strong>IQ-TREE</strong> without an input file, clicking on the input box shall open the selection from the step 2.</li>
+</ol>
+<p>The relationships of input files and functions are summarized below:</p>
+<table>
+<thead>
+<tr>
+<th>Function</th>
+<th>Input Files</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>IQ-TREE</td>
+<td>concatenate_results, PartFind_results, ModelFinder_results and alignment file</td>
+</tr>
+<tr>
+<td>MrBayes</td>
+<td>PartFind_results, ModelFinder_results and alignment file</td>
+</tr>
+<tr>
+<td>ModelFinder</td>
+<td>concatenate_results and alignment file</td>
+</tr>
+<tr>
+<td>PartitionFinder2</td>
+<td>concatenate_results</td>
+</tr>
+<tr>
+<td>MAFFT</td>
+<td>extract_results and alignment file</td>
+</tr>
+<tr>
+<td>MACSE</td>
+<td>mafft_results, extract_results and alignment file</td>
+</tr>
+<tr>
+<td>Gblocks</td>
+<td>MACSE_results, mafft_results, concatenate_results and alignment file</td>
+</tr>
+<tr>
+<td>trimAl</td>
+<td>MACSE_results, mafft_results, concatenate_results and alignment file</td>
+</tr>
+<tr>
+<td>HmmCleaner</td>
+<td>MACSE_results, mafft_results, concatenate_results and alignment file</td>
+</tr>
+<tr>
+<td>Convert Format</td>
+<td>MACSE_results, mafft_results, Gblocks_results, trimAl_results, HmmCleaner_results and alignment file</td>
+</tr>
+<tr>
+<td>Concatenate Sequence</td>
+<td>MACSE_results, mafft_results, Gblocks_results, trimAl_results, HmmCleaner_results and alignment file</td>
+</tr>
+</tbody></table>
+<p>Alignment file here refers to the alignment files listed in the <strong>Other_File</strong> root folder.<br>For results folder names refer to <a href="#Output">Output Files</a></p>
+<h4 id="4-5-1-2-Specify-input-files"><a href="#4-5-1-2-Specify-input-files" class="headerlink" title="4.5.1.2. Specify input files"></a>4.5.1.2. Specify input files</h4><p>There are two ways:</p>
+<ol>
+<li>Drag files into the “Input” box;</li>
+<li>Click the ‘open folder’ icon to the right of the input box.</li>
+</ol>
+<h3 id="4-5-2-Output-files"><a href="#4-5-2-Output-files" class="headerlink" title="4.5.2. Output files"></a>4.5.2. Output files</h3><p><span id="Output">The</span> results of all the functions will be automatically saved in the workplace. If you have selected a work folder, then the results will be saved to that work folder. If you haven’t selected one, the results will be saved to <code>GenBank_File/files</code> or <code>Other_File/files</code>. You may also change the results folder name, as well as select another work folder to deposit your results, via the down-arrow of the <code>Start</code> button.</p>
+<p>Functions and default results folders:</p>
+<table>
+<thead>
+<tr>
+<th>Function</th>
+<th>Results folder</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>IQ-TREE</td>
+<td>IQtree_results</td>
+</tr>
+<tr>
+<td>MrBayes</td>
+<td>MrBayes_results</td>
+</tr>
+<tr>
+<td>ModelFinder</td>
+<td>ModelFinder_results</td>
+</tr>
+<tr>
+<td>PartitionFinder2</td>
+<td>PartFind_results</td>
+</tr>
+<tr>
+<td>MAFFT</td>
+<td>mafft_results</td>
+</tr>
+<tr>
+<td>MACSE</td>
+<td>MACSE_results</td>
+</tr>
+<tr>
+<td>Gblocks</td>
+<td>Gblocks_results</td>
+</tr>
+<tr>
+<td>trimAl</td>
+<td>trimAl_results</td>
+</tr>
+<tr>
+<td>HmmCleaner</td>
+<td>HmmCleaner_results</td>
+</tr>
+<tr>
+<td>Convert Format</td>
+<td>convertFmt_results</td>
+</tr>
+<tr>
+<td>Concatenate Sequence</td>
+<td><span id="concatenate_results">concatenate_results</span></td>
+</tr>
+<tr>
+<td>Draw RSCU figure</td>
+<td>RSCUfig_results</td>
+</tr>
+<tr>
+<td>Compare Table</td>
+<td>comp_tbl_results</td>
+</tr>
+<tr>
+<td>Flowchart</td>
+<td>Flowchart_reports</td>
+</tr>
+</tbody></table>
+<h4 id="4-5-2-1-Brief-example"><a href="#4-5-2-1-Brief-example" class="headerlink" title="4.5.2.1. Brief example"></a>4.5.2.1. Brief example</h4><p>Please see <a href="https://dongzhang0725.github.io/dongzhang0725.github.io/PhyloSuite-demo/quick_start/#7-Get-the-results">here</a>. </p>
+<h1 id="5-Data-analysis"><a href="#5-Data-analysis" class="headerlink" title="5. Data analysis"></a>5. Data analysis</h1><h2 id="5-1-Extract-GenBank-file"><a href="#5-1-Extract-GenBank-file" class="headerlink" title="5.1. Extract GenBank file"></a>5.1. <em>Extract GenBank file</em></h2><p><span id="extracter">The</span> input file for this function can be loaded only by selecting IDs in the <a href="#operation">display area</a> of the work folder under the <a href="#operation">GenBank_File root folder</a>. For the results, please see the <a href="#Output">Output Files</a> section.</p>
+<p>There are two modes for extraction, <code>Single loc.</code> mode will extract the entire sequence but ignore annotation and other features, which is suitable for single locus, such as 18S, cox1 and 28S etc.; <code>Custom</code> mode allows you to select or edit the type of sequence and features that you wish to extract (see <a href="#extract">GenBank File Extracting settings</a>).</p>
+<p>What it can do:</p>
+<ul>
+<li>Extract genes defined (selected) in the <a href="#extract">GenBank File Extracting settings</a> and save them in the fasta format. For example, if you select to extract <code>CDS</code>, <code>tRNA</code> and <code>rRNA</code> <a href="#feature">features</a>, this function will extract these features from all selected GenBank files and store them in correspondingly named folders (CDS, tRNA, rRNA). Additionally, <code>CDS</code> feature will be split into two folders: ‘CDS_AA’ folder contains the amino acid sequences extracted from the <code>translation</code> <a href="#qualifier">qualifier</a>, whereas ‘CDS_NUC’ folder contains the nucleotide sequences. For the <a href="#extract">Mitogenome</a> version, there is an additional “self-translated_AA” folder that contains the amino acid sequences translated from the nucleotide sequences (CDS) by the PhyloSuite. <span style="color:red">Note that there may exist duplicated genes within one ID, in which case PhyloSuite will number the duplicated gene names in the order they occur. For example, if there are three <code>cox1</code> genes, then they will be saved as <code>cox1.fas</code>, <code>cox1_copy2.fas</code> and <code>cox1_copy3.fas</code></span>. Additionaly, PhyloSuite also provides <code>Resolve gene duplicates</code> function (available in <code>Parameters</code> tab) to automatically identify and remove duplicated genes.</li>
+<li>Extract overlapping and intergenic regions.</li>
+<li>Generate statistics files and files used for other analyses: <ul>
+<li>Generates an extraction overview file (<code>overview.csv</code>), which records the data type settings used for extraction, all features found in the sequences, missing features or qualifiers, and genes found in each species.</li>
+<li>The information about the species (IDs) included in the dataset, including organism name, lineages, A&#x2F;T&#x2F;C&#x2F;G content, and AT&#x2F;GC skewness. [<span style="color: red">StatFiles&#x2F;used_species.csv</span>]</li>
+<li>A name table for editing the <code>Names unification</code> table in the <a href="#extract">GenBank File Extracting settings</a>. Using this table, you can modify the names in the ‘New Name’ column and then import it into the <code>Names unification</code> table. This table is extremely useful when extracting genes for the first time. [<span style="color: red">StatFiles&#x2F;name_for_unification.csv</span>] </li>
+<li>If <code>Only extract these genes</code> is checked and none of the qualifier values conform to the name in <code>Names unification</code> table, then these values will be recorded in the <code>name_not_included.csv</code> table. [<span style="color: red">StatFiles&#x2F;name_not_included.csv</span>]</li>
+<li>Overall statistics of the mitogenome, including nucleotide composition of the whole genome, protein-coding genes (PCGs), rRNA genes and tRNA genes. [<span style="color: red">StatFiles&#x2F;used_species.csv, Mitogenome version</span>]</li>
+<li>Initial and stop codon, nucleotide content, skewness as well as length statistics for each PCG and rRNA genes. [<span style="color: red">StatFiles&#x2F;geneStat.csv, Mitogenome version</span>]</li>
+<li>Nucleotide skewness for each codon site of PCGs. [<span style="color: red">StatFiles&#x2F;CDS&#x2F;[PCGsCodonSkew.csv | firstCodonSkew.csv | secondCodonSkew.csv | thirdCodonSkew.csv], Mitogenome version</span>]</li>
+<li>Nucleotide content and skewness of individual elements and the complete mitogenome of all species (IDs) (see Fig. 2 in <a target="_blank" rel="noopener" href="https://parasitesandvectors.biomedcentral.com/articles/10.1186/s13071-017-2404-1">https://parasitesandvectors.biomedcentral.com/articles/10.1186/s13071-017-2404-1</a> and Fig. 1 in <a target="_blank" rel="noopener" href="https://doi.org/10.1186/s12862-018-1249-3">https://doi.org/10.1186/s12862-018-1249-3</a>) [<span style="color: red">StatFiles&#x2F;geom_line.csv, Mitogenome version</span>]</li>
+<li>Nucleotide statistics of each species (IDs). [<span style="color: red">StatFiles&#x2F;speciesStat&#x2F;*IDs.csv, Mitogenome version</span>]</li>
+<li>Organization table for each species (IDs). [<span style="color: red">StatFiles&#x2F;speciesStat&#x2F;*IDs_org.csv, Mitogenome version</span>]</li>
+<li>Relative synonymous codon usage table. Note that the abbreviated stop codons (T–, TA-) are removed before the calculation.  [<span style="color: red">StatFiles&#x2F;RSCU&#x2F;*IDs_RSCU.csv, Mitogenome version</span>]</li>
+<li>Amino acid usage table. [<span style="color: red">StatFiles&#x2F;RSCU&#x2F;*IDs_AA_usage.csv, Mitogenome version</span>]</li>
+</ul>
+</li>
+<li>Making <a target="_blank" rel="noopener" href="https://itol.embl.de/" title="ITOL website">ITOL</a> datasets (will be activated if you check the <code>ITOL datasets</code> checkbox)<ul>
+<li>These are simple *.txt files that you can directly drag-and-drop onto corresponding dendrograms in the iTOL web interface (<a target="_blank" rel="noopener" href="https://itol.embl.de">https://itol.embl.de</a>)</li>
+<li>Replacing tip labels in batch. [<span style="color: red">itolFiles&#x2F;[itol_labels.txt | itol_gb_labels.txt | itol_ori_labels.txt]</span>]</li>
+<li>Assigning colors to different lineages. Colors for each taxon (or lineage) can be specified in <code>Lineage color</code>. If you don’t select colors for all taxons, PhyloSuite will randomly assign colors to the remaining taxons. For adding or removing lineages, please click <code>Configure</code> button (see Fig. 1 in <a target="_blank" rel="noopener" href="https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0181699">https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0181699</a>). [<span style="color: red">itolFiles&#x2F;[itol_xxx_ColourStrip.txt | itol_xxx_Text.txt | itol_xxx_Colour.txt]</span>]</li>
+<li>Mapping histogram to the tree (see Fig. 2 in <a target="_blank" rel="noopener" href="https://parasitesandvectors.biomedcentral.com/articles/10.1186/s13071-017-2245-y">https://parasitesandvectors.biomedcentral.com/articles/10.1186/s13071-017-2245-y</a>). [<span style="color: red">itolFiles&#x2F;[itolAT.txt | itolLength.txt | itolLength_stack.txt]</span>]</li>
+<li>Mapping gene order to the tree. The color, length and shape of each gene icon, as well as the space between the icons (Gene Interval), for the gene order display can be modified using the <code>Gene order display</code> function. At this step you can also select NCRs to be visualized (if you have set up the PhyloSuite to recognize and extract them, including setting the size threshold, during the <code>Standardization</code> step) (see Fig. 6 in <a target="_blank" rel="noopener" href="https://bmcevolbiol.biomedcentral.com/articles/10.1186/s12862-018-1249-3">https://bmcevolbiol.biomedcentral.com/articles/10.1186/s12862-018-1249-3</a>). [<span style="color: red">files&#x2F;itol_gene_order.txt, Mitogenome version</span>]</li>
+</ul>
+</li>
+<li>Gene order file which can be used to conduct relative analysis using CREx and&#x2F;or treeREx.</li>
+</ul>
+<p>In the <code>Custom</code> menu, you can choose among the data types pre-set in <a href="#extract">GenBank File Extracting settings</a>. In the <code>Lineages</code> menu, you can choose which lineages to include in the results. Regarding the names of sequences, user can customize them via <code>Name Type</code> function, in which ID, organism, Family, Class, isolate, strain, etc. are available.</p>
+<h3 id="5-1-1-Brief-example"><a href="#5-1-1-Brief-example" class="headerlink" title="5.1.1. Brief example"></a>5.1.1. <span id="extract_exam">Brief</span> example</h3><ol>
+<li>Select IDs to extract (refer to <a href="#import_gb">this</a> to see how to import GenBank records into PhyloSuite);</li>
+<li>Open <code>Extract</code> via right-click, and the sequences will be imported automatically;</li>
+<li>Parameters can be set according to your own needs (if your data are mitochondrial genomes, select <code>Mitogenome</code> data-type);</li>
+<li>Start the program.<br><img src="https://github.com/dongzhang0725/PhyloSuite_tutorial/blob/master/images/manual/extract_demo.jpg?raw=true"></li>
+</ol>
+<p>For customizing the extraction, please see <a href="https://dongzhang0725.github.io/dongzhang0725.github.io/PhyloSuite-demo/customize_extraction/">Customizing the extraction</a ><br>For comprehensive demos, please see <a href="https://dongzhang0725.github.io/dongzhang0725.github.io/PhyloSuite-demo/multi-gene-phylogeny/">multi-gene tutorial</a > and <a href="https://dongzhang0725.github.io/dongzhang0725.github.io/PhyloSuite-demo/single-gene-phylogeny/">single-gene tutorial</a >. For how to use the generated iTOL datasets, please see <a href="https://dongzhang0725.github.io/dongzhang0725.github.io/PhyloSuite-demo/multi-gene-phylogeny/#10-Phylogenetic-Tree-Annotation">phylogenetic tree annotation</a >.</p>
+<h2 id="5-2-MAFFT"><a href="#5-2-MAFFT" class="headerlink" title="5.2. MAFFT"></a>5.2. <em>MAFFT</em></h2><p>For installation of MAFFT, please see <a href="#plugins">Plugins Installation</a> section. For input files for MAFFT, please see <a href="#input">Input Files</a> section. <span style="color: red">Note that the input file should be in the FASTA format.</span> For the results of MAFFT, please see <a href="#Output">Output Files</a> section.</p>
+<p>PhyloSuite enables MAFFT to <strong>run multiple files in batches</strong> using the same set of parameters, which means that you can input multiple files into MAFFT simultaneously. PhyloSuite provides three alignment modes for MAFFT:</p></p>
+<ol>
+<li>Normal mode: align sequence normally.</li>
+<li>Codon mode (<span style="color: green">added by PhyloSuite</span>): the nucleotide sequences of protein-coding genes are translated into AA sequences first, then the AA sequences are aligned by MAFFT, finally the AA alignments are back-translated into corresponding codons. <span style="color: red">Note that you should choose a proper code table first.</span></li>
+<li>N2P mode (<span style="color: green">added by PhyloSuite</span>) is identical to the previous mode minus the last step (back-translation): PCGs are translated into AAs and aligned. The result is the AA alignment.</li>
+</ol>
+<p>When aligning with codon mode, if there are internal stop codons, PhyloSuite will pop up a warning window. If you are aware of this problem, feel free to ignore it and continue the alignment (select ‘Ignore’), otherwise terminate the alignment and inspect the problem (select ‘Yes’). <code>-adjustdirection</code> can auto-adjust the direction of some sequences (i.e. reverse complement). Other parameters are also available, such as <code>align strategy</code>, <code>export format</code> and <code>thread</code> etc. </p>
+<p>After inputting files and setting parameters, you are ready to click the <code>Start</code> button and start the program. The run log can be viewed through <code>Show log</code> button. Once the program is finished, the parameter settings and the citation of <code>MAFFT</code> will be saved in the <code>summary.txt</code> file.</p>
+<h3 id="5-2-1-Brief-example"><a href="#5-2-1-Brief-example" class="headerlink" title="5.2.1. Brief example"></a>5.2.1. Brief example</h3><p>When you are in the PhyloSuite root folder, go to ‘example\MAFFT\mtDNA_36_genes\CDS_NUC’ folder (if you don’t have the newest example folder, please download it from <a target="_blank" rel="noopener" href="https://raw.githubusercontent.com/dongzhang0725/PhyloSuite/master/example.zip">here</a >), </p>
+<ol>
+<li>Select all 12 files;</li>
+<li>Open <code>Alignment--&gt;MAFFT</code> through the menu bar;</li>
+<li>Drag all 12 sequences into the file input box;</li>
+<li>Parameters can be set according to your own needs (make sure to select the correct <code>Code Table</code> for protein-coding genes, here is 9);</li>
+<li>Start the program.<br><img src="https://github.com/dongzhang0725/PhyloSuite_tutorial/blob/master/images/manual/mafft_demo.jpg?raw=true"></li>
+</ol>
+<p>For comprehensive demos, please see <a href="https://dongzhang0725.github.io/dongzhang0725.github.io/PhyloSuite-demo/multi-gene-phylogeny/">multi-gene tutorial</a > and <a href="https://dongzhang0725.github.io/dongzhang0725.github.io/PhyloSuite-demo/single-gene-phylogeny/">single-gene tutorial</a >. For a comprehensive manual of MAFFT, please visit <a target="_blank" rel="noopener" href="https://mafft.cbrc.jp/alignment/software/manual/manual.html">https://mafft.cbrc.jp/alignment/software/manual/manual.html</a>.</p>
+<h2 id="5-3-MACSE"><a href="#5-3-MACSE" class="headerlink" title="5.3. MACSE"></a>5.3. <em>MACSE</em></h2><p>For installation of MACSE, please see <a href="#plugins">Plugins Installation</a> section. For input files for MACSE, please see <a href="#input">Input Files</a> section. <span style="color: red">Note that the input file should be in the FASTA format.</span> For the results of MACSE, please see <a href="#Output">Output Files</a> section.</p>
+<p>PhyloSuite enables MACSE to <strong>run multiple files in batches</strong> using the same set of parameters, which means that you can input multiple files into MACSE simultaneously. In addition, multi-core operation is also allowed, which allows several files (depends on threads set) to run simultaneously.</p></p>
+<p>MACSE has many subprograms and it already has a GUI, so we only added <code>alignSequences</code> and <code>refineAlignment</code> subprograms to PhyloSuite. We believe these two are most suitable for PhyloSuite, in terms of complementing the shortcomings of MAFFT. The input of MACSE should be either protein-coding sequences (for <code>alignSequences</code>) or an alignment (for <code>refineAlignment</code>) generated by other programs (e.g. <code>MAFFT</code>). Regarding batch processing, if there are multiple files in both <code>Seq.</code> and <code>Seq_lr.</code> boxes, these files will be combined successively, for example, the first file of <code>Seq.</code> (-seq 1st_seq_file) will combine with the first file of <code>Seq_lr.</code> (-seq_lr 1st_seq_lr_file). Noteworthy, the <code>seq</code> and <code>seq_lr</code> options must be used together or not at all in combination with <code>Refine</code> (refineAlignment). Please note that PhyloSuite also provides the <code>View | Edit command</code> function in the dropdown arrow of the ‘Start’ button, which gives sufficient freedom for experienced users to modify and add parameters that are not included in the GUI.</p>
+<p>In particular, as the generated alignment files may contain exclamation (<code>!</code>) or star (<code>*</code>) symbols (emphasize the frameshifts detected by MACSE), which may cause errors in downstream analyses. Therefore, PhyloSuite generates an additional file with <code>_removed_chars_</code> in its name, which replaces these symbols with <code>?</code>.</p>
+<p>After inputting files and setting parameters, you are ready to click the <code>Start</code> button and start the program. The run log can be viewed through <code>Show log</code> button. Once the program is finished, the parameter settings and the citation of <code>MACSE</code> will be saved in the <code>summary.txt</code> file.</p>
+<h3 id="5-3-1-Brief-example"><a href="#5-3-1-Brief-example" class="headerlink" title="5.3.1. Brief example"></a>5.3.1. Brief example</h3><p>When you are in the PhyloSuite root folder, go to ‘example\MACSE’ folder (if you don’t have the newest example folder, please download it from <a target="_blank" rel="noopener" href="https://raw.githubusercontent.com/dongzhang0725/PhyloSuite/master/example.zip">here</a >), </p>
+<ol>
+<li>Select all 3 files;</li>
+<li>Open <code>Alignment--&gt;MACSE (for CDS)</code> through the menu bar;</li>
+<li>Drag all 3 sequences into the <code>Seq.</code> input box;</li>
+<li>Parameters can be set according to your own needs (make sure to select the correct <code>Code Table</code>; in the example we selected 9);</li>
+<li>parameters that are not included in the GUI can be added via the <code>View | Edit command</code> function in the dropdown arrow of the ‘Start’ button;</li>
+<li>Start the program.<br><img src="https://github.com/dongzhang0725/PhyloSuite_tutorial/blob/master/images/manual/MACSE_demo.jpg?raw=true"></li>
+</ol>
+<p>For a comprehensive manual of MACSE, please visit <a target="_blank" rel="noopener" href="https://bioweb.supagro.inra.fr/macse/index.php?menu=intro">https://bioweb.supagro.inra.fr/macse/index.php?menu=intro</a>.</p>
+<h2 id="5-4-trimAl"><a href="#5-4-trimAl" class="headerlink" title="5.4. trimAl"></a>5.4. <em>trimAl</em></h2><p><span id="trimAl">For</span> the installation of trimAl, please see <a href="#plugins">Plugins Installation</a> section. For inputting files into trimAl, please see <a href="#input">Input Files</a> section. </span> For the results of trimAl, please see <a href="#Output">Output Files</a> section.</p>
+<p>PhyloSuite enables trimAl to <strong>run multiple files in batches</strong> using the same set of parameters, which means you can input multiple files into trimAl simultaneously. In addition, multi-core operation is also allowed, which allows several files (depends on threads set) to run simultaneously. Please note that PhyloSuite also provides the <code>View | Edit command</code> function in the dropdown arrow of the ‘Start’ button, which gives sufficient freedom for experienced users to modify and add parameters that are not included in the GUI.</p></p>
+<p>If you want to apply the results of trimAl to downstream analyses, please ensure that you select <code>fasta</code> as output format. If you select the <code>Statistics output</code>, these results will be saved to a file with the suffix “.log”. As the output file extension <code>_trimAl</code> is recognized by downstream functions, it cannot be changed.</p>
+<p>After inputting files and setting parameters, clicking the <code>Start</code> button runs the program. You can view the running log through the <code>Show log</code> button. Parameter settings and citation for <code>trimAl</code> will be saved in the <code>summary.txt</code> file. </p>
+<h3 id="5-4-1-Brief-example"><a href="#5-4-1-Brief-example" class="headerlink" title="5.4.1. Brief example"></a>5.4.1. Brief example</h3><p>When you are in the PhyloSuite root folder, go to ‘example\trimAl_HmmCleaner’ folder (if you don’t have the newest example folder, please download it from <a target="_blank" rel="noopener" href="https://raw.githubusercontent.com/dongzhang0725/PhyloSuite/master/example.zip">here</a >), </p>
+<ol>
+<li>Select all 3 files;</li>
+<li>Open <code>Alignment--&gt;trimAl</code> through the menu bar;</li>
+<li>Drag all 3 sequences into the input box;</li>
+<li>Parameters can be set according to your own needs;</li>
+<li>Parameters that are not included in the GUI can be added via the <code>View | Edit command</code> function in the dropdown arrow of the ‘Start’ button;</li>
+<li>Start the program.<br><img src="https://github.com/dongzhang0725/PhyloSuite_tutorial/blob/master/images/manual/trimAl_demo.jpg?raw=true"></li>
+</ol>
+<p>For a comprehensive manual of trimAl, please visit <a target="_blank" rel="noopener" href="http://trimal.cgenomics.org">http://trimal.cgenomics.org</a>.</p>
+<h2 id="5-5-HmmCleaner"><a href="#5-5-HmmCleaner" class="headerlink" title="5.5. HmmCleaner"></a>5.5. <em>HmmCleaner</em></h2><p><span id="HmmCleaner">For</span> the installation of HmmCleaner, please see <a href="#plugins">Plugins Installation</a> section. For inputting files into HmmCleaner, please see <a href="#input">Input Files</a> section. For the results of HmmCleaner, please see <a href="#Output">Output Files</a> section.</p>
+<p>PhyloSuite enables HmmCleaner to <strong>run multiple files in batches</strong> using the same set of parameters, which means you can input multiple files into HmmCleaner simultaneously. In addition, multi-core operation is also allowed, which allows several files (depends on threads set) to run simultaneously. Due to HmmCleaner design contraints, this program is available only to linux and mac users. If you want to apply the results of HmmCleaner to downstream analyses, please ensure that you uncheck the <code>ali</code> output format.</p>
+<p>After inputting files and setting parameters, clicking the <code>Start</code> button runs the program. You can view the running log through the <code>Show log</code> button. The parameter settings and the citation for <code>HmmCleaner</code> will be saved in the <code>summary.txt</code> file. </p>
+<h3 id="5-5-1-Brief-example"><a href="#5-5-1-Brief-example" class="headerlink" title="5.5.1. Brief example"></a>5.5.1. Brief example</h3><p>When you are in the PhyloSuite root folder, go to ‘example\trimAl_HmmCleaner’ folder (if you don’t have the newest example folder, please download it from <a target="_blank" rel="noopener" href="https://raw.githubusercontent.com/dongzhang0725/PhyloSuite/master/example.zip">here</a >), </p>
+<ol>
+<li>Select all 3 files;</li>
+<li>Open <code>Alignment--&gt;HmmCleaner</code> through the menu bar;</li>
+<li>Drag all 3 sequences into the input box;</li>
+<li>Parameters can be set according to your own needs;</li>
+<li>parameters that are not included in the GUI can be added via the <code>View | Edit command</code> function in the dropdown arrow of the ‘Start’ button;</li>
+<li>Start the program.<br><img src="https://github.com/dongzhang0725/PhyloSuite_tutorial/blob/master/images/manual/HmmCleaner_demo.jpg?raw=true"></li>
+</ol>
+<p>For a comprehensive manual of HmmCleaner, please visit <a target="_blank" rel="noopener" href="https://metacpan.org/pod/distribution/Bio-MUST-Apps-HmmCleaner/bin/HmmCleaner.pl">https://metacpan.org/pod/distribution/Bio-MUST-Apps-HmmCleaner/bin/HmmCleaner.pl</a>.</p>
+<h2 id="5-6-Gblocks"><a href="#5-6-Gblocks" class="headerlink" title="5.6. Gblocks"></a>5.6. <em>Gblocks</em></h2><p><span id="gblocks">For</span> the installation of Gblocks, please see <a href="#plugins">Plugins Installation</a> section. For inputting files into Gblocks, please see <a href="#input">Input Files</a> section. <span style="color: red">Note that the input files should be in FASTA or NBRF&#x2F;PIR formats.</span> For the results of Gblocks, please see <a href="#Output">Output Files</a> section.</p>
+<p>PhyloSuite enables Gblocks to <strong>run multiple files in batches</strong> using the same set of parameters, which means you can input multiple files into Gblocks simultaneously.<br>The two options, <code>Minimum Number Of Sequences For A Conserved Position</code> and <code>Minimum Number Of Sequences For A Flank Position</code> will be enabled after inputting files. As the former variable has to be &gt; half the number of sequences, whereas the latter variable has to be ≥ the value of former variable. The available values of these two variables will change according to this rule.<span style="color: red">Because of this, when running batch analyses on multiple files, the number of sequences in each file must be the same.</span> </p>
+<p>As the default output file extension ‘_gb’ is recognized by downstream functions, it cannot be changed.</p>
+<p>After inputting files and setting parameters, clicking the <code>Start</code> button runs the program. You can view the running log through the <code>Show log</code> button. The parameter settings and the citation for <code>Gblocks</code> will be saved in the <code>summary.txt</code> file. </p>
+<h3 id="5-6-1-Brief-example"><a href="#5-6-1-Brief-example" class="headerlink" title="5.6.1. Brief example"></a>5.6.1. Brief example</h3><p>When you are in the PhyloSuite root folder, go to ‘example\Gblocks\mtDNA_36_genes\CDS_NUC’ folder (if you don’t have the newest example folder, please download it from <a target="_blank" rel="noopener" href="https://raw.githubusercontent.com/dongzhang0725/PhyloSuite/master/example.zip">here</a >), </p>
+<ol>
+<li>Select all 12 files;</li>
+<li>Open <code>Alignment--&gt;Gblocks</code> through the menu bar;</li>
+<li>Drag all 12 sequences into the file input box;</li>
+<li>Parameters can be set according to your own needs (ensure you choose proper data types, here it should be codons);</li>
+<li>Start the program.<br><img src="https://github.com/dongzhang0725/PhyloSuite_tutorial/blob/master/images/manual/gblocks_demo.jpg?raw=true"></li>
+</ol>
+<p>For a comprehensive manual of Gblocks, please visit <a target="_blank" rel="noopener" href="http://molevol.cmima.csic.es/castresana/Gblocks/Gblocks_documentation.html">http://molevol.cmima.csic.es/castresana/Gblocks/Gblocks_documentation.html</a>.</p>
+<h2 id="5-7-Concatenate-Sequences"><a href="#5-7-Concatenate-Sequences" class="headerlink" title="5.7. Concatenate Sequences"></a>5.7. <em>Concatenate Sequences</em></h2><p>For inputting files, please see <a href="#input">Input Files</a> section. FASTA, PHYLIP, AXT, PAML and NEXUS formats are allowed. For the results, please see <a href="#Output">Output Files</a> section.  <span style="color: red">Note that the name of the output file can be changed.</span></p>
+<p>Alignments can be concatenated into a single alignment using this function. First, PhyloSuite will scan each of the alignments and collect all of the sequence names, then it will concatenate these alignments by searching the names in each alignment. If a name can’t be found in the alignment, it will be recorded in the ‘missing_genes.txt’ file.</p>
+<p>A number of common formats can be chosen for the output file, such as PHYLIP, NEXUS, AXT, PAML and FASTA. Additionally, the function can record the index of each gene during the concatenation and generate a partition file, which can be used in <code>PartitionFinder</code>, <code>ModelFinder</code>, <code>IQ-TREE</code> and <code>MrBayes</code>. User can also select to remove any codon sites (such as third codon site) in this analysis.</p>
+<p>You can change the order in which alignments are concatenated by dragging the files to reorder them.</p>
+<h3 id="5-7-1-Brief-example"><a href="#5-7-1-Brief-example" class="headerlink" title="5.7.1. Brief example"></a>5.7.1. Brief example</h3><p><span id="concatenation">When</span> you are in the PhyloSuite root folder, go to ‘example\Concatenation\mtDNA_36_genes\36_genes_NUC’ folder (if you don’t have the newest example folder, please download it from <a target="_blank" rel="noopener" href="https://raw.githubusercontent.com/dongzhang0725/PhyloSuite/master/example.zip">here</a >), </p>
+<ol>
+<li>Select all 36 files;</li>
+<li>Open <code>Alignment--&gt;Concatenate Sequence</code> through the menu bar;</li>
+<li>Drag all the sequences into the file input box;</li>
+<li>Output formats could be selected according to your own needs, you may also select <code>Linear figure</code> function if you wish to visualize the concatenated dataset;</li>
+<li>Start the program.<br><img src="https://github.com/dongzhang0725/PhyloSuite_tutorial/blob/master/images/manual/concatenation_demo.jpg?raw=true"></li>
+</ol>
+<p>For comprehensive demos, please see <a href="https://dongzhang0725.github.io/dongzhang0725.github.io/PhyloSuite-demo/multi-gene-phylogeny/">multi-gene tutorial</a > and <a href="https://dongzhang0725.github.io/dongzhang0725.github.io/PhyloSuite-demo/single-gene-phylogeny/">single-gene tutorial</a >.</p>
+<h2 id="5-8-Convert-format"><a href="#5-8-Convert-format" class="headerlink" title="5.8. Convert format"></a>5.8. <em>Convert format</em></h2><p>For inputting files, please see <a href="#input">Input Files</a> section. For the results, please see <a href="#Output">Output Files</a> section.</p>
+<p>PHYLIP, NEXUS, AXT, PAML and FASTA formats are supported (both for input and output files). This function also supports <strong>batch format conversion</strong>, which means that you can input multiple files simultaneously.</p>
+<h3 id="5-8-1-Brief-example"><a href="#5-8-1-Brief-example" class="headerlink" title="5.8.1. Brief example"></a>5.8.1. Brief example</h3><p>When you are in the PhyloSuite root folder, go to ‘example\Convert_format’ folder (if you don’t have the newest example folder, please download it from <a target="_blank" rel="noopener" href="https://raw.githubusercontent.com/dongzhang0725/PhyloSuite/master/example.zip">here</a >), </p>
+<ol>
+<li>Select ‘cox1_AA_mafft.fas’ and ‘cox1_NUC_mafft.fas’;</li>
+<li>Open <code>Alignment--&gt;Convert Sequence Format</code> through the menu bar;</li>
+<li>Drag them into the file input box;</li>
+<li>Select output formats;</li>
+<li>Start the program.<br><img src="https://github.com/dongzhang0725/PhyloSuite_tutorial/blob/master/images/manual/convertFMT_demo.jpg?raw=true"></li>
+</ol>
+<h2 id="5-9-ModelFinder"><a href="#5-9-ModelFinder" class="headerlink" title="5.9. ModelFinder"></a>5.9. <em>ModelFinder</em></h2><p>For the installation of ModelFinder (IQ-TREE), please see <a href="#plugins">Plugins Installation</a> section, for input alignment files see <a href="#input">Input Files</a> section (FASTA, PHYLIP, NEXUS and CLUSTAL formats are allowed), and for the result files see <a href="#Output">Output Files</a> section.</p>
+<p>You may choose to provide two more optional files: a tree file (<span style="color: red">newick format</span>) and a partition file. Please see <a target="_blank" rel="noopener" href="http://www.iqtree.org/doc/Advanced-Tutorial">http://www.iqtree.org/doc/Advanced-Tutorial</a> for the format of the partition file. The most convenient option is to directly use the results of <code>Concatenate Sequence</code> (<a href="#concatenate_results">concatenate_results</a>) as input files for ModelFinder. The concatenated alignments and the partition file will load to ModelFinder automatically (see brief example below).</p>
+<p>PhyloSuite provides an additional parameter for ModelFinder settings: <code>Model for</code>. This parameter allows you to select a set of models you wish to test, suited for different phylogenetic programs (see table below). This is very useful, as different algorithms often use different model types.</p>
+<table>
+<thead>
+<tr>
+<th>Options</th>
+<th>Corresponding arguments in ModelFinder</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>MrBayes</td>
+<td>-m TESTONLY -mset mrbayes</td>
+</tr>
+<tr>
+<td>RaxML</td>
+<td>-m TESTONLY -mset raxml</td>
+</tr>
+<tr>
+<td>PhyML</td>
+<td>-m TESTONLY -mset phyml</td>
+</tr>
+<tr>
+<td>IQ-TREE</td>
+<td>-m TESTNEWONLY</td>
+</tr>
+<tr>
+<td>BEAST1</td>
+<td>-mset JC69,TrN,TrNef,K80,K2P,F81,HKY,SYM,TIM,TVM,TVMef,GTR -mrate E,G</td>
+</tr>
+<tr>
+<td>BEAST2</td>
+<td>-mset JC69,TrN,TrNef,K80,K2P,F81,HKY,SYM,TIM,TVM,TVMef,GTR -mrate E,G</td>
+</tr>
+</tbody></table>
+<p>After inputting files and setting the parameters, you may click <code>Start</code> button and run the program. The running log can be viewed through <code>Show log</code> button. Once the program is finished, the parameter settings and the citation for <code>IQ-TREE</code> will be saved in the <code>summary.txt</code> file.</p>
+<h3 id="5-9-1-Brief-example"><a href="#5-9-1-Brief-example" class="headerlink" title="5.9.1. Brief example"></a>5.9.1. Brief example</h3><ol>
+<li>Right click a result in <code>concatenate_results</code> folder (if not available, please see <a href="#concatenation">here</a> for how to make one), then select <code>Import to ModelFinder</code> in the context menu;</li>
+<li>The concatenated dataset with the position index of each gene will be automatically imported;</li>
+<li>Double-click the text box or click the edit button to open the partition editor window to configure <code>data blocks</code> (for how to operate partition editor, please see <a href="#partition_editor">below</a>);</li>
+<li>Parameters can be set according to your own needs; parameters that are not included in the GUI can be added using the <code>View | Edit command</code> function in the dropdown arrow of the ‘Start’ button;</li>
+<li>Start the program.<br><img src="https://github.com/dongzhang0725/PhyloSuite_tutorial/blob/master/images/manual/modelfinder_demo_2.jpg?raw=true"></li>
+</ol>
+<p>For comprehensive demos, please see <a href="https://dongzhang0725.github.io/dongzhang0725.github.io/PhyloSuite-demo/multi-gene-phylogeny/">multi-gene tutorial</a > and <a href="https://dongzhang0725.github.io/dongzhang0725.github.io/PhyloSuite-demo/single-gene-phylogeny/">single-gene tutorial</a >. For a comprehensive manual of ModelFinder, please visit <a target="_blank" rel="noopener" href="http://www.iqtree.org/doc/">http://www.iqtree.org/doc/</a> and <a target="_blank" rel="noopener" href="http://iqtree.cibiv.univie.ac.at/">http://iqtree.cibiv.univie.ac.at/</a>.</p>
+<h2 id="5-10-PartitionFinder"><a href="#5-10-PartitionFinder" class="headerlink" title="5.10. PartitionFinder"></a>5.10. <em>PartitionFinder</em></h2><p>For installation of PartitionFinder2, please see <a href="#plugins">Plugins Installation</a> section, for inputting the alignment file (<span style="color: red">PHYLIP format</span>) see <a href="#input">Input Files</a> section, for the results see <a href="#Output">Output Files</a> section. You may provide a tree file as well (<span style="color: red">optional, newick format</span>).</p>
+<p>The most convenient way to use PartitionFinder2 is to use the results of <code>Concatenate Sequence</code> (<a href="#concatenate_results">concatenate_results</a>) as input files. The concatenated alignments and the partition file will load into the PartitionFinder2 automatically. </p>
+<p>PartitionFinder2 requires a data block to run, the default format of which is (see <code>DATA BLOCKS</code> window):</p>
+<blockquote>
+<p>Gene1_codon1 &#x3D; 1-999\3;<br>Gene1_codon2 &#x3D; 2-999\3;<br>Gene1_codon3 &#x3D; 3-999\3;<br>Gene2 &#x3D; 1000-1665;<br>intron &#x3D; 1666-2000;</p>
+</blockquote>
+<p>PhyloSuite provides a partition editor function, in which you can add&#x2F;delete&#x2F;modify partitions  and convert&#x2F;cancel the selected data block to the codon format. For how to use this function, please see <a href="#partition_editor">below</a>.</p>
+<p>Note that among the <code>Command line options</code>, <code>--all-states</code> and <code>--min-subset-size</code> can only be used when <code>kmeans</code> is selected in the <code>search</code> menu. The options <code>hcluster</code>, <code>rclusterf</code> and <code>rcluster</code> in <code>search</code> menu as well as <code>--rcluster-max</code> and <code>--weights</code> in the <code>Command line options</code> will be enabled only when <code>--raxml</code> is checked in the <code>Command line options</code>. The <code>unlinked</code> option in the <code>branchlengths</code> menu should be used with caution, as it may hinder convergence when using the partition results to conduct an analysis in MrBayes (because of <code>unlink brlens=(all);</code>). </p>
+<p>After inputting files and setting the parameters, you can start the program (<code>Start</code> button), and view the run log through the <code>Show log</code> button. Once the program is finished, the parameter settings and the citation for <code>PartitionFinder2</code> will be saved in the <code>summary.txt</code> file.</p>
+<h3 id="5-10-1-Brief-example"><a href="#5-10-1-Brief-example" class="headerlink" title="5.10.1. Brief example"></a>5.10.1. Brief example</h3><p>One design feature of PhyloSuite is a direct link between the outputs of <code>Concatenation</code> and the inputs of <code>PartitionFinder2</code>:</p>
+<ol>
+<li>Right click a result in <code>concatenate_results</code> folder (if not available, please see <a href="#concatenation">here</a> for how to make one), then select <code>Import to PartitionFinder2</code> in the context menu;</li>
+<li>The concatenated dataset with the position index of each gene will be automatically imported;</li>
+<li>Double-click the text box or click the edit button to open the partition editor window to configure <code>data blocks</code> (for how to operate partition editor, please see <a href="#partition_editor">below</a>);</li>
+<li>Other parameters can be set according to your own needs (make sure you choose proper data types);</li>
+<li>Start the program.<br><img src="https://github.com/dongzhang0725/PhyloSuite_tutorial/blob/master/images/manual/pf_demo_2.jpg?raw=true"></li>
+</ol>
+<p>For a comprehensive demo, please see <a href="https://dongzhang0725.github.io/dongzhang0725.github.io/PhyloSuite-demo/multi-gene-phylogeny/">multi-gene tutorial</a >. For a comprehensive manual of PartitionFinder2, please visit <a target="_blank" rel="noopener" href="http://www.robertlanfear.com/partitionfinder/assets/Manual_v2.1.x.pdf">http://www.robertlanfear.com/partitionfinder/assets/Manual_v2.1.x.pdf</a>.</p>
+<h3 id="5-10-2-Brief-tutorial-for-partition-editor"><a href="#5-10-2-Brief-tutorial-for-partition-editor" class="headerlink" title="5.10.2. Brief tutorial for partition editor"></a>5.10.2. <span id="partition_editor">Brief tutorial for partition editor</span></h3><ol>
+<li>The number <code>3</code> shown to the left of the data block name indicates that the length of the sequence is a multiple of 3, select one or more data blocks (make sure they are protein-coding genes) exhibiting the icon <code>3</code> and then click <code>Codon Mode</code> button, the partition(s) will be changed to codon mode, in which icons <code>1</code>, <code>2</code>, and <code>3</code> correspond to partitions comprising first, second and third codon position of the gene, respectively.;<br><img src="https://github.com/dongzhang0725/PhyloSuite_tutorial/blob/master/images/manual/part_edit1.jpg?raw=true"></li>
+<li>Select gene name(s) with icons <code>1</code>, <code>2</code>, and <code>3</code>, then click <code>Cancel Codon Mode</code> to change back to the normal partiton mode.<br><img src="https://github.com/dongzhang0725/PhyloSuite_tutorial/blob/master/images/manual/part_edit2.jpg?raw=true"></li>
+<li>The <code>Name</code>, <code>Start</code> and <code>Stop</code> columns can be modified via double-clicking the corresponding cells;<br><img src="https://github.com/dongzhang0725/PhyloSuite_tutorial/blob/master/images/manual/part_edit3.jpg?raw=true"></li>
+<li>Closing the window will automatically save the modified partitions;<br><img src="https://github.com/dongzhang0725/PhyloSuite_tutorial/blob/master/images/manual/part_edit4.jpg?raw=true"></li>
+<li>If you want to manually add partition to data blocks, you can paste the text in partition format in the text box below, and then click the <code>Recognize</code> button.<br><img src="https://github.com/dongzhang0725/PhyloSuite_tutorial/blob/master/images/manual/part_edit5.jpg?raw=true"></li>
+</ol>
+<h2 id="5-11-IQ-TREE"><a href="#5-11-IQ-TREE" class="headerlink" title="5.11. IQ-TREE"></a>5.11. <em>IQ-TREE</em></h2><p>For the installation of IQ-TREE, please see <a href="#plugins">Plugins Installation</a> section, for the results see <a href="#Output">Output Files</a> section, for input files see <a href="#input">Input Files</a> section. FASTA, PHYLIP, NEXUS and CLUSTAL formats are allowed.</p>
+<p>Optionally, you may input a partition file (check the box). Please see <a target="_blank" rel="noopener" href="http://www.iqtree.org/doc/Advanced-Tutorial">http://www.iqtree.org/doc/Advanced-Tutorial</a> for detailed format requirements for the partition file. The most convenient option is to use the results of <code>Concatenate Sequence</code> (<a href="#concatenate_results">concatenate_results</a>) as input files for IQ-TREE: the concatenated alignments and the partition file will load to IQ-TREE automatically. Similarly, when using the results of <code>PartitionFinder2</code> or <code>ModelFinder</code> as input files of IQ-TREE, the alignment file, the partition and the best-fit model selection will also load into the IQ-TREE automatically.</p>
+<p>Alternatively, IQ-TREE can select the best-fit model and immediately continue with the tree reconstruction (using the inferred model) by setting <code>Models</code> to <code>Auto</code> and either check ‘FreeRate heterogeneity [+R]’ (<code>-m TESTNEW</code>) or not (<code>-m TEST</code>). We also enabled IQ-TREE to reconstruct phylogenetic trees in batches, which can be used to infer supertrees.</p>
+<p>After inputting files and setting the parameters, you may start the program (<code>Start</code> button), and view the run log through the <code>Show log</code> button. Once the program is finished, the parameter settings and the citation for the <code>IQ-TREE</code> will be saved in the <code>summary.txt</code> file. </p>
+<h3 id="5-11-1-Brief-example"><a href="#5-11-1-Brief-example" class="headerlink" title="5.11.1. Brief example"></a>5.11.1. Brief example</h3><p>When you are in the PhyloSuite root folder, go to ‘example\IQ-TREE\mtDNA_36_genes\36_genes_NUC\normal’ folder (if you don’t have the newest example folder, please download it from <a target="_blank" rel="noopener" href="https://raw.githubusercontent.com/dongzhang0725/PhyloSuite/master/example.zip">here</a >),</p>
+<ol>
+<li>Select ‘concatenation.phy’ file;</li>
+<li>Open <code>Phylogeny--&gt;IQ-TREE</code> through the menu bar;</li>
+<li>Drag it into the file input box;</li>
+<li>Select best-fit evolutionary model  and associated parameters (+I, +G, etc.) (here if you choose <code>Auto</code>, IQ-TREE will select the best-fit model and immediately continue with the tree reconstruction, see above);</li>
+<li>Parameters can be set according to your own needs (if you don’t have a partition file, remember to uncheck <code>Partition Mode</code>), parameters that are not included in the GUI can be added via the <code>View | Edit command</code> function in the dropdown arrow of the ‘Start’ button;</li>
+<li>Start the program.<br><img src="https://github.com/dongzhang0725/PhyloSuite_tutorial/blob/master/images/manual/iqtree_demo.jpg?raw=true"></li>
+</ol>
+<p>IQ-TREE can directly use the outputs of ModelFinder and&#x2F;or PartitionFinder2, please see  <a href="https://dongzhang0725.github.io/dongzhang0725.github.io/PhyloSuite-demo/multi-gene-phylogeny/">multi-gene tutorial</a > and <a href="https://dongzhang0725.github.io/dongzhang0725.github.io/PhyloSuite-demo/single-gene-phylogeny/">single-gene tutorial</a >. For a comprehensive manual of IQ-TREE, please visit <a target="_blank" rel="noopener" href="http://www.iqtree.org/doc/">http://www.iqtree.org/doc/</a> and <a target="_blank" rel="noopener" href="http://iqtree.cibiv.univie.ac.at/">http://iqtree.cibiv.univie.ac.at/</a>.</p>
+<h2 id="5-12-MrBayes"><a href="#5-12-MrBayes" class="headerlink" title="5.12. MrBayes"></a>5.12. <em>MrBayes</em></h2><p>For the installation of MrBayes, please see <a href="#plugins">Plugins Installtion</a> section, for result files see <a href="#Output">Output Files</a> section, for <a href="#input">Input Files</a> see Input Files section. <span style="color: red">Note that only the NEXUS format is allowed; if <a href="#autodetect">autodetect</a> function is used, the alignment will be converted to the NEXUS format automatically.</span> When using the results of <code>PartitionFinder2</code> or <code>ModelFinder</code> as input files for MrBayes, the alignment file and the best-fit model calculated will load into MrBayes automatically.</p>
+<p>If the loaded alignment file contains a command block, you can select to run with this command block directly. The <code>Outgroup(s)</code> and <code>Models</code> parameters are enabled only after the alignment is loaded.</p>
+<p>PhyloSuite provides a window to edit the partition file (activated by clicking <code>Partition Models</code>), in which you can input the name of the subset, the start and stop positions, and the best model for the subset. After editing, you can click the <code>Generate Command Block</code> button to generate the corresponding command block for the edited partition.</p>
+<p>Sometimes, after finishing an analysis, you may decide that the results haven’t fully converged and that you would prefer to continue the analysis; for such circumstances, PhyloSuite provides the <code>Continue Previous Analysis</code> function, which allows you to continue any of your analyses (finished and unfinished) after setting the number of additional generations.</p>
+<p>There are two ways to discard MCMC samples (not generations) when summary statistics are calculated: you can either set the specific number of samples (<code>Burnin box</code>) or the proportion (<code>Burnin Fraction box</code>) of all samples.</p>
+<p>The <code>Conformat</code> parameter controls the format of the consensus tree, where <code>Simple</code> setting results in a simple consensus tree written in a format read by a variety of programs (TreeView, iTOL etc.); whereas <code>Figtree</code> setting results in a consensus tree formatted for the program FigTree, with rich summary statistics.</p>
+<p>The <code>Show MrBayes Data Block</code> button allows you to add the parameters that are not included in the GUI or export the configured file and run in servers (such as CIPRES, see Brief example).</p>
+<p>After inputting files and setting the parameters, you can either export the alignment and the corresponding command block to execute MrBayes separately (through <code>Show MrBayes Data Block</code>) or click <code>Start</code> button to run the program within the PhyloSuite. The run log can be viewed through the <code>Show log</code> button. Once the program is finished, the parameter settings and the citation for <code>MrBayes</code> will be saved in the <code>summary.txt</code> file.</p>
+<h3 id="5-12-1-Brief-example"><a href="#5-12-1-Brief-example" class="headerlink" title="5.12.1. Brief example"></a>5.12.1. Brief example</h3><p>When you are in the PhyloSuite root folder, go to ‘example\MrBayes\mtDNA_36_genes\36_genes_NUC\normal’ folder (if you don’t have the newest example folder, please download it from <a target="_blank" rel="noopener" href="https://raw.githubusercontent.com/dongzhang0725/PhyloSuite/master/example.zip">here</a >),</p>
+<ol>
+<li>Select <code>input.nex</code> file;</li>
+<li>Open <code>Phylogeny--&gt;MrBayes</code> through the menu bar;</li>
+<li>Drag it into the file input box;</li>
+<li>Select best-fit evolutionary model and associated parameters (+I, +G, etc.);</li>
+<li>Parameters can be set according to your own needs;</li>
+<li>Start the program.<br><img src="https://github.com/dongzhang0725/PhyloSuite_tutorial/blob/master/images/manual/mrbayes_demo.jpg?raw=true"></li>
+<li>If you want to export the settings to run MrBayes on CIPRES, click <code>Show MrBayes Data Block</code>, then select ‘Save to File’, upload this file to CIPRES to run directly (remember to check <code>My Data Contains a MrBayes Data Block</code>).<br><img src="https://github.com/dongzhang0725/PhyloSuite_tutorial/blob/master/images/manual/mb_cipres.jpg?raw=true"></li>
+<li>If you want to view the tree and convergence diagnostics results when it is running, you can achieve this through the <code>Stop the run and infer the tree</code> option accessed via the dropdown arrow of the <code>Stop</code> button.<br><img src="https://github.com/dongzhang0725/PhyloSuite_tutorial/blob/master/images/manual/stop_mb_run.jpg?raw=true"></li>
+<li>If you wish to restart a previous run (unfinished or finished), click <code>Continue Previous Analysis</code>.<br><img src="https://github.com/dongzhang0725/PhyloSuite_tutorial/blob/master/images/manual/mb_continue.jpg?raw=true"></li>
+</ol>
+<p>MrBayes can directly use the outputs of ModelFinder and&#x2F;or PartitionFinder2, please see <a href="https://dongzhang0725.github.io/dongzhang0725.github.io/PhyloSuite-demo/multi-gene-phylogeny/">multi-gene tutorial</a > and <a href="https://dongzhang0725.github.io/dongzhang0725.github.io/PhyloSuite-demo/single-gene-phylogeny/">single-gene tutorial</a >. For a comprehensive manual of MrBayes, please visit <a target="_blank" rel="noopener" href="http://mrbayes.sourceforge.net/manual.php">http://mrbayes.sourceforge.net/manual.php</a>.</p>
+<h2 id="5-13-Flowchart"><a href="#5-13-Flowchart" class="headerlink" title="5.13. Flowchart"></a>5.13. <em>Flowchart</em></h2><p>This function streamlines the procedure of evolutionary phylogenetics analysis, including the sequence alignment (<code>MAFFT</code> and <code>MACSE</code>), elimination of poorly aligned positions and divergent regions (<code>Gblocks</code>, <code>trimAl</code> and <code>HmmCleaner</code>), sequence concatenation (<code>Concatenation</code>), model selection (<code>ModelFinder</code> or <code>PartitionFinder</code>), and tree reconstruction (<code>MrBayes</code> and <code>IQ-TREE</code>). By default, PhyloSuite predefines seven different workflows, but you can also configure&#x2F;delete your own workflows via the add button. These allow you to repeat your analyses quickly.</p>
+<p>There are several things you should keep in mind when using this function:</p>
+<ul>
+<li>As shown in the figure below, the execution order of these programs is [<code>MAFFT</code> and&#x2F;or <code>MACSE</code>]–&gt;[<code>Gblocks</code> or <code>trimAl</code> or <code>HmmCleaner</code>]–&gt;<code>Concatenation</code>–&gt;[<code>ModelFinder</code> or <code>PartitionFinder</code>]–&gt;[<code>IQ-TREE</code> and <code>MrBayes</code>].<br> <img src="https://github.com/dongzhang0725/PhyloSuite_tutorial/blob/master/images/manual/flowchart_en.jpg?raw=true"><br></li>
+<li>If you simultaneously choose <code>MAFFT</code> and <code>MACSE</code>, protein-coding sequences should be used as input, and the results of <code>MAFFT</code> will be subsequently refined by <code>MACSE</code></li>
+<li>Only one of the three alignment optimization programs can be selected.</li>
+<li>Only one of the two model selection programs can be selected.</li>
+<li>Except for the model selection programs and <code>Concatenation</code>, other programs do not have to be selected (when <code>MAFFT</code>, <code>MACSE</code>, <code>trimAl</code>, <code>HmmCleaner</code>, or <code>Gblocks</code> is selected, <code>Concatenation</code> must be retained because it serves as a bridge that connects these programs with downstream programs, even for a single gene).</li>
+<li>Only the first program requires an input file(s), whereas the input file(s) of other programs will be autodetected from the results of upstream analyses. <span style="color: red">Note that the two <code>Tree Reconstruction</code> programs can use either the results of <code>ModelFinder</code> or <code>PartitionFinder</code>, and they can run in parallel.</span></li>
+<li>As the <code>Minimum Number Of Sequences For A Conserved Position</code> and <code>Minimum Number Of Sequences For A Flank Position</code> options are enabled only when files are input directly into <a href="#gblocks">Gblocks</a>, these two options are set by default to the most ‘relaxed’ values (i.e. lowest values) in the Flowchart mode, unless if <code>Gblocks</code> is the first program in a Flowchart analysis, in which case you can set the two options as you would normally.</li>
+<li>For the model selection and tree reconstruction, if only <code>ModelFinder</code> and <code>IQ-TREE</code> are selected, <code>IQ-TREE</code> will use the best-fit model calculated by <code>ModelFinder</code>; if only <code>ModelFinder</code> and <code>MrBayes</code> are selected, then <code>Mrbayes</code> option must be selected in the <code>Model for</code> menu of <code>ModelFinder</code>; and finally, if <code>ModelFinder</code>, <code>IQ-TREE</code> and <code>MrBayes</code> are selected, the results of <code>ModelFinder</code> will be used only for <code>MrBayes</code> (thus it will use the same settings as described in the preceding note), whereas <code>IQ-TREE</code> will first conduct the best-fit model selection inbuilt in the algorithm, and conduct the tree inference (using the <code>Auto</code> option in the <code>Models</code> menu, equivalent to <code>-m TEST</code> or <code>-m MFP</code>). </li>
+<li>PhyloSuite also provides a function to check and autocorrect the parameters between selected programs, including those specified in the previous note, conflicting sequence types, conflicting partition modes, etc.<br><img src="https://github.com/dongzhang0725/PhyloSuite_tutorial/blob/master/images/manual/flowchart_settings.jpg?raw=true"><br> </li>
+<li>When the flowchart is finished, the parameter settings and the citations of corresponding software programs will be summarized in the <a href="#operation">display area</a> of the <code>flowchart</code>.</li>
+</ul>
+<h3 id="5-13-1-Brief-example"><a href="#5-13-1-Brief-example" class="headerlink" title="5.13.1. Brief example"></a>5.13.1. Brief example</h3><p>Tip: if you changed the workflow settings, remember to save it using the <code>add</code> button, otherwise, it will not be remembered. For comprehensive demos, please see <a href="https://dongzhang0725.github.io/dongzhang0725.github.io/PhyloSuite-demo/multi-gene-phylogeny/#9-Flowchart">multi-gene tutorial</a > and <a href="https://dongzhang0725.github.io/dongzhang0725.github.io/PhyloSuite-demo/single-gene-phylogeny/#7-Flowchart">single-gene tutorial</a >.</p>
+<h2 id="5-14-Mitogenome"><a href="#5-14-Mitogenome" class="headerlink" title="5.14. Mitogenome"></a>5.14. <em>Mitogenome</em></h2><h3 id="5-14-1-Parse-annotations"><a href="#5-14-1-Parse-annotations" class="headerlink" title="5.14.1. Parse annotations"></a>5.14.1. Parse annotations</h3><p>This function can parse the annotations recorded in a Microsoft Word document (only *.docx extension is supported). When annotating the tRNAs, you should add the anti-codon of each tRNA gene to the end of the gene name (in brackets), for example: tRNA-Cys(GCA) (also see an example in the image below). Regarding the names of genes, PhyloSuite allows you to replace the name with other names by setting the <code>Name from Word</code> table accessed through the <code>Configure name replacing</code> button. Additionally, you can define the name of <code>product</code> <a href="#qualifier">qualifiers</a> for each protein coding gene and the abbreviation of tRNA genes used for the organization table.</p>
+<p>Example of mitogenome annotation in a Word document:<br><img src="https://github.com/dongzhang0725/PhyloSuite_tutorial/blob/master/images/manual/annotations.jpg?raw=true"><br></p>
+<p>The GenBank Submission Template file including the information of authors and affiliations can be generated <a target="_blank" rel="noopener" href="https://submit.ncbi.nlm.nih.gov/genbank/template/submission/" title="Submission Portal">here</a>. Several datasets from PhyloSuite can be used to generate the annotation section, including <code>Organism</code>, <code>Strain</code>, <code>Lineage</code>, etc. The <code>Release Date</code> parameter defines the release date of your sequence. <span style="color: red">Note that you should have office suite installed on your computer.</span></p>
+<h4 id="5-14-1-1-Brief-example"><a href="#5-14-1-1-Brief-example" class="headerlink" title="5.14.1.1. Brief example"></a>5.14.1.1. Brief example</h4><p>When you are in the PhyloSuite root folder, go to ‘example\Parse_Word_annotations’ folder (if you don’t have the newest example folder, please download it from <a target="_blank" rel="noopener" href="https://raw.githubusercontent.com/dongzhang0725/PhyloSuite/master/example.zip">here</a >), </p>
+<ol>
+<li>Select ‘Diplectanum_longipenis_mtDNA.docx’ file (you can open this file to see how to annotate the sequence);</li>
+<li>Open <code>Mitogenome--&gt;Parse Annotation</code> through the menu bar;</li>
+<li>Drag the file into the file input box;</li>
+<li>Click the blue word (as shown in figure) to generate a template file;</li>
+<li>Drag the template file into the <code>Template File</code> input box;</li>
+<li>Fill in necessary information, such as <code>Organism</code>, <code>Lineage</code>, <code>Code Table</code>, etc. </li>
+<li>Other Parameters can be set according to your own needs;</li>
+<li>Start the program.<br><img src="https://github.com/dongzhang0725/PhyloSuite_tutorial/blob/master/images/manual/parseANNT_demo.jpg?raw=true"></li>
+</ol>
+<h3 id="5-14-2-Compare-tables"><a href="#5-14-2-Compare-tables" class="headerlink" title="5.14.2. Compare tables"></a>5.14.2. Compare tables</h3><p>This function can compare and gather tables in the <code>speciesStat</code> subfolder under the <code>extract_results</code> folder. For organization tables, pairwise similarity calculation is allowed, in which MAFFT is invoked to make alignment and DistanceCalculator package in Biopython is used to calculate the identity of the sequence. The header of a table can be omitted from the comparison by selecting the number of rows you wish to exclude (from the top). For table examples, please see Table 1 in <a target="_blank" rel="noopener" href="https://bmcevolbiol.biomedcentral.com/articles/10.1186/s12862-018-1249-3">https://bmcevolbiol.biomedcentral.com/articles/10.1186/s12862-018-1249-3</a> and Table 2 in <a target="_blank" rel="noopener" href="https://parasitesandvectors.biomedcentral.com/articles/10.1186/s13071-018-2910-9">https://parasitesandvectors.biomedcentral.com/articles/10.1186/s13071-018-2910-9</a>.</p>
+<h4 id="5-14-2-1-Brief-example"><a href="#5-14-2-1-Brief-example" class="headerlink" title="5.14.2.1. Brief example"></a>5.14.2.1. Brief example</h4><p>This function can directly use the results of ‘extract’ function:</p>
+<ol>
+<li>Select the <code>extract_results</code> folder (if not available, please see <a href="#extract_exam">here</a> for how to make one, mitogenome datatype only);</li>
+<li>Open <code>Mitogenome--&gt;Compare Table</code> through the menu bar;</li>
+<li>All extracted organization tables will be automatically imported; remove the tables you are not interested in using the <code>remove</code> button;</li>
+<li>Check <code>Calculate pairwise similarity</code> if you want to calculate pairwise similarity for homologous genes;</li>
+<li>Start the program;<br><img src="https://github.com/dongzhang0725/PhyloSuite_tutorial/blob/master/images/manual/compare_table_demo.jpg?raw=true"></li>
+<li>If you want to compare nucleotide composition and skewness table (identified by no ‘_org’ in its name in the results folder), you should open the <code>extract_results</code> folder first, then enter ‘extract_results\StatFiles\speciesStat’, select interested files, drag them into the <code>Tables</code> box, uncheck <code>Calculate pairwise similarity</code>, then Start the program.<br><img src="https://github.com/dongzhang0725/PhyloSuite_tutorial/blob/master/images/manual/compare_table_notorg.jpg?raw=true"></li>
+</ol>
+<h3 id="5-14-3-Draw-RSCU-figure"><a href="#5-14-3-Draw-RSCU-figure" class="headerlink" title="5.14.3. Draw RSCU figure"></a>5.14.3. Draw RSCU figure</h3><p>For the installation of Rscript, please see <a href="#plugins">Plugins Installation</a> section, and for the results please see <a href="#Output">Output Files</a> section.</p>
+<p>This function can draw an RSCU figure based on the tables in the “RSCU” subfolder under the <code>extract_results/StatFiles/RSCU</code> folder. You can drag to reorder the input files and the amino acids on the x-axis. For a figure example, please see Fig. 3 in <a target="_blank" rel="noopener" href="https://parasitesandvectors.biomedcentral.com/articles/10.1186/s13071-017-2404-1">https://parasitesandvectors.biomedcentral.com/articles/10.1186/s13071-017-2404-1</a>.</p>
+<h4 id="5-14-3-1-Brief-example"><a href="#5-14-3-1-Brief-example" class="headerlink" title="5.14.3.1. Brief example"></a>5.14.3.1. Brief example</h4><p>This function can directly use the results of ‘extract’ function:</p>
+<ol>
+<li>Select the <code>extract_results</code> folder (if not available, please see <a href="#extract_exam">here</a> for how to make one, mitogenome datatype only);</li>
+<li>Open <code>Mitogenome--&gt;Draw RSCU figure</code> through the menu bar;</li>
+<li>All extracted RSCU tables will be automatically imported, remove the tables you are not interested in using the <code>remove</code> button;</li>
+<li>Parameters can be set according to your own needs;</li>
+<li>Start the program;<br><img src="https://github.com/dongzhang0725/PhyloSuite_tutorial/blob/master/images/manual/RSCU_demo.jpg?raw=true"></li>
+</ol>
+<h1 id="6-Citations-and-codes"><a href="#6-Citations-and-codes" class="headerlink" title="6. Citations and codes"></a>6. Citations and codes</h1><p>If you use data generated by PhyloSuite in a scientific paper, please use the following citation:</p>
+<blockquote>
+<p>Zhang, D., F. Gao, I. Jakovlić, H. Zou, J. Zhang, W.X. Li, and G.T. Wang, PhyloSuite: An integrated and scalable desktop platform for streamlined molecular sequence data management and evolutionary phylogenetics studies. Molecular Ecology Resources, 2020. 20(1): p. 348–355. DOI: 10.1111&#x2F;1755-0998.13096.</p>
+</blockquote>
+<p>Please also note that PhyloSuite is a plug-in program, and that you should also cite any (and every) plug-in program not designed and compiled by us that you use in your analyses. This applies to the following plug-ins:<br><br></p>
+<p><strong>MAFFT</strong></p>
+<blockquote>
+<p>Katoh, K., and Standley, D.M. (2013). MAFFT multiple sequence alignment software version 7: improvements in performance and usability. Mol Biol Evol 30, 772-780.</p>
+</blockquote>
+<br>
+
+<p><strong>MACSE</strong></p>
+<blockquote>
+<p>Ranwez V, Douzery EJP, Cambon C, Chantret N, Delsuc F. 2018. MACSE v2: Toolkit for the alignment of coding sequences accounting for frameshifts and stop codons. Mol Biol Evol. 35: 2582-2584. doi: 10.1093&#x2F;molbev&#x2F;msy159.</p>
+</blockquote>
+<br>
+
+<p><strong>Gblocks</strong></p>
+<blockquote>
+<p>Talavera, G., and Castresana, J. (2007). Improvement of phylogenies after removing divergent and ambiguously aligned blocks from protein sequence alignments. Syst Biol 56, 564-577.</p>
+</blockquote>
+<br>
+
+<p><strong>trimAl</strong></p>
+<blockquote>
+<p>Capella-Gutierrez S, Silla-Martinez JM, Gabaldon T. 2009. trimAl: a tool for automated alignment trimming in large-scale phylogenetic analyses. Bioinformatics. 25: 1972-1973. doi: 10.1093&#x2F;bioinformatics&#x2F;btp348.</p>
+</blockquote>
+<br>
+
+<p><strong>HmmCleaner</strong></p>
+<blockquote>
+<p>Di Franco A, Poujol R, Baurain D, Philippe H. 2019. Evaluating the usefulness of alignment filtering methods to reduce the impact of errors on evolutionary inferences. BMC Evol Biol. 19: 21. doi: 10.1186&#x2F;s12862-019-1350-2.</p>
+</blockquote>
+<br>
+
+<p><strong>IQ-TREE</strong></p>
+<blockquote>
+<p>Nguyen, L.T., Schmidt, H.A., von Haeseler, A., and Minh, B.Q. (2015). IQ-TREE: a fast and effective stochastic algorithm for estimating maximum-likelihood phylogenies. Mol Biol Evol 32, 268-274.</p>
+</blockquote>
+<br>
+
+<p><strong>PartitionFinder2</strong></p>
+<blockquote>
+<p>Lanfear, R., Frandsen, P.B., Wright, A.M., Senfeld, T., and Calcott, B. (2017). PartitionFinder 2: new methods for selecting partitioned models of evolution for molecular and morphological phylogenetic analyses. Mol Biol Evol 34, 772-773.</p>
+</blockquote>
+<br>
+
+<p><strong>MrBayes</strong></p>
+<blockquote>
+<p>Ronquist, F., Teslenko, M., van der Mark, P., Ayres, D.L., Darling, A., Höhna, S., Larget, B., Liu, L., Suchard, M.A., and Huelsenbeck, J.P. (2012). MrBayes 3.2: efficient Bayesian phylogenetic inference and model choice across a large model space. Syst Biol 61, 539-542.</p>
+</blockquote>
+<br>
+
+<p>For the remaining functions, we mostly used our own Python codes, written in Python 3.6.7 and PyQT5. Biopython package was used for some functions, such as feature extraction from GenBank files, which is conducted using SeqIO module.</p>
+<blockquote>
+<p>Cock, P.J., Antao, T., Chang, J.T., Chapman, B.A., Cox, C.J., Dalke, A., Friedberg, I., Hamelryck, T., Kauff, F., Wilczynski, B., et al. (2009). Biopython: freely available Python tools for computational molecular biology and bioinformatics. Bioinformatics 25, 1422-1423.</p>
+</blockquote>
+<h1 id="7-Troubleshooting"><a href="#7-Troubleshooting" class="headerlink" title="7. Troubleshooting"></a>7. Troubleshooting</h1><h2 id="7-1-Update-failed-how-to-revert-to-previous-settings-and-plugins"><a href="#7-1-Update-failed-how-to-revert-to-previous-settings-and-plugins" class="headerlink" title="7.1. Update failed: how to revert to previous settings and plugins"></a>7.1. Update failed: how to revert to previous settings and plugins</h2><p>In some rare cases, users may encounter errors when updating PhyloSuite. As this may cause losing some of your settings and configurations, here we will demonstrate how to revert your settings and plugins to the state before update.</p>
+<ol>
+<li>First you should download the latest PhyloSuite package at <a target="_blank" rel="noopener" href="https://github.com/dongzhang0725/PhyloSuite/releases">https://github.com/dongzhang0725/PhyloSuite/releases</a>  or <a href="https://dongzhang0725.github.io/dongzhang0725.github.io/installation/#Chinese_download_link">https://dongzhang0725.github.io/dongzhang0725.github.io/installation/#Chinese_download_link</a> (China). <span style="color: red"> Note: for Windows, you should download <code>PhyloSuite_xxx_Win.rar</code>, instead of the installer file.</span></li>
+</ol>
+<table>
+<thead>
+<tr>
+<th>System</th>
+<th>Package file</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Windows</td>
+<td>PhyloSuite_xxx_Win.rar</td>
+</tr>
+<tr>
+<td>Linux</td>
+<td>PhyloSuite_xxx_Linux.tar.gz</td>
+</tr>
+<tr>
+<td>Mac OSX</td>
+<td>PhyloSuite_xxx_Mac.zip</td>
+</tr>
+</tbody></table>
+<ol start="2">
+<li><p>Unzip the package, select and copy all files, go to the installation path of PhyloSuite, open the <code>PhyloSuite</code> folder, paste the copied files directly into this folder (if prompted so, confirm that you wish to replace files with the same name).<br><img src="https://github.com/dongzhang0725/PhyloSuite_tutorial/blob/master/images/manual/update_failed.jpg?raw=true"></p>
+</li>
+<li><p>Open PhyloSuite, you should find that you are running an updated version, and that your previous settings have been retained.<br><img src="https://github.com/dongzhang0725/PhyloSuite_tutorial/blob/master/images/manual/open_phylosuite.jpg?raw=true"></p>
+</li>
+</ol>
+<h2 id="7-2-PhyloSuite-run-failed"><a href="#7-2-PhyloSuite-run-failed" class="headerlink" title="7.2. PhyloSuite run failed"></a>7.2. PhyloSuite run failed</h2><p>If the execution of PhyloSuite fails, please first try shutting down your antivirus program.</p>
+<h2 id="7-3-MrBayes-does-not-work"><a href="#7-3-MrBayes-does-not-work" class="headerlink" title="7.3. MrBayes does not work"></a>7.3. MrBayes does not work</h2><p>Sometimes MrBayes will finish immediately, without reporting an error. Generally you can try to find the problem by executing MrBayes in the terminal:</p>
+<p><img src="https://github.com/dongzhang0725/PhyloSuite_tutorial/blob/master/images/manual/exe_mb_terminal.jpg?raw=true"></p>
+<p>If you get ‘msvcr120.dll is missing’ error in Windows, you can fix it via <a target="_blank" rel="noopener" href="https://www.drivereasy.com/knowledge/best-solutions-to-fix-msvcr120-dll-is-missing-in-windows/">this solution</a>.</p>
+<p><img src="https://github.com/dongzhang0725/PhyloSuite_tutorial/blob/master/images/manual/mrbayes_error_win.png?raw=true"></p>
+<p>For other problems, please search the <code>error code</code> in the website.</p>
+<h2 id="7-4-PhyloSuite-get-stuck"><a href="#7-4-PhyloSuite-get-stuck" class="headerlink" title="7.4. PhyloSuite get stuck"></a>7.4. PhyloSuite get stuck</h2><p>If PhyloSuite become more and more stuck, this may be caused by the increasing data in a workplace. To settle this problem, you should create a new workplace. Generally, PhyloSuite encourage user to create multiple workplaces to preserve their work.</p>
+<h1 id="8-Acknowledgements"><a href="#8-Acknowledgements" class="headerlink" title="8. Acknowledgements"></a>8. Acknowledgements</h1><p>We would like to thank Dr. Meng Kai-Kai for helping us to set up the chloroplast genome extraction function.</p>
+
+      </div>
+      
+      
+      
+    </div>
+
+    
+    
+
+
+    <div class="comments gitalk-container"></div>
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+  <div class="copyright">
+    &copy; 
+    <span itemprop="copyrightYear">2025</span>
+    <span class="with-love">
+      <i class="user"></i>
+    </span>
+    <span class="author" itemprop="copyrightHolder">Dong Zhang</span>
+  </div>
+  <div class="powered-by">Powered by <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/" rel="noopener" target="_blank">NexT.Gemini</a>
+  </div>
+
+    </div>
+  </footer>
+
+  
+  <div class="toggle sidebar-toggle" role="button">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+  <div class="sidebar-dimmer"></div>
+  <div class="reading-progress-bar"></div>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/gitalk/1.8.0/gitalk.css" integrity="sha256-AJnUHL7dBv6PGaeyPQJcgQPDjt/Hn/PvYZde1iqfp8U=" crossorigin="anonymous">
+
+<script class="next-config" data-name="gitalk" type="application/json">{"enable":true,"github_id":"dongzhang0725","repo":"PhyloSuite","client_id":"55e7b2bd2c9d294158bf","client_secret":"b0716af44800887bfab50497c5e0309525a353b8","admin_user":"dongzhang0725","distraction_free_mode":true,"proxy":"https://cors-anywhere.azm.workers.dev/https://github.com/login/oauth/access_token","language":null,"js":{"url":"https://cdnjs.cloudflare.com/ajax/libs/gitalk/1.8.0/gitalk.min.js","integrity":"sha256-MVK9MGD/XJaGyIghSVrONSnoXoGh3IFxLw0zfvzpxR4="},"path_md5":"e872704cf2959b8a00c634b13965df81"}</script>
+<script src="/dongzhang0725.github.io/js/third-party/comments/gitalk.js" defer></script>
+
+</body>
+</html>

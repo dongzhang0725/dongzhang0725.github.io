@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222"><meta name="generator" content="Hexo 7.3.0">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/dongzhang0725.github.io/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/dongzhang0725.github.io/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/dongzhang0725.github.io/images/apple-touch-icon-next.png">
+  <link rel="mask-icon" href="/dongzhang0725.github.io/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/dongzhang0725.github.io/css/main.css">
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha256-VHqXKFhhMxcpubYf9xiWdCiojEbY9NexQ4jh8AxbvcM=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"dongzhang0725.github.io","root":"/dongzhang0725.github.io/","images":"/dongzhang0725.github.io/images","scheme":"Gemini","darkmode":false,"version":"8.25.0","exturl":false,"sidebar":{"position":"left","width_expanded":320,"width_dual_column":240,"display":"post","padding":18,"offset":12},"hljswrap":true,"codeblock":{"theme":{"light":"default","dark":"stackoverflow-dark"},"prism":{"light":"prism","dark":"prism-dark"},"copy_button":{"enable":false,"style":null},"fold":{"enable":false,"height":500},"language":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"duration":200,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"},"path":"/dongzhang0725.github.io/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/dongzhang0725.github.io/js/config.js" defer></script>
+
+    <meta name="description" content="Examples  All examples can be found in example folder of the PhyloSuite root folder or downloaded from https:&#x2F;&#x2F;raw.githubusercontent.com&#x2F;dongzhang0725&#x2F;PhyloSuite&#x2F;master&#x2F;example.zip or http:&#x2F;&#x2F;phylosuit">
+<meta property="og:type" content="website">
+<meta property="og:title" content="PhyloSuite">
+<meta property="og:url" content="https://dongzhang0725.github.io/example/index.html">
+<meta property="og:site_name" content="PhyloSuite">
+<meta property="og:description" content="Examples  All examples can be found in example folder of the PhyloSuite root folder or downloaded from https:&#x2F;&#x2F;raw.githubusercontent.com&#x2F;dongzhang0725&#x2F;PhyloSuite&#x2F;master&#x2F;example.zip or http:&#x2F;&#x2F;phylosuit">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://github.com/dongzhang0725/PhyloSuite_tutorial/blob/master/images/test_run/open_mitogenome.jpg?raw=true">
+<meta property="og:image" content="https://github.com/dongzhang0725/PhyloSuite_tutorial/blob/master/images/test_run/extraction.jpg?raw=true">
+<meta property="og:image" content="https://github.com/dongzhang0725/PhyloSuite_tutorial/blob/master/images/test_run/open_flowchart.jpg?raw=true">
+<meta property="og:image" content="https://github.com/dongzhang0725/PhyloSuite_tutorial/blob/master/images/test_run/open_extraction.jpg?raw=true">
+<meta property="og:image" content="https://github.com/dongzhang0725/PhyloSuite_tutorial/blob/master/images/test_run/set_parameters.jpg?raw=true">
+<meta property="og:image" content="https://github.com/dongzhang0725/PhyloSuite_tutorial/blob/master/images/test_run/start_workflow.jpg?raw=true">
+<meta property="og:image" content="https://github.com/dongzhang0725/PhyloSuite_tutorial/blob/master/images/test_run/all_task_finished.jpg?raw=true">
+<meta property="og:image" content="https://github.com/dongzhang0725/PhyloSuite_tutorial/blob/master/images/test_run/workflow_results.jpg?raw=true">
+<meta property="og:image" content="https://github.com/dongzhang0725/PhyloSuite_tutorial/blob/master/images/test_run/time_used.jpg?raw=true">
+<meta property="og:image" content="https://github.com/dongzhang0725/PhyloSuite_tutorial/blob/master/images/test_run/brief_demo.jpg?raw=true">
+<meta property="article:published_time" content="2019-05-06T07:21:04.000Z">
+<meta property="article:modified_time" content="2023-01-04T11:56:22.242Z">
+<meta property="article:author" content="Dong Zhang">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://github.com/dongzhang0725/PhyloSuite_tutorial/blob/master/images/test_run/open_mitogenome.jpg?raw=true">
+
+
+<link rel="canonical" href="https://dongzhang0725.github.io/example/">
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":false,"lang":"en","comments":true,"permalink":"https://dongzhang0725.github.io/example/index.html","path":"example/index.html","title":""}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title> | PhyloSuite
+</title>
+  
+
+
+
+
+
+
+
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous" defer></script>
+<script src="/dongzhang0725.github.io/js/utils.js" defer></script><script src="/dongzhang0725.github.io/js/motion.js" defer></script><script src="/dongzhang0725.github.io/js/sidebar.js" defer></script><script src="/dongzhang0725.github.io/js/next-boot.js" defer></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-generator-searchdb/1.5.0/search.js" integrity="sha256-xFC6PJ82SL9b3WkGjFavNiA9gm5z6UBxWPiu4CYjptg=" crossorigin="anonymous" defer></script>
+<script src="/dongzhang0725.github.io/js/third-party/search/local-search.js" defer></script>
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  <noscript>
+    <link rel="stylesheet" href="/dongzhang0725.github.io/css/noscript.css">
+  </noscript>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <div class="column">
+      <header class="header" itemscope itemtype="http://schema.org/WPHeader"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="Toggle navigation bar" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/dongzhang0725.github.io/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <p class="site-title">PhyloSuite</p>
+      <i class="logo-line"></i>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger" aria-label="Search" role="button">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/dongzhang0725.github.io/" rel="section"><i class="fa fa-home fa-fw"></i>Home</a></li><li class="menu-item menu-item-documentation"><a href="/dongzhang0725.github.io/documentation/" rel="section"><i class="fa fa-navicon fa-fw"></i>documentation</a></li><li class="menu-item menu-item-installation"><a href="/dongzhang0725.github.io/installation/" rel="section"><i class="fa fa-download fa-fw"></i>installation</a></li><li class="menu-item menu-item-example"><a href="/dongzhang0725.github.io/example/" rel="section"><i class="fa fa-print fa-fw"></i>example</a></li><li class="menu-item menu-item-categories"><a href="/dongzhang0725.github.io/categories/" rel="section"><i class="fa fa-th fa-fw"></i>Categories</a></li><li class="menu-item menu-item-archives"><a href="/dongzhang0725.github.io/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>Archives</a></li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>Search
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+      <div class="search-header">
+        <span class="search-icon">
+          <i class="fa fa-search"></i>
+        </span>
+        <div class="search-input-container">
+          <input autocomplete="off" autocapitalize="off" maxlength="80"
+                placeholder="Searching..." spellcheck="false"
+                type="search" class="search-input">
+        </div>
+        <span class="popup-btn-close" role="button">
+          <i class="fa fa-times-circle"></i>
+        </span>
+      </div>
+      <div class="search-result-container">
+        <div class="search-result-icon">
+          <i class="fa fa-spinner fa-pulse fa-5x"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</header>
+        
+  
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          Table of Contents
+        </li>
+        <li class="sidebar-nav-overview">
+          Overview
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-PhyloSuite-installation"><span class="nav-text">1. PhyloSuite installation</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-Install-plugins"><span class="nav-text">2. Install plugins</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-Run-the-test"><span class="nav-text">3. Run the test</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#3-1-Import-mitogenomes"><span class="nav-text">3.1 Import mitogenomes</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-2-Gene-extraction"><span class="nav-text">3.2 Gene extraction</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-3-Phylogenetic-workflow"><span class="nav-text">3.3 Phylogenetic workflow</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#3-3-1-Choose-workflow"><span class="nav-text">3.3.1 Choose workflow</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#3-3-2-Input-file-and-parameter-setting"><span class="nav-text">3.3.2 Input file and parameter setting</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#3-3-3-Start-workflow"><span class="nav-text">3.3.3 Start workflow</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#3-3-4-Get-workflow-results"><span class="nav-text">3.3.4 Get workflow results</span></a></li></ol></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-Test-run-of-each-function"><span class="nav-text">4. Test run of each function</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5-Recommended-reading"><span class="nav-text">5. Recommended reading</span></a></li></ol></div>
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">Dong Zhang</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        <a href="/dongzhang0725.github.io/archives/">
+          <span class="site-state-item-count">7</span>
+          <span class="site-state-item-name">posts</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+          <a href="/dongzhang0725.github.io/categories/">
+        <span class="site-state-item-count">1</span>
+        <span class="site-state-item-name">categories</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+          <a href="/dongzhang0725.github.io/tags/">
+        <span class="site-state-item-count">3</span>
+        <span class="site-state-item-name">tags</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author animated">
+      <span class="links-of-author-item">
+        <a href="https://github.com/dongzhang0725/PhyloSuite" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;dongzhang0725&#x2F;PhyloSuite" rel="noopener me" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="mailto:dongzhang0725@gmail.com" title="E-Mail → mailto:dongzhang0725@gmail.com" rel="noopener me" target="_blank"><i class="fa fa-envelope fa-fw"></i>E-Mail</a>
+      </span>
+  </div>
+
+        </div>
+      </div>
+        <div class="back-to-top animated" role="button" aria-label="Back to top">
+          <i class="fa fa-arrow-up"></i>
+          <span>0%</span>
+        </div>
+    </div>
+
+    
+  </aside>
+
+
+    </div>
+
+    <div class="main-inner page posts-expand">
+
+
+    
+    
+    
+    <div class="post-block" lang="en"><header class="post-header">
+
+<h1 class="post-title" itemprop="name headline">
+</h1>
+
+<div class="post-meta-container">
+</div>
+
+</header>
+
+      
+      
+      
+      <div class="post-body">
+          <center style="font-size:26px"><strong>Examples</strong></center>
+
+<p>All examples can be found in <code>example</code> folder of the PhyloSuite root folder or downloaded from <a target="_blank" rel="noopener" href="https://raw.githubusercontent.com/dongzhang0725/PhyloSuite/master/example.zip">https://raw.githubusercontent.com/dongzhang0725/PhyloSuite/master/example.zip</a> or <a target="_blank" rel="noopener" href="http://phylosuite.jushengwu.com/example.zip">http://phylosuite.jushengwu.com/example.zip</a> (China).</p>
+<center style="font-size:26px"><strong>Test run</strong></center>
+
+<h3 id="1-PhyloSuite-installation"><a href="#1-PhyloSuite-installation" class="headerlink" title="1. PhyloSuite installation"></a>1. PhyloSuite installation</h3><p>Please see <a href="https://dongzhang0725.github.io/dongzhang0725.github.io/installation/">https://dongzhang0725.github.io/dongzhang0725.github.io/installation/</a>.</p>
+<h3 id="2-Install-plugins"><a href="#2-Install-plugins" class="headerlink" title="2. Install plugins"></a>2. Install plugins</h3><p>Please see  <a href="https://dongzhang0725.github.io/dongzhang0725.github.io/PhyloSuite-demo/how-to-configure-plugins/">https://dongzhang0725.github.io/dongzhang0725.github.io/PhyloSuite-demo/how-to-configure-plugins/</a>.</p>
+<h3 id="3-Run-the-test"><a href="#3-Run-the-test" class="headerlink" title="3. Run the test"></a>3. Run the test</h3><p>Here I use 31 marine turtle mitogenomes as an example. For the original paper see <a target="_blank" rel="noopener" href="https://www.sciencedirect.com/science/article/pii/S1055790312002242#t0005 ">https://www.sciencedirect.com/science/article/pii/S1055790312002242#t0005</a>.</p>
+<h4 id="3-1-Import-mitogenomes"><a href="#3-1-Import-mitogenomes" class="headerlink" title="3.1 Import mitogenomes"></a>3.1 Import mitogenomes</h4><ol>
+<li>Select any of the work folders (here I chose <code>files</code>);</li>
+<li>Click <code>Open file(s)/Input ID(s)</code> to open the input window;</li>
+<li>Click <code>Choose Files</code> in the <code>Input by files</code> box;</li>
+<li>Go to PhyloSuite root folder, open the <code>tests</code> folder, then choose <code>marine_turtle_mitogenomes.gb</code>;</li>
+<li>Click <code>Open</code> to import.<br><img src="https://github.com/dongzhang0725/PhyloSuite_tutorial/blob/master/images/test_run/open_mitogenome.jpg?raw=true"></li>
+</ol>
+<h4 id="3-2-Gene-extraction"><a href="#3-2-Gene-extraction" class="headerlink" title="3.2 Gene extraction"></a>3.2 Gene extraction</h4><ol>
+<li>In the main interface, choose <code>files</code> work folder, select all sequences;</li>
+<li>Right-click and choose <code>Extract</code> to enter the extraction interface;</li>
+<li>Select the predefined <code>Mitogenome</code> as the sequence type;</li>
+<li>Select <code>2 Vertebrate mitochondrial code</code>;</li>
+<li>Click to rename the output dir name as <code>test_run</code>;</li>
+<li>Click <code>Start</code> to extract.<br><img src="https://github.com/dongzhang0725/PhyloSuite_tutorial/blob/master/images/test_run/extraction.jpg?raw=true"></li>
+</ol>
+<h4 id="3-3-Phylogenetic-workflow"><a href="#3-3-Phylogenetic-workflow" class="headerlink" title="3.3 Phylogenetic workflow"></a>3.3 Phylogenetic workflow</h4><h5 id="3-3-1-Choose-workflow"><a href="#3-3-1-Choose-workflow" class="headerlink" title="3.3.1 Choose workflow"></a>3.3.1 Choose workflow</h5><ol>
+<li>Click <code>Flowchart</code> in the menu bar;</li>
+<li>Choose <code>Test run</code> in the <code>Workflow</code> menu;<br><img src="https://github.com/dongzhang0725/PhyloSuite_tutorial/blob/master/images/test_run/open_flowchart.jpg?raw=true"></li>
+</ol>
+<h5 id="3-3-2-Input-file-and-parameter-setting"><a href="#3-3-2-Input-file-and-parameter-setting" class="headerlink" title="3.3.2 Input file and parameter setting"></a>3.3.2 Input file and parameter setting</h5><ol>
+<li><p>Only the first program needs an input file, so click the red <code>Input file here</code> to open the MAFFT program window;</p>
+</li>
+<li><p>   Click the file input box of MAFFT to view the automatically prepared input files (you may opt to use a different file via <code>No, thanks</code>);</p>
+</li>
+<li><p>   Select the results that you extracted in section 3.2 (<code>test_run</code> in <code>extract_results</code>);</p>
+</li>
+<li><p>Click <code>Ok</code> to import.<br><img src="https://github.com/dongzhang0725/PhyloSuite_tutorial/blob/master/images/test_run/open_extraction.jpg?raw=true"></p>
+</li>
+<li><p>   Tick <code>Extract-Seq</code> option and then tick <code>PCGs</code>, and the nucleotide sequences of protein-coding genes will be imported automatically;</p>
+</li>
+<li><p>To speed up the test, you may pop-up the files menu and remove all files but ‘nad3.fas’, ‘nad4L.fas’ and ‘nad6.fas’ files (using the <code>remove button</code> [red x sign]);</p>
+</li>
+<li><p>Select <code>2 Vertebrate mitochondrial code</code>; </p>
+</li>
+<li><p>   Just close the window to save the imported files and parameters.<br><img src="https://github.com/dongzhang0725/PhyloSuite_tutorial/blob/master/images/test_run/set_parameters.jpg?raw=true"></p>
+</li>
+</ol>
+<h5 id="3-3-3-Start-workflow"><a href="#3-3-3-Start-workflow" class="headerlink" title="3.3.3 Start workflow"></a>3.3.3 Start workflow</h5><ol>
+<li>   Click the <code>Check | Start</code> button, and the parameter summary window will pop up, allowing you to check and modify the parameters;</li>
+<li>   Click <code>Ok, start</code> to start the workflow.<br><img src="https://github.com/dongzhang0725/PhyloSuite_tutorial/blob/master/images/test_run/start_workflow.jpg?raw=true"></li>
+</ol>
+<h5 id="3-3-4-Get-workflow-results"><a href="#3-3-4-Get-workflow-results" class="headerlink" title="3.3.4 Get workflow results"></a>3.3.4 Get workflow results</h5><p>When all the tasks are finished, click <code>Ok</code> to view the results, double-click the folders in the <code>list of results</code> box to open the corresponding results:<br><img src="https://github.com/dongzhang0725/PhyloSuite_tutorial/blob/master/images/test_run/all_task_finished.jpg?raw=true"><br><img src="https://github.com/dongzhang0725/PhyloSuite_tutorial/blob/master/images/test_run/workflow_results.jpg?raw=true"></p>
+<p>Scroll to the bottom of the results, and you will see that the whole workflow takes around 3 minutes (CPU: AMD Ryzen 7 1700; RAM: 8 G; OS: Windows 10 64 bit).<br><img src="https://github.com/dongzhang0725/PhyloSuite_tutorial/blob/master/images/test_run/time_used.jpg?raw=true"></p>
+<p><span style="color:red">Note: to make this ‘test run’ very fast, I set a very low number of generations for MrBayes (10000) and IQ-TREE ultrafast bootstrap (5000). </span></p>
+<h3 id="4-Test-run-of-each-function"><a href="#4-Test-run-of-each-function" class="headerlink" title="4. Test run of each function"></a>4. Test run of each function</h3><p>You may view a brief demo and&#x2F;or test for each function via the inbuilt question mark button. For example:</p>
+<p><img src="https://github.com/dongzhang0725/PhyloSuite_tutorial/blob/master/images/test_run/brief_demo.jpg?raw=true"></p>
+<h3 id="5-Recommended-reading"><a href="#5-Recommended-reading" class="headerlink" title="5. Recommended reading"></a>5. Recommended reading</h3><p>Other demo tutorials can be found <a href="https://dongzhang0725.github.io/dongzhang0725.github.io/archives/">here</a>.</p>
+
+      </div>
+      
+      
+      
+    </div>
+
+    
+    
+
+
+    <div class="comments gitalk-container"></div>
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+  <div class="copyright">
+    &copy; 
+    <span itemprop="copyrightYear">2025</span>
+    <span class="with-love">
+      <i class="user"></i>
+    </span>
+    <span class="author" itemprop="copyrightHolder">Dong Zhang</span>
+  </div>
+  <div class="powered-by">Powered by <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/" rel="noopener" target="_blank">NexT.Gemini</a>
+  </div>
+
+    </div>
+  </footer>
+
+  
+  <div class="toggle sidebar-toggle" role="button">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+  <div class="sidebar-dimmer"></div>
+  <div class="reading-progress-bar"></div>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/gitalk/1.8.0/gitalk.css" integrity="sha256-AJnUHL7dBv6PGaeyPQJcgQPDjt/Hn/PvYZde1iqfp8U=" crossorigin="anonymous">
+
+<script class="next-config" data-name="gitalk" type="application/json">{"enable":true,"github_id":"dongzhang0725","repo":"PhyloSuite","client_id":"55e7b2bd2c9d294158bf","client_secret":"b0716af44800887bfab50497c5e0309525a353b8","admin_user":"dongzhang0725","distraction_free_mode":true,"proxy":"https://cors-anywhere.azm.workers.dev/https://github.com/login/oauth/access_token","language":null,"js":{"url":"https://cdnjs.cloudflare.com/ajax/libs/gitalk/1.8.0/gitalk.min.js","integrity":"sha256-MVK9MGD/XJaGyIghSVrONSnoXoGh3IFxLw0zfvzpxR4="},"path_md5":"2cd3c25911f4ed5ac4f018d51131293b"}</script>
+<script src="/dongzhang0725.github.io/js/third-party/comments/gitalk.js" defer></script>
+
+</body>
+</html>
