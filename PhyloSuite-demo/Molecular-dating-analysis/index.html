@@ -85,7 +85,7 @@
 <meta property="og:image" content="https://github.com/dongzhang0725/PhyloSuite_tutorial/blob/master/images/manual/r8sfolder.jpg?raw=true">
 <meta property="og:image" content="https://github.com/dongzhang0725/PhyloSuite_tutorial/blob/master/images/manual/r8sresult.jpg?raw=true">
 <meta property="article:published_time" content="2025-11-16T02:51:53.000Z">
-<meta property="article:modified_time" content="2025-11-16T13:43:39.152Z">
+<meta property="article:modified_time" content="2025-11-16T13:45:20.821Z">
 <meta property="article:author" content="Dong Zhang">
 <meta property="article:tag" content="PyQT5">
 <meta property="article:tag" content="Python">
@@ -311,7 +311,7 @@
       <span class="post-meta-item-text">Posted on</span>
       
 
-      <time title="Created: 2025-11-16 10:51:53 / Modified: 21:43:39" itemprop="dateCreated datePublished" datetime="2025-11-16T10:51:53+08:00">2025-11-16</time>
+      <time title="Created: 2025-11-16 10:51:53 / Modified: 21:45:20" itemprop="dateCreated datePublished" datetime="2025-11-16T10:51:53+08:00">2025-11-16</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -590,9 +590,10 @@
 <h2 id="1-1-文件输入与准备"><a href="#1-1-文件输入与准备" class="headerlink" title="1.1 文件输入与准备"></a>1.1 文件输入与准备</h2><p><img src="https://github.com/dongzhang0725/PhyloSuite_tutorial/blob/master/images/manual/draginput.jpg?raw=true"></p>
 <center><strong>图1.1a. MDGUI文件拖拽导入</strong></center>
 ① 序列比对文件（Alignment）：将多重多序列比对文件（支持FASTA、NEXUS、PHYLIP 等格式）拖拽到文件输入框（图1.1a）。
-② 树文件（Treefile）：通过相同的方式导入含物种系统发育关系的进化树文件（建议 nwk 格式）。
 
-<p><span style="color:red"><em>Tips：MDGUI 支持三种文件导入方式，分别是：拖拽导入、按钮导入以及自动导入上游程序结果（其他导入方式演示见下文图1.1b、1.1c）。</em></span><br>③ 当用户导入文件后，程序会自动识别序列类型（AAs、nucleotides、codon）并显示在“seqtype”选项中。<br>④ 树文件导入后，通过“Add calibration points in tree”按钮可以打开化石校准信息可视化管理界面（见1.1 添加化石校准信息）。<br>⑤ 软件会自动识别物种数量并显示在界面。<br>用户需要确保两个文件中的物种名称完全一致。软件会自动校验树文件与序列比对文件的物种名称是否匹配，若不一致会弹框提醒。</p>
+<p>② 树文件（Treefile）：通过相同的方式导入含物种系统发育关系的进化树文件（建议 nwk 格式）。</p>
+<p><span style="color:red"><em>Tips：MDGUI 支持三种文件导入方式，分别是：拖拽导入、按钮导入以及自动导入上游程序结果（其他导入方式演示见下文图1.1b、1.1c）。</em></span></p>
+<p>③ 当用户导入文件后，程序会自动识别序列类型（AAs、nucleotides、codon）并显示在“seqtype”选项中。<br>④ 树文件导入后，通过“Add calibration points in tree”按钮可以打开化石校准信息可视化管理界面（见1.1 添加化石校准信息）。<br>⑤ 软件会自动识别物种数量并显示在界面。<br>用户需要确保两个文件中的物种名称完全一致。软件会自动校验树文件与序列比对文件的物种名称是否匹配，若不一致会弹框提醒。</p>
 <p><span style="color:red"><em>Tips：MCMCtree 要求进化树必须为有根树，并且在根（root）的位置必须设置时间校准点。若不满足这些要求，MDGUI 将在运行的时候弹窗提示。解决办法见下一章节。</em></span></p>
 <p><span style="color:red"><em>Tips：如果是病毒序列，且序列名包含时间信息，可以勾选“Enabling tip-dating analyses”即可启用适用于tipdates的分析功能（<a target="_blank" rel="noopener" href="https://github.com/abacus-gene/paml/wiki/MCMCtree#enabling-tip-dating-analyses-with-mcmctree">https://github.com/abacus-gene/paml/wiki/MCMCtree#enabling-tip-dating-analyses-with-mcmctree</a>）。</em></span></p>
 <p><img src="https://github.com/dongzhang0725/PhyloSuite_tutorial/blob/master/images/manual/upstreaminput.jpg?raw=true"></p>
