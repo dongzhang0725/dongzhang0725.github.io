@@ -85,7 +85,7 @@
 <meta property="og:image" content="https://github.com/dongzhang0725/PhyloSuite_tutorial/blob/master/images/manual/r8sfolder.jpg?raw=true">
 <meta property="og:image" content="https://github.com/dongzhang0725/PhyloSuite_tutorial/blob/master/images/manual/r8sresult.jpg?raw=true">
 <meta property="article:published_time" content="2025-11-16T02:51:53.000Z">
-<meta property="article:modified_time" content="2025-11-16T12:25:48.267Z">
+<meta property="article:modified_time" content="2025-11-16T12:34:19.694Z">
 <meta property="article:author" content="Dong Zhang">
 <meta property="article:tag" content="PyQT5">
 <meta property="article:tag" content="Python">
@@ -311,7 +311,7 @@
       <span class="post-meta-item-text">Posted on</span>
       
 
-      <time title="Created: 2025-11-16 10:51:53 / Modified: 20:25:48" itemprop="dateCreated datePublished" datetime="2025-11-16T10:51:53+08:00">2025-11-16</time>
+      <time title="Created: 2025-11-16 10:51:53 / Modified: 20:34:19" itemprop="dateCreated datePublished" datetime="2025-11-16T10:51:53+08:00">2025-11-16</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -364,12 +364,9 @@
 
 <ol>
 <li>Sequence Alignment File (Alignment): Drag multi-sequence alignment files (FASTA, NEXUS, PHYLIP formats supported) into the file input box (Figure 1.1a).  </li>
-<li>Tree File (Treefile): Similarly, import a tree file with species phylogenetic relationships (recommended in nwk format).<br><br>Tips: MDGUI supports three import methods: drag-and-drop, button import, or automatic import from upstream results (see Figures 1.1b, 1.1c).<br></li>
-<li>After importing, the program will automatically detect the sequence type (AAs, nucleotides, codon) and display it in the “seqtype” option.<br></li>
-<li>After importing the tree, click “Add calibration points in tree” to open the fossil calibration visualization interface (see Section 1.1.1).<br></li>
-<li>The software automatically detects the number of species and displays it. Ensure species names match between alignment and tree files; mismatches will trigger a warning.<br></li>
+<li>Tree File (Treefile): Similarly, import a tree file with species phylogenetic relationships (recommended in nwk format).</li>
 </ol>
-<p><span style="color:red"><em>Tips: MCMCtree requires a rooted tree, and the root must have a calibration point. Otherwise, MDGUI will prompt an error during the run. See next section for solutions.</em></span><br></p>
+<p><span style="color:red"><em>Tips: MDGUI supports three import methods: drag-and-drop, button import, or automatic import from upstream results (see Figures 1.1b, 1.1c).</em> </span><br>3. After importing, the program will automatically detect the sequence type (AAs, nucleotides, codon) and display it in the “seqtype” option.<br><br>4. After importing the tree, click “Add calibration points in tree” to open the fossil calibration visualization interface (see Section 1.1.1).<br><br>5. The software automatically detects the number of species and displays it. Ensure species names match between alignment and tree files; mismatches will trigger a warning.<br><span style="color:red"><em>Tips: MCMCtree requires a rooted tree, and the root must have a calibration point. Otherwise, MDGUI will prompt an error during the run. See next section for solutions.</em></span><br></p>
 <p><span style="color:red"><em>Tips: For viral sequences with temporal information in sequence names, enable “Enabling tip-dating analyses” for tip-dating analyses (<a target="_blank" rel="noopener" href="https://github.com/abacus-gene/paml/wiki/MCMCtree#enabling-tip-dating-analyses-with-mcmctree">link</a>).</em> </span><br></p>
 <p><img src="https://github.com/dongzhang0725/PhyloSuite_tutorial/blob/master/images/manual/upstreaminput.jpg?raw=true"></p>
 <center><strong>Figure 1.1b. Automatic Import from Upstream Analysis in MDGUI</strong></center>
@@ -569,7 +566,7 @@
 </div>
 
 <!-- 中文内容 -->
-<div class="lang lang-zh" style="display:none;">
+<div class="lang lang-zh"># style="display:none;">
 
 <center style="font-size:30px"><strong>使用PhyloSuite v2进行分子定年分析</strong></center>
 <br>
@@ -590,15 +587,11 @@
 <h2 id="1-1-文件输入与准备"><a href="#1-1-文件输入与准备" class="headerlink" title="1.1 文件输入与准备"></a>1.1 文件输入与准备</h2><p><img src="https://github.com/dongzhang0725/PhyloSuite_tutorial/blob/master/images/manual/draginput.jpg?raw=true"></p>
 <center><strong>图1.1a. MDGUI文件拖拽导入</strong></center>
 ① 序列比对文件（Alignment）：将多重多序列比对文件（支持FASTA、NEXUS、PHYLIP 等格式）拖拽到文件输入框（图1.1a）。
-② 树文件（Treefile）：通过相同的方式导入含物种系统发育关系的进化树文件（建议 nwk 格式）。<br>
-Tips：MDGUI 支持三种文件导入方式，分别是：拖拽导入、按钮导入以及自动导入上游程序结果（其他导入方式演示见下文图1.1b、1.1c）。<br>
-③ 当用户导入文件后，程序会自动识别序列类型（AAs、nucleotides、codon）并显示在“seqtype”选项中。<br>
-④ 树文件导入后，通过“Add calibration points in tree”按钮可以打开化石校准信息可视化管理界面（见1.1 添加化石校准信息）。<br>
-⑤ 软件会自动识别物种数量并显示在界面。<br>
-用户需要确保两个文件中的物种名称完全一致。软件会自动校验树文件与序列比对文件的物种名称是否匹配，若不一致会弹框提醒。<br>
+② 树文件（Treefile）：通过相同的方式导入含物种系统发育关系的进化树文件（建议 nwk 格式）。
 
-<p><span style="color:red"><em>Tips：MCMCtree 要求进化树必须为有根树，并且在根（root）的位置必须设置时间校准点。若不满足这些要求，MDGUI 将在运行的时候弹窗提示。解决办法见下一章节。</em></span><br></p>
-<p><span style="color:red"><em>Tips：如果是病毒序列，且序列名包含时间信息，可以勾选“Enabling tip-dating analyses”即可启用适用于tipdates的分析功能（<a target="_blank" rel="noopener" href="https://github.com/abacus-gene/paml/wiki/MCMCtree#enabling-tip-dating-analyses-with-mcmctree">https://github.com/abacus-gene/paml/wiki/MCMCtree#enabling-tip-dating-analyses-with-mcmctree</a>）。</em></span><br></p>
+<p><span style="color:red"><em>Tips：MDGUI 支持三种文件导入方式，分别是：拖拽导入、按钮导入以及自动导入上游程序结果（其他导入方式演示见下文图1.1b、1.1c）。</em></span><br>③ 当用户导入文件后，程序会自动识别序列类型（AAs、nucleotides、codon）并显示在“seqtype”选项中。<br>④ 树文件导入后，通过“Add calibration points in tree”按钮可以打开化石校准信息可视化管理界面（见1.1 添加化石校准信息）。<br>⑤ 软件会自动识别物种数量并显示在界面。<br>用户需要确保两个文件中的物种名称完全一致。软件会自动校验树文件与序列比对文件的物种名称是否匹配，若不一致会弹框提醒。</p>
+<p><span style="color:red"><em>Tips：MCMCtree 要求进化树必须为有根树，并且在根（root）的位置必须设置时间校准点。若不满足这些要求，MDGUI 将在运行的时候弹窗提示。解决办法见下一章节。</em></span></p>
+<p><span style="color:red"><em>Tips：如果是病毒序列，且序列名包含时间信息，可以勾选“Enabling tip-dating analyses”即可启用适用于tipdates的分析功能（<a target="_blank" rel="noopener" href="https://github.com/abacus-gene/paml/wiki/MCMCtree#enabling-tip-dating-analyses-with-mcmctree">https://github.com/abacus-gene/paml/wiki/MCMCtree#enabling-tip-dating-analyses-with-mcmctree</a>）。</em></span></p>
 <p><img src="https://github.com/dongzhang0725/PhyloSuite_tutorial/blob/master/images/manual/upstreaminput.jpg?raw=true"></p>
 <center><strong>图1.1b. MDGUI自动导入上有分析的结果</strong></center>
 
@@ -643,7 +636,7 @@ Tips：MDGUI 支持三种文件导入方式，分别是：拖拽导入、按钮�
 <h3 id="1-1-2参数设置"><a href="#1-1-2参数设置" class="headerlink" title="1.1.2	参数设置"></a>1.1.2	参数设置</h3><p><img src="https://github.com/dongzhang0725/PhyloSuite_tutorial/blob/master/images/manual/MDGUIsetting.jpg?raw=true"></p>
 <center><strong>图1.4. MDGUI-MCMCtree参数设置</strong></center>
 
-<p>MDGUI-MCMCtree 的参数与命令行版本 MCMCtree 保持一致，但在易用性和自动化方面进行了多项改进（图1.4）。例如，当用户选择 GTR、氨基酸模型等非 MCMCtree 的默认模型时，MDGUI 会自动将“usedata”参数设置为 approximate likelihood。<br>① burnin（预烧代数设置）：与原版需设置固定代数不同，此处用户需要设置一个比例（例如，10%）。软件会自动计算总代数中相应比例的步数作为 burnin ，并在后续分析中舍弃这部分数据。<br>② usedata：命令行版本 MCMCtree 仅可直接使用五种核苷酸替代模型（JC69、K80、F81、F84、HKY85），若需使用其它核苷酸模型（如T92、T93、GTR、UNREST）或氨基酸模型（如WAG、MtZoa、LG等），则必须手动配置 usedata 参数以结合 Baseml&#x2F;Codeml 程序进行 Hessian matrix （矩阵）计算。具体步骤如下：首先在控制文件中设置 usedata&#x3D;3 并运行 MCMCtree 以生成一个用于计算 Hessian matrix 的临时文件；随后打开生成的tmp*.ctl文件，修改aaRatefile和模型参数（如添加+F或+G）等；接着根据数据类型，使用Baseml（核苷酸）或Codeml（氨基酸&#x2F;密码子）运行该配置文件，生成Hessian矩阵文件（rst2），并将其重命名为in.BV；最后在主控制文件中设置usedata &#x3D; 2 in.BV以调用mcmctree进行分歧时间估算。核苷酸模型的分析步骤虽简单一些（通常三步），但仍需手动操作。<br>在 MDGUI 中，用户只需将 usedata 设置为 “approximate likelihood FAST” 模式，即可一键完成上述所有操作，无需任何手动配置。当选择 “no data (prior)” 或 “seq like (exact likelihood) SLOW” 选项时，其效果分别等同于在配置文件中手动设置 usedata&#x3D;0 或 usedata&#x3D;1。<br>③ Thread（独立运行的MCMC链数）：当数据量较大时（基因组数据或物种数较多），可使用该参数同时运行多条MCMC 链，分析结束后 PhyloSuite 会合并这些 MCMC 链的 sample 文件（mcmc.txt）进行统计分析，进而缩短分析所需的时间，操作原理见<a target="_blank" rel="noopener" href="https://github.com/abacus-gene/paml/issues/74">https://github.com/abacus-gene/paml/issues/74</a><br>④ Repeat for  convergence（自动重复一次分子定年分析以便判断结果是否收敛）：建议勾选此选项，软件会根据设置的 Thread 数值，将 MCMC 链平均分配到2个 repeat 文件夹中（repeat1和repeat2）。例如，当用户设置 thread 为4，repeat1 文件夹中将会运行 run1 和 run2 两条链，repeat2 中将会运行 run3 和 run4 两条链。如果用户设置 Thread 为奇数，例如5，MDGUI 会将 Thread 数量减1（4）以便分配 MCMC 链。分析完成后，每个 repeat 文件夹中会生成一个包含所有 MCMC samples 的文件（all_mcmc_runs.txt），便于用户在分析结束后使用 MCMCTracer 等工具进行收敛诊断，评估结果的可信度。</p>
+<p>MDGUI-MCMCtree 的参数与命令行版本 MCMCtree 保持一致，但在易用性和自动化方面进行了多项改进（图1.4）。例如，当用户选择 GTR、氨基酸模型等非 MCMCtree 的默认模型时，MDGUI 会自动将“usedata”参数设置为 approximate likelihood。<br>① burnin（预烧代数设置）：与原版需设置固定代数不同，此处用户需要设置一个比例（例如，10%）。软件会自动计算总代数中相应比例的步数作为 burnin ，并在后续分析中舍弃这部分数据。<br>② usedata：命令行版本 MCMCtree 仅可直接使用五种核苷酸替代模型（JC69、K80、F81、F84、HKY85），若需使用其它核苷酸模型（如T92、T93、GTR、UNREST）或氨基酸模型（如WAG、MtZoa、LG等），则必须手动配置 usedata 参数以结合 Baseml&#x2F;Codeml 程序进行 Hessian matrix （矩阵）计算。具体步骤如下：首先在控制文件中设置 usedata&#x3D;3 并运行 MCMCtree 以生成一个用于计算 Hessian matrix 的临时文件；随后打开生成的tmp*.ctl文件，修改aaRatefile和模型参数（如添加+F或+G）等；接着根据数据类型，使用Baseml（核苷酸）或Codeml（氨基酸&#x2F;密码子）运行该配置文件，生成Hessian矩阵文件（rst2），并将其重命名为 in.BV；最后在主控制文件中设置usedata &#x3D; 2 in.BV以调用mcmctree进行分歧时间估算。核苷酸模型的分析步骤虽简单一些（通常三步），但仍需手动操作。<br>在 MDGUI 中，用户只需将 usedata 设置为 “approximate likelihood FAST” 模式，即可一键完成上述所有操作，无需任何手动配置。当选择 “no data (prior)” 或 “seq like (exact likelihood) SLOW” 选项时，其效果分别等同于在配置文件中手动设置 usedata&#x3D;0 或 usedata&#x3D;1。<br>③ Thread（独立运行的MCMC链数）：当数据量较大时（基因组数据或物种数较多），可使用该参数同时运行多条MCMC 链，分析结束后 PhyloSuite 会合并这些 MCMC 链的 sample 文件（mcmc.txt）进行统计分析，进而缩短分析所需的时间，操作原理见<a target="_blank" rel="noopener" href="https://github.com/abacus-gene/paml/issues/74">https://github.com/abacus-gene/paml/issues/74</a><br>④ Repeat for  convergence（自动重复一次分子定年分析以便判断结果是否收敛）：建议勾选此选项，软件会根据设置的 Thread 数值，将 MCMC 链平均分配到2个 repeat 文件夹中（repeat1和repeat2）。例如，当用户设置 thread 为4，repeat1 文件夹中将会运行 run1 和 run2 两条链，repeat2 中将会运行 run3 和 run4 两条链。如果用户设置 Thread 为奇数，例如5，MDGUI 会将 Thread 数量减1（4）以便分配 MCMC 链。分析完成后，每个 repeat 文件夹中会生成一个包含所有 MCMC samples 的文件（all_mcmc_runs.txt），便于用户在分析结束后使用 MCMCTracer 等工具进行收敛诊断，评估结果的可信度。</p>
 <p><img src="https://github.com/dongzhang0725/PhyloSuite_tutorial/blob/master/images/manual/modelsetting.jpg?raw=true"></p>
 <center><strong>图1.4a. MDGUI-MCMCtree支持的模型列表</strong></center>
 
