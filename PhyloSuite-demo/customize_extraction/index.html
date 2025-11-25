@@ -19,12 +19,12 @@
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"dongzhang0725.github.io","root":"/","images":"/images","scheme":"Gemini","darkmode":false,"version":"8.25.0","exturl":false,"sidebar":{"position":"left","width_expanded":320,"width_dual_column":240,"display":"post","padding":18,"offset":12},"hljswrap":true,"codeblock":{"theme":{"light":"default","dark":"stackoverflow-dark"},"prism":{"light":"prism","dark":"prism-dark"},"copy_button":{"enable":false,"style":null},"fold":{"enable":false,"height":500},"language":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"duration":200,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js" defer></script>
 
-    <meta name="description" content="When extracting sequences, you should use different settings for different data-types. PhyloSuite has five predefined data-types, Mitogenome, general, cox1, 16S and 18S, but you can easily add your ow">
+    <meta name="description" content="English   中文      When extracting sequences, you should use different settings for different data-types. PhyloSuite has five predefined data-types, Mitogenome, general, cox1, 16S and 18S, but you">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Customizing the extraction">
 <meta property="og:url" content="https://dongzhang0725.github.io/PhyloSuite-demo/customize_extraction/index.html">
 <meta property="og:site_name" content="PhyloSuite">
-<meta property="og:description" content="When extracting sequences, you should use different settings for different data-types. PhyloSuite has five predefined data-types, Mitogenome, general, cox1, 16S and 18S, but you can easily add your ow">
+<meta property="og:description" content="English   中文      When extracting sequences, you should use different settings for different data-types. PhyloSuite has five predefined data-types, Mitogenome, general, cox1, 16S and 18S, but you">
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="https://github.com/dongzhang0725/PhyloSuite_tutorial/blob/master/images/customize_extraction/open_gb.jpg?raw=true">
 <meta property="og:image" content="https://github.com/dongzhang0725/PhyloSuite_tutorial/blob/master/images/customize_extraction/general_extraction.jpg?raw=true">
@@ -34,8 +34,16 @@
 <meta property="og:image" content="https://github.com/dongzhang0725/PhyloSuite_tutorial/blob/master/images/customize_extraction/hover.jpg?raw=true">
 <meta property="og:image" content="https://github.com/dongzhang0725/PhyloSuite_tutorial/blob/master/images/customize_extraction/modify.jpg?raw=true">
 <meta property="og:image" content="https://github.com/dongzhang0725/PhyloSuite_tutorial/blob/master/images/customize_extraction/self_extract.jpg?raw=true">
+<meta property="og:image" content="https://github.com/dongzhang0725/PhyloSuite_tutorial/blob/master/images/customize_extraction/open_gb.jpg?raw=true">
+<meta property="og:image" content="https://github.com/dongzhang0725/PhyloSuite_tutorial/blob/master/images/customize_extraction/general_extraction.jpg?raw=true">
+<meta property="og:image" content="https://github.com/dongzhang0725/PhyloSuite_tutorial/blob/master/images/customize_extraction/overview.jpg?raw=true">
+<meta property="og:image" content="https://github.com/dongzhang0725/PhyloSuite_tutorial/blob/master/images/customize_extraction/open_settings.jpg?raw=true">
+<meta property="og:image" content="https://github.com/dongzhang0725/PhyloSuite_tutorial/blob/master/images/customize_extraction/add_feature.jpg?raw=true">
+<meta property="og:image" content="https://github.com/dongzhang0725/PhyloSuite_tutorial/blob/master/images/customize_extraction/hover.jpg?raw=true">
+<meta property="og:image" content="https://github.com/dongzhang0725/PhyloSuite_tutorial/blob/master/images/customize_extraction/modify.jpg?raw=true">
+<meta property="og:image" content="https://github.com/dongzhang0725/PhyloSuite_tutorial/blob/master/images/customize_extraction/self_extract.jpg?raw=true">
 <meta property="article:published_time" content="2019-03-04T11:06:19.000Z">
-<meta property="article:modified_time" content="2023-01-02T07:46:35.212Z">
+<meta property="article:modified_time" content="2025-11-25T04:57:30.562Z">
 <meta property="article:author" content="Dong Zhang">
 <meta property="article:tag" content="PyQT5">
 <meta property="article:tag" content="Python">
@@ -168,7 +176,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
-            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-GenBank-file-format"><span class="nav-text">1. GenBank file format</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-General-extraction"><span class="nav-text">2. General extraction</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-Customize-extraction"><span class="nav-text">3. Customize extraction</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-Extracting-with-customized-settings"><span class="nav-text">4. Extracting with customized settings</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5-Recommended-reading"><span class="nav-text">5. Recommended reading</span></a></li></ol></div>
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-GenBank-file-format"><span class="nav-text">1. GenBank file format</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-General-extraction"><span class="nav-text">2. General extraction</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-Customize-extraction"><span class="nav-text">3. Customize extraction</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-Extracting-with-customized-settings"><span class="nav-text">4. Extracting with customized settings</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5-Recommended-reading"><span class="nav-text">5. Recommended reading</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-GenBank-%E6%96%87%E4%BB%B6%E6%A0%BC%E5%BC%8F"><span class="nav-text">1. GenBank 文件格式</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-%E9%80%9A%E7%94%A8%E6%8F%90%E5%8F%96"><span class="nav-text">2. 通用提取</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-%E8%87%AA%E5%AE%9A%E4%B9%89%E6%8F%90%E5%8F%96"><span class="nav-text">3. 自定义提取</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-%E4%BD%BF%E7%94%A8%E8%87%AA%E5%AE%9A%E4%B9%89%E8%AE%BE%E7%BD%AE%E8%BF%9B%E8%A1%8C%E6%8F%90%E5%8F%96"><span class="nav-text">4. 使用自定义设置进行提取</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5-%E6%8E%A8%E8%8D%90%E9%98%85%E8%AF%BB"><span class="nav-text">5. 推荐阅读</span></a></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -267,7 +275,7 @@
         <i class="far fa-calendar-check"></i>
       </span>
       <span class="post-meta-item-text">Edited on</span>
-      <time title="Modified: 2023-01-02 15:46:35" itemprop="dateModified" datetime="2023-01-02T15:46:35+08:00">2023-01-02</time>
+      <time title="Modified: 2025-11-25 12:57:30" itemprop="dateModified" datetime="2025-11-25T12:57:30+08:00">2025-11-25</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -288,7 +296,16 @@
     
     
     
-    <div class="post-body" itemprop="articleBody"><p>When extracting sequences, you should use different settings for different data-types. PhyloSuite has five predefined data-types, Mitogenome, general, cox1, 16S and 18S, but you can easily add your own data-type extraction settings, suited to your data. </p>
+    <div class="post-body" itemprop="articleBody"><!-- 切换按钮 -->
+<div id="lang-switcher" style="margin-bottom: 10px;">
+  <button class="lang-btn" onclick="switchLang('en')">English</button>
+  <button class="lang-btn" onclick="switchLang('zh')">中文</button>
+</div>
+
+<!-- 英文内容 -->
+<div class="lang lang-en">
+
+<p>When extracting sequences, you should use different settings for different data-types. PhyloSuite has five predefined data-types, Mitogenome, general, cox1, 16S and 18S, but you can easily add your own data-type extraction settings, suited to your data. </p>
 <p>Here I will demonstrate the process of making the extraction settings for the mitochondrial genome data-type.</p>
 <span id="more"></span>
 
@@ -330,7 +347,117 @@ FEATURES             Location/Qualifiers
 <h3 id="4-Extracting-with-customized-settings"><a href="#4-Extracting-with-customized-settings" class="headerlink" title="4. Extracting with customized settings"></a>4. Extracting with customized settings</h3><p>Now we can use the customized setting to extract the sequences anew. The multiple gene name aliases should be unified in the extracted file (see screenshot).</p>
 <p><img src="https://github.com/dongzhang0725/PhyloSuite_tutorial/blob/master/images/customize_extraction/self_extract.jpg?raw=true"></p>
 <h3 id="5-Recommended-reading"><a href="#5-Recommended-reading" class="headerlink" title="5. Recommended reading"></a>5. Recommended reading</h3><p>Other demo tutorials can be seen <a href="https://dongzhang0725.github.io/dongzhang0725.github.io/archives/">here</a>.</p>
+</div>
 
+<!-- 中文内容 -->
+<div class="lang lang-zh" style="display:none;">
+提取序列时，您需要根据不同的数据类型使用不同的设置。PhyloSuite 提供了五种预定义的数据类型：**线粒体基因组**、**通用**、**cox1**、**16S** 和 **18S**，但您也可以轻松添加适合您数据的新数据类型提取设置。
+
+<p>此处，我将以为<strong>线粒体基因组</strong>数据类型创建提取设置为例进行演示。</p>
+<!--more-->
+
+<h3 id="1-GenBank-文件格式"><a href="#1-GenBank-文件格式" class="headerlink" title="1. GenBank 文件格式"></a>1. GenBank 文件格式</h3><p>GenBank 文件格式（<code>Feature</code> 部分）如下所示（有关详细的 GenBank 格式，请访问 <a target="_blank" rel="noopener" href="https://www.ncbi.nlm.nih.gov/Sitemap/samplerecord.html">https://www.ncbi.nlm.nih.gov/Sitemap/samplerecord.html</a>）：</p>
+<pre>
+FEATURES             Location/Qualifiers
+    source[<span id="feature" style="color: red">Feature</span>] 1..5028
+                    /organism[<span id="qualifier" style="color: red">Qualifier</span>]  ="Saccharomyces cerevisiae[<span id="value" style="color: red">Value or Name</span>]"
+                    /db_xref[<span style="color: red">Qualifier</span>]   ="taxon:4932[<span style="color: red">Value or Name</span>]"
+                    /chromosome[<span style="color: red">Qualifier</span>]="IX[<span style="color: red">Value or Name</span>]"
+                    /map[<span style="color: red">Qualifier</span>]       ="9[<span style="color: red">Value or Name</span>]"
+    CDS[<span style="color: red">Feature</span>]    1..206
+                    /product[<span style="color: red">Qualifier</span>]   ="TCP1-beta[<span style="color: red">Value or Name</span>]"
+</pre>
+
+<p>三个术语——<strong>Feature</strong>、<strong>Qualifier</strong> 和 <strong>Name</strong>（见上文），对我们提取序列非常重要。在您将序列<a href="https://dongzhang0725.github.io/dongzhang0725.github.io/PhyloSuite-demo/five_ways_to_import/">导入</a> PhyloSuite 之后（关于如何选择和下载线粒体基因组，请参阅<a href="https://dongzhang0725.github.io/dongzhang0725.github.io/documentation/#4-3-3-1-Brief-example">此示例</a>），您可以打开序列来查看它包含哪些特征和限定符。<br><img src="https://github.com/dongzhang0725/PhyloSuite_tutorial/blob/master/images/customize_extraction/open_gb.jpg?raw=true"></p>
+<h3 id="2-通用提取"><a href="#2-通用提取" class="headerlink" title="2. 通用提取"></a>2. 通用提取</h3><p>关于如何操作提取功能，请参阅<a href="https://dongzhang0725.github.io/dongzhang0725.github.io/documentation/#5-1-1-Brief-example">此简要演示</a>。</p>
+<p>默认情况下，PhyloSuite 为六种数据类型（基因座）提供了设置：<code>线粒体基因组</code>、<code>叶绿体基因组</code>、<code>通用</code>、<code>cox1</code>、<code>16S</code> 和 <code>18S</code>。您可以通过 <code>设置 --&gt; GenBank 文件提取</code> 来查看它们。当您不确定使用哪种数据类型设置时，可以选择 <code>通用</code>。</p>
+<p><img src="https://github.com/dongzhang0725/PhyloSuite_tutorial/blob/master/images/customize_extraction/general_extraction.jpg?raw=true"></p>
+<p>提取完成后，您可以打开 <code>overview.csv</code> 文件查看此次提取的摘要。</p>
+<p>从该文件中，您可以看到这些数据包含的特征以及 <code>通用</code> 数据类型的设置。在我的示例中，您可以看到许多基因是同义词（例如，COI、COX1 和 COXI 是同义词）；它们可以在后续步骤中进行统一。</p>
+<p><img src="https://github.com/dongzhang0725/PhyloSuite_tutorial/blob/master/images/customize_extraction/overview.jpg?raw=true"></p>
+<h3 id="3-自定义提取"><a href="#3-自定义提取" class="headerlink" title="3. 自定义提取"></a>3. 自定义提取</h3><p>关于提取设置的详细说明，请参阅<a href="https://dongzhang0725.github.io/dongzhang0725.github.io/documentation/#4-4-3-Features-Extract">此处</a>。</p>
+<p>基于概述信息，现在我们可以调整设置以适应我们的序列。</p>
+<ol>
+<li>点击 <code>齿轮</code> 按钮打开设置；</li>
+<li>点击 <code>当前版本</code> 按钮，然后选择 <code>添加新版本</code>；您可以在弹出的窗口中将其命名为 <code>mtDNA</code>。<br><img src="https://github.com/dongzhang0725/PhyloSuite_tutorial/blob/master/images/customize_extraction/open_settings.jpg?raw=true"></li>
+</ol>
+<p>您会看到只有 <code>rRNA</code> 特征是预定义的，因此我们可以根据上面的 <code>overview.csv</code> 文件添加更多特征。点击添加按钮，然后输入您打算包含在提取中的特征名称。您可以参考概述文件中 “Features found in sequences” 部分来决定包含哪些特征（注意：特征名称区分大小写）。这里，我添加了 <code>CDS</code>、<code>tRNA</code> 和 <code>misc_feature</code>。每次我们添加一个特征时，其默认的限定符是 <code>gene</code>、<code>product</code> 和 <code>note</code>。通常，这些足以覆盖大多数情况，但您可以通过相应的 <code>添加</code> 按钮添加其他限定符。</p>
+<p><img src="https://github.com/dongzhang0725/PhyloSuite_tutorial/blob/master/images/customize_extraction/add_feature.jpg?raw=true"></p>
+<p>限定符用于识别基因名称：PhyloSuite 将依次搜索每个限定符的<a href="#value">值&#x2F;名称</a>。在下面的示例中（见截图），对于 <code>CDS</code>，PhyloSuite 将首先搜索 <code>gene</code> 限定符的<a href="#value">值&#x2F;名称</a>，如果没有 <code>gene</code> 限定符，则搜索 <code>product</code> 的<a href="#value">值&#x2F;名称</a>，最后搜索 <code>note</code> 的<a href="#value">值&#x2F;名称</a>。如果未找到为该特征指定的任何限定符，它将被记录在 <code>summary.csv</code> 文件中。</p>
+<p><img src="https://github.com/dongzhang0725/PhyloSuite_tutorial/blob/master/images/customize_extraction/hover.jpg?raw=true"></p>
+<p>最后，我们需要统一同义词基因名称。在提取结果文件夹（本演示第 2 节中的那个）中，进入 <code>StatFiles</code> 文件夹并打开 <code>name_for_unification.csv</code> 文件。</p>
+<ol>
+<li>在 “New Name” 列中，将基因别名修改为选定的标准名称；</li>
+<li>将修改后的 “name_for_unification.csv” 文件拖拽并放入下方指定区域（见截图）。<br><img src="https://github.com/dongzhang0725/PhyloSuite_tutorial/blob/master/images/customize_extraction/modify.jpg?raw=true"></li>
+</ol>
+<p>关闭设置窗口将自动保存您的参数。另请参阅 <a href="https://dongzhang0725.github.io/dongzhang0725.github.io/PhyloSuite-demo/single-gene-phylogeny/#2-Sequence-extraction">https://dongzhang0725.github.io/dongzhang0725.github.io/PhyloSuite-demo/single-gene-phylogeny/#2-Sequence-extraction</a>。</p>
+<h3 id="4-使用自定义设置进行提取"><a href="#4-使用自定义设置进行提取" class="headerlink" title="4. 使用自定义设置进行提取"></a>4. 使用自定义设置进行提取</h3><p>现在我们可以使用自定义设置重新提取序列。多个基因名称别名应在提取的文件中得到统一（见截图）。</p>
+<p><img src="https://github.com/dongzhang0725/PhyloSuite_tutorial/blob/master/images/customize_extraction/self_extract.jpg?raw=true"></p>
+<h3 id="5-推荐阅读"><a href="#5-推荐阅读" class="headerlink" title="5. 推荐阅读"></a>5. 推荐阅读</h3><p>其他演示教程可以在<a href="https://dongzhang0725.github.io/dongzhang0725.github.io/archives/">此处</a>查看。</p>
+</div>
+
+<!-- JS 切换逻辑 + 按钮高亮 + 记忆用户选择 -->
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const buttons = document.querySelectorAll('.lang-btn');
+  const langContents = document.querySelectorAll('.lang');
+
+  // 切换语言函数
+  function switchLang(lang){
+    // 隐藏所有内容
+    langContents.forEach(el => el.style.display = 'none');
+    // 显示对应语言
+    document.querySelectorAll('.lang-' + lang).forEach(el => el.style.display = 'block');
+    
+    // 高亮按钮
+    buttons.forEach(btn => btn.classList.remove('active'));
+    document.querySelector(`.lang-btn[onclick="switchLang('${lang}')"]`).classList.add('active');
+    
+    // 保存选择到 localStorage
+    localStorage.setItem('preferredLang', lang);
+  }
+
+  // 页面加载时读取用户上次选择
+  const savedLang = localStorage.getItem('preferredLang') || 'zh';
+  switchLang(savedLang);
+
+  // 给按钮绑定点击事件
+  buttons.forEach(btn => {
+    btn.addEventListener('click', () => {
+      const lang = btn.getAttribute('onclick').match(/switchLang\('(\w+)'\)/)[1];
+      switchLang(lang);
+    });
+  });
+});
+</script>
+
+<!-- CSS 美化按钮 -->
+<style>
+#lang-switcher {
+  display: flex;
+  gap: 10px;
+}
+
+.lang-btn {
+  padding: 6px 14px;
+  border: 1px solid #888;
+  border-radius: 6px;
+  background-color: #f5f5f5;
+  cursor: pointer;
+  transition: 0.2s;
+  font-weight: bold;
+}
+
+.lang-btn:hover {
+  background-color: #e0e0e0;
+}
+
+.lang-btn.active {
+  background-color: #007bff;
+  color: white;
+  border-color: #007bff;
+}
+</style>
     </div>
 
     

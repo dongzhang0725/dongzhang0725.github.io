@@ -19,15 +19,15 @@
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"dongzhang0725.github.io","root":"/","images":"/images","scheme":"Gemini","darkmode":false,"version":"8.25.0","exturl":false,"sidebar":{"position":"left","width_expanded":320,"width_dual_column":240,"display":"post","padding":18,"offset":12},"hljswrap":true,"codeblock":{"theme":{"light":"default","dark":"stackoverflow-dark"},"prism":{"light":"prism","dark":"prism-dark"},"copy_button":{"enable":false,"style":null},"fold":{"enable":false,"height":500},"language":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"duration":200,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js" defer></script>
 
-    <meta name="description" content="The video below describes the operation of multilocus phylogeny pipeline in PhyloSuite.">
+    <meta name="description" content="English   中文      The video below describes the operation of multilocus phylogeny pipeline in PhyloSuite.">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Tutorial videoes">
 <meta property="og:url" content="https://dongzhang0725.github.io/PhyloSuite-demo/videoes/index.html">
 <meta property="og:site_name" content="PhyloSuite">
-<meta property="og:description" content="The video below describes the operation of multilocus phylogeny pipeline in PhyloSuite.">
+<meta property="og:description" content="English   中文      The video below describes the operation of multilocus phylogeny pipeline in PhyloSuite.">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2023-01-04T11:46:44.000Z">
-<meta property="article:modified_time" content="2023-01-04T12:05:35.761Z">
+<meta property="article:modified_time" content="2025-11-20T12:35:56.000Z">
 <meta property="article:author" content="Dong Zhang">
 <meta property="article:tag" content="PyQT5">
 <meta property="article:tag" content="Python">
@@ -249,9 +249,15 @@
         <i class="far fa-calendar"></i>
       </span>
       <span class="post-meta-item-text">Posted on</span>
-      
 
-      <time title="Created: 2023-01-04 19:46:44 / Modified: 20:05:35" itemprop="dateCreated datePublished" datetime="2023-01-04T19:46:44+08:00">2023-01-04</time>
+      <time title="Created: 2023-01-04 19:46:44" itemprop="dateCreated datePublished" datetime="2023-01-04T19:46:44+08:00">2023-01-04</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">Edited on</span>
+      <time title="Modified: 2025-11-20 20:35:56" itemprop="dateModified" datetime="2025-11-20T20:35:56+08:00">2025-11-20</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -272,10 +278,93 @@
     
     
     
-    <div class="post-body" itemprop="articleBody"><p>The video below describes the operation of multilocus phylogeny pipeline in PhyloSuite.</p>
+    <div class="post-body" itemprop="articleBody"><!-- 切换按钮 -->
+<div id="lang-switcher" style="margin-bottom: 10px;">
+  <button class="lang-btn" onclick="switchLang('en')">English</button>
+  <button class="lang-btn" onclick="switchLang('zh')">中文</button>
+</div>
+
+<!-- 英文内容 -->
+<div class="lang lang-en">
+
+<p>The video below describes the operation of multilocus phylogeny pipeline in PhyloSuite.</p>
 <iframe src="http://phylosuite.jushengwu.com/images_storage/videoes/multi_locus_phylogeny.mp4" style='height: 99%; width: 99%;' scrolling="no" border="0" frameborder="0" framespacing="0" allowfullscreen="true"> </iframe>
 
 <span id="more"></span>
+</div>
+
+
+
+<!-- 中文内容 -->
+<div class="lang lang-zh" style="display:none;">
+以下视频介绍了 PhyloSuite 中多基因座系统发育流程的操作。
+
+<iframe src="http://phylosuite.jushengwu.com/images_storage/videoes/multi_locus_phylogeny.mp4" style='height: 99%; width: 99%;' scrolling="no" border="0" frameborder="0" framespacing="0" allowfullscreen="true"> </iframe>
+<!--more-->
+</div>
+
+<!-- JS 切换逻辑 + 按钮高亮 + 记忆用户选择 -->
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const buttons = document.querySelectorAll('.lang-btn');
+  const langContents = document.querySelectorAll('.lang');
+
+  // 切换语言函数
+  function switchLang(lang){
+    // 隐藏所有内容
+    langContents.forEach(el => el.style.display = 'none');
+    // 显示对应语言
+    document.querySelectorAll('.lang-' + lang).forEach(el => el.style.display = 'block');
+    
+    // 高亮按钮
+    buttons.forEach(btn => btn.classList.remove('active'));
+    document.querySelector(`.lang-btn[onclick="switchLang('${lang}')"]`).classList.add('active');
+    
+    // 保存选择到 localStorage
+    localStorage.setItem('preferredLang', lang);
+  }
+
+  // 页面加载时读取用户上次选择
+  const savedLang = localStorage.getItem('preferredLang') || 'zh';
+  switchLang(savedLang);
+
+  // 给按钮绑定点击事件
+  buttons.forEach(btn => {
+    btn.addEventListener('click', () => {
+      const lang = btn.getAttribute('onclick').match(/switchLang\('(\w+)'\)/)[1];
+      switchLang(lang);
+    });
+  });
+});
+</script>
+
+<!-- CSS 美化按钮 -->
+<style>
+#lang-switcher {
+  display: flex;
+  gap: 10px;
+}
+
+.lang-btn {
+  padding: 6px 14px;
+  border: 1px solid #888;
+  border-radius: 6px;
+  background-color: #f5f5f5;
+  cursor: pointer;
+  transition: 0.2s;
+  font-weight: bold;
+}
+
+.lang-btn:hover {
+  background-color: #e0e0e0;
+}
+
+.lang-btn.active {
+  background-color: #007bff;
+  color: white;
+  border-color: #007bff;
+}
+</style>
     </div>
 
     
