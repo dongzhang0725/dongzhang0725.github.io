@@ -35,7 +35,7 @@
 <meta property="og:image" content="https://github.com/dongzhang0725/PhyloSuite_tutorial/blob/master/images/installation/vncviewer_enter.jpg?raw=true">
 <meta property="og:image" content="https://github.com/dongzhang0725/PhyloSuite_tutorial/blob/master/images/installation/PhyloSuite_VNC.jpg?raw=true">
 <meta property="article:published_time" content="2019-03-04T07:51:47.000Z">
-<meta property="article:modified_time" content="2026-01-12T01:29:36.471Z">
+<meta property="article:modified_time" content="2026-01-12T01:38:23.750Z">
 <meta property="article:author" content="Dong Zhang">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://github.com/dongzhang0725/PhyloSuite_tutorial/blob/master/images/installation/MAC_error1.png?raw=true">
@@ -260,7 +260,7 @@
 <p>For <strong>macOS users</strong>, if you encounter <em>Security &amp; Privacy restrictions</em> or an alert such as <strong>“Apple cannot verify “xxx file”</strong>, you can try resolving the issue with the following command:</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo xattr -rd [PhyloSuite_installation_path]/PhyloSuite</span><br></pre></td></tr></table></figure>
 
-<p>Please note that <code>[PhyloSuite_installation_path]/PhyloSuite</code> refers to a directory (for example, <code>~/PhyloSuite_v2_Mac/PhyloSuite</code>), not the PhyloSuite executable file.</p>
+<p>Please note that <code>[PhyloSuite_installation_path]/PhyloSuite</code> refers specifically to the PhyloSuite installation directory (for example, <code>~/PhyloSuite_v2_Mac/PhyloSuite</code>), not the PhyloSuite executable.<br>Therefore, in this example, you should replace <code>PhyloSuite_installation_path</code> with <code>~/PhyloSuite_v2_Mac</code>, i.e., run: <code>sudo xattr -rd ~/PhyloSuite_v2_Mac/PhyloSuite</code></p>
 <p><span style="color:red">Note that both 64 bit and 32 bit Windows is supported (Windows 7 and above), whereas only 64 bit has been tested in Linux (Ubuntu 18.04.6 LTS) and Mac OSX (macOS Sierra version 10.12.3 and above).<br>We strongly encourage you to use conda, docker or singularity to install PhyloSuite in Linux (see section 3 and 4), especially for version 1.2.3.</p>
 </span>
 
@@ -356,7 +356,7 @@
 <p>对于MAC用户，如果遇到<code>安全性/隐私问题</code>或<code>Apple无法验证“某某文件”</code>问题，可尝试使用以下命令解决：</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo xattr -rd [PhyloSuite_installation_path]/PhyloSuite</span><br></pre></td></tr></table></figure>
 
-<p>请注意上述<code>[PhyloSuite_installation_path]/PhyloSuite</code>是一个目录，如<code>~/PhyloSuite_v2_Mac/PhyloSuite</code>，不是PhyloSuite的可执行文件</p>
+<p>请注意，<code>[PhyloSuite_installation_path]/PhyloSuite</code> 指的是 PhyloSuite 的安装目录（例如 <code>~/PhyloSuite_v2_Mac/PhyloSuite</code>），而不是 PhyloSuite 的可执行文件。<br>因此，在上述示例中，需要将 <code>PhyloSuite_installation_path</code> 替换为 <code>~/PhyloSuite_v2_Mac</code>，即执行： <code>sudo xattr -rd ~/PhyloSuite_v2_Mac/PhyloSuite</code></p>
 <p><span style="color:red">请注意，支持 64 位和 32 位 Windows（Windows 7 及以上版本），而在 Linux（Ubuntu 18.04.6 LTS）和 Mac OSX（macOS Sierra 版本 10.12.3 及以上版本）中仅测试了 64 位。<br>我们强烈建议您在 Linux 中使用 conda、docker 或 singularity 安装 PhyloSuite（参见第 3 和第 4 节），特别是对于 1.2.3 版本。</p>
 </span>
 
