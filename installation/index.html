@@ -35,7 +35,7 @@
 <meta property="og:image" content="https://github.com/dongzhang0725/PhyloSuite_tutorial/blob/master/images/installation/vncviewer_enter.jpg?raw=true">
 <meta property="og:image" content="https://github.com/dongzhang0725/PhyloSuite_tutorial/blob/master/images/installation/PhyloSuite_VNC.jpg?raw=true">
 <meta property="article:published_time" content="2019-03-04T07:51:47.000Z">
-<meta property="article:modified_time" content="2025-11-27T06:15:29.126Z">
+<meta property="article:modified_time" content="2026-01-12T01:29:36.471Z">
 <meta property="article:author" content="Dong Zhang">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://github.com/dongzhang0725/PhyloSuite_tutorial/blob/master/images/installation/MAC_error1.png?raw=true">
@@ -254,11 +254,13 @@
 <h4 id="1-2-Mac-OSX-or-Linux"><a href="#1-2-Mac-OSX-or-Linux" class="headerlink" title="1.2. Mac OSX or Linux"></a>1.2. Mac OSX or Linux</h4><p>Unzip <code>PhyloSuite_xxx_Mac.zip/PhyloSuite_xxx_Linux.tar.gz</code> to anywhere you like, and double click “PhyloSuite” (in PhyloSuite folder) to start, or use the following command: </p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">cd [PhyloSuite_installation_path]/PhyloSuite</span><br><span class="line">./PhyloSuite</span><br></pre></td></tr></table></figure>
 <p>If you encounter an error of “permission denied”, try to use the following command:</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">bash [PhyloSuite_installation_path]/assign_permission.sh</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">bash [PhyloSuite_installation_path]/PhyloSuite/assign_permission.sh</span><br></pre></td></tr></table></figure>
 
 <p><img src="https://github.com/dongzhang0725/PhyloSuite_tutorial/blob/master/images/installation/MAC_error1.png?raw=true"></p>
 <p>For <strong>macOS users</strong>, if you encounter <em>Security &amp; Privacy restrictions</em> or an alert such as <strong>“Apple cannot verify “xxx file”</strong>, you can try resolving the issue with the following command:</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo xattr -rd [PhyloSuite_installation_path]/PhyloSuite</span><br></pre></td></tr></table></figure>
+
+<p>Please note that <code>[PhyloSuite_installation_path]/PhyloSuite</code> refers to a directory (for example, <code>~/PhyloSuite_v2_Mac/PhyloSuite</code>), not the PhyloSuite executable file.</p>
 <p><span style="color:red">Note that both 64 bit and 32 bit Windows is supported (Windows 7 and above), whereas only 64 bit has been tested in Linux (Ubuntu 18.04.6 LTS) and Mac OSX (macOS Sierra version 10.12.3 and above).<br>We strongly encourage you to use conda, docker or singularity to install PhyloSuite in Linux (see section 3 and 4), especially for version 1.2.3.</p>
 </span>
 
@@ -343,17 +345,18 @@
 
 <h3 id="1-安装已编译的-PhyloSuite"><a href="#1-安装已编译的-PhyloSuite" class="headerlink" title="1. 安装已编译的 PhyloSuite"></a>1. 安装已编译的 PhyloSuite</h3><p>所有平台的安装程序都可以从 <a target="_blank" rel="noopener" href="https://github.com/dongzhang0725/PhyloSuite/releases">https://github.com/dongzhang0725/PhyloSuite/releases</a> 下载。</p>
 <p><a id="download" target="_blank" rel="noopener" href="https://github.com/dongzhang0725/PhyloSuite/releases"><i class="fa fa-download"></i><span> 立即下载</span> </a></p>
-<p><a id="download" href="#Chinese_download_link_zw"><i class="fa fa-download"></i><span> 中文下载链接</span> </a></p>
+<p><a id="download" href="#Chinese_download_link_zw"><i class="fa fa-download"></i><span> 中国用户下载链接</span> </a></p>
 <h4 id="1-1-Windows-1"><a href="#1-1-Windows-1" class="headerlink" title="1.1. Windows"></a>1.1. Windows</h4><p>支持 Windows 7、8 和 10，只需双击 <code>PhyloSuite_xxx_win_setup.exe</code> 进行安装，安装后运行 “PhyloSuite.exe” 文件。如果安装失败，请下载 <code>PhyloSuite_xxx_Win64/32.rar</code>，解压后直接从该文件夹运行 PhyloSuite。</p>
 <h4 id="1-2-Mac-OSX-或-Linux"><a href="#1-2-Mac-OSX-或-Linux" class="headerlink" title="1.2. Mac OSX 或 Linux"></a>1.2. Mac OSX 或 Linux</h4><p>将 <code>PhyloSuite_xxx_Mac.zip</code>&#x2F;<code>PhyloSuite_xxx_Linux.tar.gz</code> 解压到您喜欢的任何位置，然后双击 “PhyloSuite”（在 PhyloSuite 文件夹中）启动，或使用以下命令：</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">cd [PhyloSuite_installation_path]/PhyloSuite</span><br><span class="line">./PhyloSuite</span><br></pre></td></tr></table></figure>
 <p>如果遇到 “permission denied” 错误，请尝试使用以下命令：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">bash [PhyloSuite_installation_path]/assign_permission.sh</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">bash [PhyloSuite_installation_path]/PhyloSuite/assign_permission.sh</span><br></pre></td></tr></table></figure>
 
 <p><img src="https://github.com/dongzhang0725/PhyloSuite_tutorial/blob/master/images/installation/MAC_error1.png?raw=true"></p>
 <p>对于MAC用户，如果遇到<code>安全性/隐私问题</code>或<code>Apple无法验证“某某文件”</code>问题，可尝试使用以下命令解决：</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo xattr -rd [PhyloSuite_installation_path]/PhyloSuite</span><br></pre></td></tr></table></figure>
 
+<p>请注意上述<code>[PhyloSuite_installation_path]/PhyloSuite</code>是一个目录，如<code>~/PhyloSuite_v2_Mac/PhyloSuite</code>，不是PhyloSuite的可执行文件</p>
 <p><span style="color:red">请注意，支持 64 位和 32 位 Windows（Windows 7 及以上版本），而在 Linux（Ubuntu 18.04.6 LTS）和 Mac OSX（macOS Sierra 版本 10.12.3 及以上版本）中仅测试了 64 位。<br>我们强烈建议您在 Linux 中使用 conda、docker 或 singularity 安装 PhyloSuite（参见第 3 和第 4 节），特别是对于 1.2.3 版本。</p>
 </span>
 
@@ -514,7 +517,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
   <div class="copyright">
     &copy; 
-    <span itemprop="copyrightYear">2025</span>
+    <span itemprop="copyrightYear">2026</span>
     <span class="with-love">
       <i class="user"></i>
     </span>
