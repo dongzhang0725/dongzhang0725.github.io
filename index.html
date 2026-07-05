@@ -249,7 +249,7 @@
         <i class="far fa-calendar-check"></i>
       </span>
       <span class="post-meta-item-text">Edited on</span>
-      <time title="Modified: 2026-07-05 11:07:35" itemprop="dateModified" datetime="2026-07-05T11:07:35+08:00">2026-07-05</time>
+      <time title="Modified: 2026-07-05 17:16:05" itemprop="dateModified" datetime="2026-07-05T17:16:05+08:00">2026-07-05</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -271,55 +271,10 @@
     
     
     <div class="post-body" itemprop="articleBody">
-          <style>
-.lang-switcher {
-  margin: 12px 0 22px;
-  text-align: center;
-}
-.lang-btn {
-  display: inline-block;
-  margin: 0 6px 8px;
-  padding: 6px 14px;
-  border: 1px solid #6aaed6;
-  border-radius: 4px;
-  background: #f7fbff;
-  color: #1f5f85;
-  cursor: pointer;
-  font-size: 14px;
-}
-.lang-btn:hover {
-  background: #e8f4fb;
-}
-.tutorial-figure {
-  text-align: center;
-  margin: 22px auto;
-}
-.tutorial-figure img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-  margin: 0 auto;
-}
-.tutorial-figure figcaption {
-  text-align: center;
-  margin-top: 8px;
-  font-size: 0.95em;
-}
-</style>
-
-<script>
-function switchLang(lang) {
-  var zh = document.querySelector('.lang-zh');
-  var en = document.querySelector('.lang-en');
-  if (!zh || !en) return;
-  zh.style.display = lang === 'zh' ? 'block' : 'none';
-  en.style.display = lang === 'en' ? 'block' : 'none';
-}
-</script>
-
-<div class="lang-switcher">
-  <button class="lang-btn" onclick="switchLang('zh')">中文</button>
+          <!-- 切换按钮 -->
+<div id="lang-switcher" style="margin-bottom: 10px;">
   <button class="lang-btn" onclick="switchLang('en')">English</button>
+  <button class="lang-btn" onclick="switchLang('zh')">中文</button>
 </div>
 
 <div class="lang lang-zh">
